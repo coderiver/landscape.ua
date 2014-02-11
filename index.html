@@ -3,20 +3,312 @@
 <!--[if gt IE 8]><!--><html><!--<![endif]-->
 <head>
 	<meta charset="utf-8">
-	<title>Template</title>
+	<title>landscape</title>
 	<meta name="viewport" content="initial-scale=1"/>
 	<link rel="stylesheet" media="screen" href="css/screen.css" >
 	<!--[if IE]><script src="js/html5shiv.js"></script><![endif]-->
 	<script src="js/jquery.js"></script>
+	<script src="js/cycle.js"></script>
+	<script src="js/jquery.cycle2.carousel.min.js"></script>
 	<script src="js/common.js"></script>
 </head>
 <body>
 
 <!-- BEGIN  out-->
 <div class="out">
-
+	<!-- BEGIN header -->
+	<header class="header container">
+		<h1 class="logo">
+			<a href="#">landscape</a>
+		</h1>
+		<div class="header__toolbar">
+			<div class="header__tools">
+				<div class="log-in">
+					<a href="#">Войти в кабинет</a>	
+				</div>
+				<div class="registration">
+					<a href="#">Зарегистрироваться</a>	
+				</div>
+				<div class="language">
+					<ul>
+						<li><a href="#">Укр</a></li>
+						<li><a href="#">Рус</a></li>
+					</ul>
+				</div>
+				<div class="basket">
+					<i class="basket__icon"></i>
+					<span>Корзина</span>
+					<span class="basket__item">12</span>
+				</div>
+			</div>
+			<div class="search">
+				<input class="search__input" type="text" placeholder="Поиск...">
+				<button class="search__sbmit" type="submit"></button>
+			</div>
+		</div>
+	</header>
+	<!-- END header -->
+	<!-- BEGIN banner -->
+	<div class="banner">
+		<div class="banner__inner container">
+			<img class="banner__hands" src="img/hands.png" alt="">
+			<div class="banner__content">
+				<a href="#" class="banner__logo"></a>
+				<div class="banner__slogan">
+					<span>Всеукраинский портал</span><br>
+					<span><strong>растений и товаров для сада!</strong></span>
+				</div>
+				<div class="banner__text">
+					<p>Растения и товары от лучших Компаний </p>
+					<p>и производителей!</p>
+				</div>	
+			</div>
+		</div>
+	</div>
+	<!-- END banner -->
+	<div class="container">
+		<!-- BEGIN category -->
+		<ul class="category">
+			<li class="category__item plants">
+				<a href="#">
+					<div class="category__img"></div>
+					<div class="category__title">Растения</div>
+					<p>456000 растений от 228 компаний</p>
+				</a>
+			</li>
+			<li class="category__item goods">
+				<a href="#">
+					<div class="category__img"></div>
+					<div class="category__title">Товары</div>
+					<p>156 растений от 45 компаний</p>
+				</a>
+			</li>
+			<li class="category__item companies">
+				<a href="#">
+					<div class="category__img"></div>
+					<div class="category__title">Компании</div>
+					<p>156 растений от 45 компаний</p>
+				</a>
+			</li>
+			<li class="category__item serv">
+				<a href="#">
+					<div class="category__img"></div>
+					<div class="category__title">Растения</div>
+					<p>156 растений от 45 компаний</p>
+				</a>
+			</li>
+		</ul>
+		<!-- END category -->
+		<!-- BEGIN bestsellers -->
+		<div class="bestsellers">
+			<h2 class="title">ТОП товаров на портале:</h2>
+			<div class="center">
+        		<span class="bestsellers__prev"></span>
+        		<span class="bestsellers__next"></span>
+    		</div>
+			<div class="cycle-slideshow"
+			data-cycle-timeout="0"
+			data-cycle-prev=".bestsellers__prev"
+        	data-cycle-next=".bestsellers__next"
+        	data-cycle-fx="carousel"
+        	data-cycle-carousel-visible="4"
+        	data-cycle-slides="> div"
+			>
+				<div class="card">
+					<div class="card__img">
+						<img src="img/pict1.png" alt="">
+					</div>
+					<div class="card__descr">
+						<p>Роза парковая Westerland</p>
+						<p>(Вестерленд), саженец</p>
+					</div>
+					<div class="card__price">
+						<span class="price">4029 грн</span>
+					</div>
+					<div class="card__btn">
+						<a href="#" class="buy"><span></span>Купить!</a>
+					</div>
+				</div>
+				<div class="card">
+					<div class="card__img">
+						<img src="img/pict2.png" alt="">
+					</div>
+					<div class="card__descr">
+						<p>Роза парковая Westerland</p>
+						<p>(Вестерленд), саженец</p>
+					</div>
+					<div class="card__price">	
+						<span class="old-price">5289 грн</span>
+						<span class="price">4029 грн</span>
+					</div>
+					<div class="card__btn">
+						<a href="#" class="buy"><span></span>Купить!</a>
+					</div>
+				</div>
+				<div class="card">
+					<div class="card__img">
+						<img src="img/pict1.png" alt="">
+					</div>
+					<div class="card__descr">
+						<p>Роза парковая Westerland</p>
+						<p>(Вестерленд), саженец</p>
+					</div>
+					<div class="card__price">
+						<span class="price">4029 грн</span>
+					</div>
+					<div class="card__btn">
+						<a href="#" class="buy"><span></span>Купить!</a>
+					</div>
+				</div>
+				<div class="card">
+					<div class="card__img">
+						<img src="img/pict2.png" alt="">
+					</div>
+					<div class="card__descr">
+						<p>Роза парковая Westerland</p>
+						<p>(Вестерленд), саженец</p>
+					</div>
+					<div class="card__price">	
+						<span class="old-price">5289 грн</span>
+						<span class="price">4029 грн</span>
+					</div>
+					<div class="card__btn">
+						<a href="#" class="buy"><span></span>Купить!</a>
+					</div>
+				</div>
+				<div class="card">
+					<div class="card__img">
+						<img src="img/pict1.png" alt="">
+					</div>
+					<div class="card__descr">
+						<p>Роза парковая Westerland</p>
+						<p>(Вестерленд), саженец</p>
+					</div>
+					<div class="card__price">	
+						<span class="old-price">5289 грн</span>
+						<span class="price">4029 грн</span>
+					</div>
+					<div class="card__btn">
+						<a href="#" class="buy"><span></span>Купить!</a>
+					</div>
+				</div>
+				<div class="card">
+					<div class="card__img">
+						<img src="img/pict2.png" alt="">
+					</div>
+					<div class="card__descr">
+						<p>Роза парковая Westerland</p>
+						<p>(Вестерленд), саженец</p>
+					</div>
+					<div class="card__price">
+						<span class="price">4029 грн</span>
+					</div>
+					<div class="card__btn">
+						<a href="#" class="buy"><span></span>Купить!</a>
+					</div>
+				</div>
+			</div>
+		</div>
+		<!-- END bestsellers -->
+	</div>
+	<!-- BEGIN leaders -->
+	<div class="leaders">
+		<div class="title">Лидеры рынка на портале:</div>
+		<div class="divide"></div>
+		<div class="container">
+			<div class="center">
+				<span class="leaders__prev"></span>
+        		<span class="leaders__next"></span>
+			</div>
+			<div class="cycle-slideshow"
+			data-cycle-timeout="0"
+			data-cycle-prev=".leaders__prev"
+        	data-cycle-next=".leaders__next"
+        	data-cycle-fx="carousel"
+        	data-cycle-carousel-visible="4"
+        	data-cycle-slides="> div"
+			>
+				<div class="leaders__item">
+					<a href="#"><img src="img/leader1.png" alt=""></a>
+				</div>
+				<div class="leaders__item">
+					<a href="#"><img src="img/leader2.png" alt=""></a>
+				</div>
+				<div class="leaders__item">
+					<a href="#"><img src="img/leader3.png" alt=""></a>
+				</div>
+				<div class="leaders__item">
+					<a href="#"><img src="img/leader4.png" alt=""></a>
+				</div>
+				<div class="leaders__item">
+					<a href="#"><img src="img/leader1.png" alt=""></a>
+				</div>
+				<div class="leaders__item">
+					<a href="#"><img src="img/leader2.png" alt=""></a>
+				</div>
+			</div>
+		</div>
+		<div class="divide"></div>	
+	</div>
+	<!-- END leaders -->
+	<!-- BEGIN info -->
+	<div class="info info_main">
+		<div class="container clr">
+			<div class="information">
+				<div class="information__title">ИНФОРМАЦИЯ</div>
+				<div class="divide divide_white"></div>
+				<ul>
+					<li><a href="#">Реклама на Landscape</a></li>
+					<li><a href="#">Сравнение платных пакетов услуг</a></li>
+					<li><a href="#">Работа на Landscape</a></li>
+					<li><a href="#">Безопасность</a></li>
+					<li><a href="#">Политика конфиденциальности</a></li>
+					<li><a href="#">Контакты</a></li>
+				</ul>
+			</div>
+			<div class="information">
+				<div class="information__title">ДОПОЛНИТЕЛЬНО</div>
+				<div class="divide divide_white"></div>
+				<ul>
+					<li><a href="#">Карта Ландшафтной индустрии</a></li>
+					<li><a href="#">Тендеры - Объявления</a></li>
+					<li><a href="#">Правила оформления товарных позиций</a></li>
+					<li><a href="#">Семинары и тренинги</a></li>
+					<li><a href="#">Вакансии рынка</a></li>
+					<li><a href="#">Новости рынка</a></li>
+					<li><a href="#">Статьи</a></li>
+					<li><a href="#">Landscape TV (Видеообзоры)</a></li>
+				</ul>
+			</div>
+			<div class="reg-form">
+				<div class="reg-form__title">Регистрация компании</div>
+				<form action="">
+					<div class="input input_contant">
+						<input type="text" placeholder="Контактное лицо">
+						<span></span>
+					</div>
+					<div class="input input_contant">
+						<input type="text" placeholder="Телефон">
+						<span></span>
+					</div>
+					<div class="input input_contant">
+						<input type="text" placeholder="E-mail">
+						<span></span>
+					</div>
+				</form>
+			</div>
+		</div>
+	</div>
+	<!-- END info -->
+	
+	
 </div>
 <!-- END out-->
+<!-- BEGIN footer -->
+<footer class="footer">
+	
+</footer>
+<!-- END footer -->
 
 </body>
 </html>

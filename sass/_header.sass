@@ -1,0 +1,107 @@
+// header styles
+.header
+	+clr
+	padding: 9px 0 10px
+	a
+		font-size: 13px
+		text-decoration: none
+		color: #838383
+		&:hover
+			text-decoration: underline
+.logo
+	float: left
+	a
+		+hide-text
+		display: block
+		+s(logo) 
+.header__toolbar
+	float: right
+	width: 495px 		
+.header__tools
+	font-size: 0
+	line-height: 1
+	margin-bottom: 8px
+	padding-top: 2px
+.basket
+	display: inline-block
+	vertical-align: middle
+	width: 110px 
+	text-align: center
+	font-size: 13px
+	i, span
+		vertical-align: middle
+.basket__icon
+	display: inline-block
+	margin-right: 4px 
+	+s(basket)	
+.basket__item
+	display: inline-block
+	padding: 0 6px
+	height: 18px
+	margin-left: 4px 
+	line-height: 18px
+	+border-radius(4px)
+	background: #a9cb5b
+	font-size: 11px
+	color: #fff   	
+.language
+	display: inline-block
+	vertical-align: middle
+	margin-right: 30px 
+	font-size: 12px
+	ul
+		+clr
+		li
+			float: left
+			position: relative
+			margin-left: 8px
+			&:before
+				content: "|"
+				position: absolute
+				top: 0
+				left: -6px
+			&:first-child
+				margin-left: 0
+				&:before
+					content: ""
+.registration, .log-in
+	display: inline-block
+	vertical-align: middle
+	margin-right: 27px 
+	position: relative
+	padding-left: 16px
+	&:before
+		content: ""
+		position: absolute
+		top: 0px
+		left: 0px
+		+s(reg)
+.log-in
+	&:before
+		+s(login)
+
+// search
+.search
+	position: relative		
+.search__input
+	width: 100%
+	height: 33px
+	+border-radius(5px)
+	padding: 0 128px 0 12px
+	background: #ededed
+	+box
+.search__sbmit
+	position: absolute
+	top: 0
+	right: 0
+	width: 116px
+	height: 33px 
+	+border-radius(0 5px 5px 0)
+	background: #aacc5c
+	&:before
+		content: ""
+		position: absolute
+		top: 50%
+		left: 50%
+		margin: -10px 0 0 -10px
+		+s(search)     

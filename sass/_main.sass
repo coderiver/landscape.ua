@@ -1,2 +1,233 @@
-// Normally mainpage styles
- 
+// main page styles
+.banner
+	height: 350px 
+	background: url(../img/banner.jpg)
+	+cover
+	margin-bottom: 90px
+.banner__inner
+	+clr	 
+.banner__hands
+	position: absolute
+	left: 0
+	bottom: 0
+.banner__content
+	float: right
+	width: 486px 
+	height: 283px
+	padding-top: 67px  	 
+.banner__logo
+	display: block
+	+s(banner-logo)
+	margin-bottom: 23px
+.banner__slogan	
+	font: 35px Calibri, sans-serif
+	line-height: 1.2 
+	color: #fff
+	margin-bottom: 5px
+	span
+		display: inline-block
+		background: rgba(#fff, .3)
+		padding: 0 12px  	
+.banner__text
+	font-size: 21px
+	font-style: italic
+	font-weight: 300
+	color: #fff
+	
+// categories
+
+.category
+	+justify
+	margin-bottom: 17px
+.category__item
+	position: relative
+	width: 248px
+	height: 126px 
+	+justify-child
+	a
+		display: block
+		text-align: center
+		padding-top: 80px
+		font-size: 13px
+		text-decoration: none
+		color: #fff
+.category__img
+	position: absolute
+	left: 50%
+	top: -52%
+	margin: 0 0 0 -66px 
+	width: 133px
+	height: 133px
+	+border-radius(50%)
+	background: #fff  		
+.category__title
+	font-size: 18px
+	text-transform: uppercase 		   
+.plants
+	+border-radius(20px 0 0 20px)
+	background: #aacc5c
+	.category__img
+		border: 6px solid #aacc5c
+		&:before
+			content: ""
+			position: absolute
+			top: 50%
+			left: 50%
+			margin: -45px 0 0 -37px
+			+s(plants)
+.goods
+	background: #ff9600
+	.category__img
+		border: 6px solid #ff9600
+		&:before
+			content: ""
+			position: absolute
+			top: 50%
+			left: 50%
+			margin: -26px 0 0 -47px
+			+s(goods)
+.companies
+	background: #6bbbff
+	.category__img
+		border: 6px solid #6bbbff
+		&:before
+			content: ""
+			position: absolute
+			top: 50%
+			left: 50%
+			margin: -33px 0 0 -48px
+			+s(conpanies)
+.serv
+	+border-radius(0 20px 20px 0)
+	background: #ff6757
+	.category__img
+		border: 6px solid #ff6757
+		&:before
+			content: ""
+			position: absolute
+			top: 50%
+			left: 50%
+			margin: -37px 0 0 -38px
+			+s(serv)
+	
+// bestsellers
+.bestsellers
+	position: relative
+	margin-bottom: 22px
+	.cycle-slideshow
+		margin-left: -12px
+.bestsellers__prev, .leaders__prev
+	position: absolute
+	left: -50px
+	top: 50%
+	margin-top: -24px
+	+s(prev)
+	cursor: pointer
+.bestsellers__next, .leaders__next
+	position: absolute
+	right: -50px
+	top: 50%
+	margin-top: -24px
+	+s(next)
+	cursor: pointer 		 
+.card
+	vertical-align: top
+	display: inline-block
+	width: 213px
+	height: 358px
+	padding: 14px 
+	margin-left: 12px 
+	background: #ededed
+	+border-radius(20px)
+.card__img
+	height: 200px
+	line-height: 1
+	font-size: 0
+	text-align: center
+	margin-bottom: 15px
+	img
+		display: inline-block
+		vertical-align: middle
+		max-width: 100%
+		+border-radius(20px)
+.card__descr
+	height: 36px
+	overflow: hidden
+	margin-bottom: 20px 
+	text-align: center
+.card__price
+	text-align: center
+	margin-bottom: 19px
+.price
+	display: inline-block
+	font-size: 23px
+	font-weight: bold
+	color: #ff9600
+.old-price
+	position: relative
+	font-size: 15px
+	margin-right: 18px
+	&:before
+		content: ""
+		position: absolute
+		left: -2px
+		right: -2px
+		height: 2px
+		top: 8px
+		background: #a3a3a3
+.card__btn
+	text-align: center
+	
+// leaders
+
+.leaders
+	.cycle-slideshow
+		margin-bottom: 20px
+		margin-top: 24px 
+.leaders__item
+	position: relative
+	width: 244px
+	text-align: center 
+	display: inline-block
+	vertical-align: top
+	a
+		display: inline-block
+		height: 92px
+		line-height: 92px
+		img
+			vertical-align: middle  
+
+// info
+
+.info
+	padding: 30px 0 24px 
+	background: #ededed
+.info_main
+	background: #7b7b7b
+	color: #fff
+.information
+	float: left
+	margin-right: 50px
+	width: 240px
+	ul
+		padding-top: 5px
+	a
+		text-decoration: none
+		color: #fff
+		&:hover
+			text-decoration: underline 
+.information__title
+	text-transform: uppercase
+	font-size: 18px
+	margin-bottom: 2px	 
+
+// reg-form
+
+.reg-form
+	float: right
+	width: 367px
+.reg-form__title
+	text-align: center
+	text-transform: uppercase
+	font-size: 18px
+	margin-bottom: 5px				 			 						   	 									 			  	
