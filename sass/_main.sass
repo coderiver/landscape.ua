@@ -230,4 +230,68 @@
 	text-align: center
 	text-transform: uppercase
 	font-size: 18px
-	margin-bottom: 5px				 			 						   	 									 			  	
+	margin-bottom: 5px
+.reg-form__btn
+	text-align: center
+
+// products
+
+.products
+	position: relative
+	padding: 20px 0 30px 
+	background: #ededed 						 			 						   	 									 			  	
+.products__item
+	float: left
+	width: 250px
+	ul
+		position: relative
+		text-align: center
+		&:before
+			content: ""
+			position: absolute
+			top: 10px
+			height: 174px 
+			right: 0
+			width: 0px
+			border-right: 1px dashed #c8c8c8	  
+		li
+			margin-bottom: 4px
+		a
+			font-size: 14px
+			color: #787878
+			text-transform: none
+			text-decoration: none
+			&:hover
+				text-decoration: underline
+	&:first-child
+		ul
+			&:after
+				content: ""
+				position: absolute
+				top: 10px
+				height: 174px 
+				left: 0
+				width: 0px
+				border-right: 1px dashed #c8c8c8			
+.products__title
+	margin-bottom: 30px
+	font-size: 18px
+	color: #7b7b7b
+	text-transform: uppercase
+	text-align: center
+	i
+		display: inline-block
+		vertical-align: middle
+		margin-right: 15px 
+.products__title_plants
+	i
+		+s(plants-grey)
+.products__title_goods
+	i
+		+s(goods-grey)
+.products__title_companies
+	i
+		+s(conpanies-grey)
+.products__title_serv
+	i
+		+s(serv-grey)									

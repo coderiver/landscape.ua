@@ -1,0 +1,165 @@
+// styles for inner pages
+
+.main
+	+clr
+
+.sidebar
+	width: 240px
+	float: left
+	margin-right: 20px  
+.catlist
+	padding-left: 22px
+	margin-bottom: 30px
+	li
+		position: relative
+		margin-bottom: 10px
+		color: #c5c5c5
+		&:before
+			content: ""
+			position: absolute
+			top: 3px
+			left: -19px
+			+s(catlist) 
+		a
+			font-size: 13px
+			color: #636363
+			text-decoration: none
+			&:hover
+				text-decoration: underline
+				color: #89be18
+.content
+	float: right
+	width: 740px
+
+.filters-wrap
+	border: 1px solid #e0e0e0
+	+border-radius(5px)
+	overflow: hidden
+	margin-bottom: 20px	
+.filters
+	display: table
+	width: 100%
+	border-collapse: collapse
+	li
+		display: table-cell
+		text-align: center
+		border-left: 1px solid #e0e0e0
+		&:first-child
+			border-left: none 	  
+		a
+			display: block
+			padding: 0 10px 
+			height: 31px
+			line-height: 31px
+			text-align: center 
+			font-size: 13px
+			color: #838383
+			text-decoration: none				
+			&.is-active
+				background: #ededed
+			span, i
+				display: inline-block
+				vertical-align: middle
+			i
+				margin-right: 10px 		
+.marker-icon
+	+s(marker)
+.plants-icon
+	+s(plants-small)
+.goods-icon
+	+s(goods-small)
+.serv-icon
+	+s(serv-small)
+
+// sheet
+.sheet__item
+	border-bottom: 1px dashed #cfcfcf
+	margin-bottom: 19px 			
+.sheet__title
+	font-size: 20px
+	color: #89be18
+	margin-bottom: 10px	
+.sheet__content
+	+clr
+.sheet__descr
+	float: left
+	width: 470px
+	p
+		margin-bottom: 18px
+.sheet__info
+	position: relative
+	float: right
+	width: 181px
+	padding: 18px 13px
+	+box 
+	border: 1px solid #e0e0e0
+	+border-radius(5px)
+	li
+		position: relative
+		padding-left: 25px
+		margin-bottom: 13px 
+		span
+			color: #838383
+		a
+			color: #838383
+			text-decoration: none
+			border-bottom: 1px dotted
+			&:hover
+				color: #aacc5c	
+.sheet__phone
+	&:before
+		content: ""
+		position: absolute
+		top: 2px
+		left: 0px	 		
+		+s(phone2)
+.sheet__map
+	&:before
+		content: ""
+		position: absolute
+		top: 2px 
+		left: 0px
+		+s(marker)
+.sheet__comment
+	&:before
+		content: ""
+		position: absolute
+		top: 2px 
+		left: 0px
+		+s(comment)
+.sheet__status
+	position: absolute
+	top: -10px
+	right: -6px
+	height: 19px
+	line-height: 19px
+	padding: 0 5px 0 9px
+	+border-radius(8px 0 0 8px) 
+	text-transform: uppercase
+	color: #fff
+	text-align: center
+.sheet__status_gold
+	background: #feac0d
+	&:before
+		content: ""
+		position: absolute
+		top: 100%
+		right: 0px
+		+s(gold)
+.sheet__status_platinum
+	background: #fa5662
+	&:before
+		content: ""
+		position: absolute
+		top: 100%
+		right: 0px
+		+s(platinum)
+.sheet__status_silver
+	background: #878787
+	&:before
+		content: ""
+		position: absolute
+		top: 100%
+		right: 0px
+		+s(silver)
+							 		 		  		
