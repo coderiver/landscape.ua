@@ -214,7 +214,7 @@
 	overflow: hidden
 	background: #f9f9f9
 	margin-bottom: 20px
-.services__title
+.topic
 	position: relative
 	height: 34px
 	line-height: 34px
@@ -223,6 +223,7 @@
 	text-align: center
 	font-size: 18px
 	color: #636363
+	+border-radius(4px 4px 0 0)
 	&:before
 		content: ""
 		position: absolute
@@ -283,5 +284,109 @@
 		background: #6f6f6f
 		color: #fff
 		&:before
-			+s(download-hover)	 				
-							 		 		  		
+			+s(download-hover)
+.company__text
+	margin-bottom: 15px			
+.company__contacts
+	+clr
+	margin-bottom: 40px				 				
+.company__adress
+	float: left
+	width: 260px
+	+border-radius(5px 5px 0 0)
+	background: #f9f9f9
+	border-bottom: 1px dashed #cfcfcf
+.company__info
+	padding: 25px 15px 15px
+	line-height: 1.2  
+	p
+		margin-bottom: 10px
+		b
+			font-weight: bold
+			display: block
+		a
+			text-decoration: none
+			color: inherit
+			&:hover
+				text-decoration: underline
+.company__map
+	float: right
+	width: 460px
+.map	 
+	height: 290px
+.request-wrap
+	+clr
+	margin-left: -17px
+	margin-bottom: 26px
+.request
+	width: 235px 
+	float: left
+	margin-left: 17px
+	margin-bottom: 17px
+.request__topper
+	+border-radius(5px 5px 0 0)
+	border: 1px solid #ededed
+	border-bottom: 1px dashed #ededed
+	padding: 22px 10px 18px
+.reqest__img
+	+border-radius(5px)
+	overflow: hidden
+	img
+		width: 100%
+		height: 100%
+.request__title
+	width: 213px 
+	height: 50px
+	overflow: hidden 
+	font-size: 13px
+	color: #636363
+	text-align: center
+	font-weight: bold
+	display: table-cell
+	vertical-align: middle	    
+.request__company
+	padding: 10px
+	background: #f9f9f9
+	font-size: 12px
+	height: 25px
+	line-height: 1.2
+	overflow: hidden
+	border-bottom: 1px dashed #ededed 
+	a
+		color: #89be18
+		text-decoration: none
+		&:hover
+			text-decoration: underline	
+.request__price 
+	height: 27px
+	line-height: 27px
+	padding: 0 10px
+	font-size: 12px
+	border-bottom: 1px dashed #ededed
+	background: #f9f9f9
+.request__btn 
+	height: 45px
+	padding-top: 10px 
+	text-align: center
+	background: #f9f9f9
+	+border-radius(0 0 5px 5px) 
+	a
+		position: relative
+		display: inline-block
+		height: 34px
+		line-height: 34px
+		width: 122px
+		padding-left: 46px
+		+border-radius(5px)
+		background: #aacc5c
+		color: #fff
+		text-align: left
+		text-decoration: none
+		font-size: 15px
+		&:before
+			content: ""
+			position: absolute
+			top: 8px 
+			left: 18px
+			+s(join)       
+			
