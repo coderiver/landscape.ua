@@ -102,6 +102,17 @@ body
 			left: 50%
 			margin: -13px 0 0 -13px 
 			+s(basket-white)
+		&:after
+			content: ""
+			position: absolute
+			top: 6px
+			bottom: 6px
+			right: -1px
+			width: 0
+			border-right: 1px dotted #fff  	
+	&:hover
+		background: #ff9600
+		color: #fff 		
 .title
 	font-size: 22px
 	color: #7b7b7b
@@ -180,7 +191,7 @@ body
 // up btn	    						
 .up
 	position: absolute
-	bottom: 0px
+	top: -16px
 	left: 50%
 	margin-left: -30px
 	width: 60px
@@ -207,9 +218,14 @@ body
 		left: 0
 		+arr(60, 19, #fff, b)
 .up_grey
-	background: #ededed
+	bottom: 0
+	top: auto
+	background: #7b7b7b
+	color: #fff
+	i
+		+s(arr-top-white)
 	&:before
-		+arr(60, 19, #ededed, b)
+		+arr(60, 19, #7b7b7b, b)
 
 // checkbox
 

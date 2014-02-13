@@ -4,7 +4,7 @@
 .copyrights
 	float: left
 	font-size: 14px
-	padding-top: 28px 
+	line-height: 85px 
 	a
 		font-weight: bold
 		color: #89be18
@@ -54,5 +54,39 @@
 	&:before	
 		margin-top: 2px 
 		margin-left: -10px
-		+s(gp)								
-	
+		+s(gp)
+.feedback
+	overflow: hidden
+	text-align: center 
+.feedback__inner
+	display: inline-block
+	margin-top: 30px
+	background: #ededed
+	+border-radius(10px)
+	padding: 0 12px  
+	span, a
+		position: relative
+		color: #7b7b7b
+		font-size: 13px
+		display: inline-block
+		vertical-align: middle
+		height: 27px
+		line-height: 27px
+.feedback__link
+	text-decoration: none											
+	padding-left: 30px
+	&:before
+		content: ""
+		position: absolute
+		top: 4px
+		left: 6px
+		+s(feedback)
+.feedback__tel
+	padding-left: 20px
+	margin-right: 20px 
+	&:before
+		content: ""
+		position: absolute
+		top: 6px
+		left: 4px
+		+s(tel)		

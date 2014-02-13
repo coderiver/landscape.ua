@@ -133,16 +133,18 @@
 .card
 	vertical-align: top
 	display: inline-block
-	width: 213px
-	height: 358px
-	padding: 14px 
+	width: 239px
+	height: 364px
+	overflow: hidden
+	padding: 14px 0 
 	margin-left: 12px 
-	background: #ededed
+	border: 1px solid #ededed
 	+border-radius(20px)
 .card__img
 	height: 200px
 	line-height: 1
 	font-size: 0
+	padding: 0 14px 
 	text-align: center
 	margin-bottom: 15px
 	img
@@ -151,13 +153,17 @@
 		max-width: 100%
 		+border-radius(20px)
 .card__descr
-	height: 36px
+	height: 35px
 	overflow: hidden
-	margin-bottom: 20px 
 	text-align: center
+	padding: 0 14px 20px  
+	border-bottom: 1px dotted #ededed 
 .card__price
 	text-align: center
-	margin-bottom: 19px
+	height: 42px
+	line-height: 42px
+	background: #f9f9f9 
+	border-bottom: 1px dotted #ededed  
 .price
 	display: inline-block
 	font-size: 23px
@@ -177,7 +183,8 @@
 		background: #a3a3a3
 .card__btn
 	text-align: center
-	
+	padding: 14px 0
+	background: #ededed  
 // leaders
 
 .leaders
@@ -200,11 +207,18 @@
 // info
 
 .info
+	position: relative
 	padding: 30px 0 24px 
 	background: #ededed
 .info_main
 	background: #7b7b7b
 	color: #fff
+	.information
+		a
+			text-decoration: none
+			color: #fff
+			&:hover
+				text-decoration: underline 
 .information
 	float: left
 	margin-right: 50px
@@ -213,7 +227,7 @@
 		padding-top: 5px
 	a
 		text-decoration: none
-		color: #fff
+		color: #7b7b7b
 		&:hover
 			text-decoration: underline 
 .information__title
@@ -225,7 +239,8 @@
 
 .reg-form
 	float: right
-	width: 367px
+.reg-form_main
+	width: 367px 	
 .reg-form__title
 	text-align: center
 	text-transform: uppercase
