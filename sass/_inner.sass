@@ -232,7 +232,7 @@
 		margin-left: -7px
 		+arr(14, 6, #d8d8d8, b)
 		z-index: 99
-.services__list
+.services__list, .dropdown__list
 	li
 		position: relative
 		&:before
@@ -250,7 +250,6 @@
 			padding: 0 15px 0 39px
 			height: 33px
 			line-height: 33px
-			
 			font-size: 13px
 			color: #636363
 			text-decoration: none
@@ -452,5 +451,178 @@
 	font-size: 12px
 	color: #636363
 	a
-		color: #89be18   
+		color: #89be18
+.activity
+	padding-left: 14px
+	li
+		padding-left: 25px
+		position: relative
+		margin-bottom: 17px
+		&:before
+			content: ""
+			position: absolute
+			top: 2px
+			left: 0px
+			+s(plus)
+		a
+			font-size: 14px
+			color: #636363
+			text-decoration: none
+.activity__title
+	font-size: 17px
+	color: #636363
+	font-weight: bold
+	margin-bottom: 15px
+.dropdown
+	+border-radius(4px)
+	margin-bottom: 20px 
+.dropdown__btn
+	position: relative 
+	line-height: 1.2
+	padding: 5px 10px 5px 38px
+	cursor: pointer
+	background: #ededed
+	+border-radius(5px 5px 0 0) 
+	&:before
+		content: ""
+		position: absolute
+		top: 50%
+		left: 14px
+		margin-top: -2px 
+		+s(arr-down-grey)  
+	p
+		font-size: 18px
+	span
+		font-size: 13px
+.dropdown__item
+	background: #f9f9f9 
+	&:hover
+		background: #ededed 
+		.dropdown__sublist
+			display: block			
+.dropdown__sublist
+	display: none
+	position: absolute
+	top: 0px
+	left: 100%
+	width: 195px
+	background: #ededed
+	+border-radius(0 5px 5px 0)
+	overflow: hidden
+	li
+		&:before 
+			border-top: 1px dashed #fff
+		a
+			color: #636363
+			font-size: 13px
+			padding: 0 15px 
+			text-decoration: none
+			&:hover
+				text-decoration: underline
+			&:before
+				display: none
+.dropdown_green
+	color: #9cc74d
+	border: 1px solid #aacc5c
+	.dropdown__btn
+		+border-radius(5px)
+		background: #FFF
+		&:before 
+			+s(arr-down) 
+	.dropdown__list
+		background: #aacc5c 
+		.dropdown__item
+			background: #FFF 
+			a
+				&:before
+					+s(catlist-green)
+				&:hover
+					background: #aacc5c
+					color: #fff 
+					&:before	
+						+s(catlist-white)
+			&:hover
+				a
+					background: #aacc5c
+					color: #fff 
+					&:before	
+						+s(catlist-white)
+				.dropdown__sublist
+					display: block
+	.dropdown__sublist
+		a
+			color: #fff
+.viewed
+	margin-bottom: 20px			
+.viewed__title
+	text-align: center
+	font-size: 18px
+	margin-bottom: 15px
+.viewed__item
+	+clr
+	padding: 8px 0
+	border-bottom: 1px dashed #cfcfcf
+.viewed__img
+	float: left
+	width: 55px
+	height: 55px
+	margin-right: 13px 
+	+border-radius(4px)
+	overflow: hidden
+	img
+		width: 100%
+		height: 100%
+.viewed__content
+	overflow: hidden
+	a
+		color: #636363
+		text-decoration: none
+		line-height: 1.2
+		&:hover
+			text-decoration: underline
+.viewed__price
+	font-size: 18px
+	color: #ff9600
+	
+// gallery
+
+.gallery
+	position: relative
+	float: left
+	width: 300px
+.gallery__main	 	 		   	 																	
+	+border-radius(5px)
+	border: 1px solid #ededed
+	margin-bottom: 6px
+.cycle-prev
+	position: absolute
+	bottom: 22px
+	left: 0
+	+s(nav-prev)
+	cursor: pointer
+.cycle-next
+	position: absolute
+	bottom: 22px
+	right: 0
+	+s(nav-next)
+	cursor: pointer
+.gallery__item 
+	padding: 32px 7px
+.gallery__nav
+	padding: 0 14px
+	+box
+	width: 268px!important
+	height: 62px 
+	margin: 0 auto     
+	div
+		width: 60px
+		height: 60px
+		margin-right: 7px 
+		padding: 10px 4px
+		+box 
+		+border-radius(5px)
+		border: 1px solid #ededed
+		  
+
+
 			
