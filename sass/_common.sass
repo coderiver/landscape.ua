@@ -294,13 +294,15 @@ body
 	margin-bottom: 17px
 	border: 1px solid #ededed
 	+border-radius(5px)
-.h2
+.h2, .h3
 	font-size: 23px
 	color: #717171
 	font-weight: normal
 	margin-bottom: 18px
 	p
-		font-size: 12px 
+		font-size: 12px
+.h3
+	font-size: 22px		 
 .link
 	display: inline-block
 	padding: 0 12px
@@ -362,6 +364,45 @@ body
 .pagination__right
 	float: right
 .pagination__all
+
+// tabs
+
+.tab-wrap
+	padding-top: 26px
+	margin-bottom: 34px
+.tab
+	+clr
+	border-bottom: 1px solid #ededed
+.tab__item 
+	float: left
+	height: 33px
+	padding: 0 25px 
+	line-height: 33px
+	+box
+	border: 1px solid #ededed
+	border-bottom: none
+	border-left: none
+	&:first-child
+		+border-radius(5px 0 0 0)
+		border-left: 1px solid #ededed
+	&.tab__item_last
+		+border-radius(0 5px 0 0)
+	&.is-active
+		background: #ededed 	
+	a
+		text-decoration: none
+		font-size: 13px
+		color: #636363
+		font-weight: bold
+		span
+			color: #a3a3a3
+			font-weight: normal
+.tab-cont
+	padding-top: 21px
+	p
+		margin-bottom: 20px					 
+	
+
 
 				 			
 				

@@ -86,7 +86,7 @@
 	width: 470px
 	p
 		margin-bottom: 18px
-.sheet__info
+.details
 	position: relative
 	float: right
 	width: 181px
@@ -106,28 +106,28 @@
 			border-bottom: 1px dotted
 			&:hover
 				color: #aacc5c	
-.sheet__phone
+.details__phone
 	&:before
 		content: ""
 		position: absolute
 		top: 2px
 		left: 0px	 		
 		+s(phone2)
-.sheet__map
+.details__map
 	&:before
 		content: ""
 		position: absolute
 		top: 2px 
 		left: 0px
 		+s(marker)
-.sheet__comment
+.details__comment
 	&:before
 		content: ""
 		position: absolute
 		top: 2px 
 		left: 0px
 		+s(comment)
-.sheet__status
+.details__status
 	position: absolute
 	top: -10px
 	right: -6px
@@ -138,7 +138,7 @@
 	text-transform: uppercase
 	color: #fff
 	text-align: center
-.sheet__status_gold
+.details__status_gold
 	background: #feac0d
 	&:before
 		content: ""
@@ -146,7 +146,7 @@
 		top: 100%
 		right: 0px
 		+s(gold)
-.sheet__status_platinum
+.details__status_platinum
 	background: #fa5662
 	&:before
 		content: ""
@@ -154,7 +154,7 @@
 		top: 100%
 		right: 0px
 		+s(platinum)
-.sheet__status_silver
+.details__status_silver
 	background: #878787
 	&:before
 		content: ""
@@ -590,17 +590,18 @@
 	position: relative
 	float: left
 	width: 300px
+	margin-right: 13px 
 .gallery__main	 	 		   	 																	
 	+border-radius(5px)
 	border: 1px solid #ededed
 	margin-bottom: 6px
-.cycle-prev
+.gallery__prev
 	position: absolute
 	bottom: 22px
 	left: 0
 	+s(nav-prev)
 	cursor: pointer
-.cycle-next
+.gallery__next
 	position: absolute
 	bottom: 22px
 	right: 0
@@ -622,7 +623,104 @@
 		+box 
 		+border-radius(5px)
 		border: 1px solid #ededed
-		  
-
+		img
+			cursor: pointer
+			
+// order
+			
+.order-wrap
+	float: left
+	width: 218px
+	.list
+		padding: 0 11px
+		li
+			margin-bottom: 5px
+.order
+	+border-radius(5px 5px 0 0)
+	background: #f9f9f9
+	padding: 15px 0 10px 
+	border-bottom: 1px dashed #EDEDED
+	margin-bottom: 14px
+.order__price
+	text-align: center
+	font-size: 24px
+	color: #93c336
+	font-weight: bold
+.order__buy
+	+clr
+	padding: 7px 
+	background: #ededed
+	border-bottom: 1px dashed #EDEDED
+	border-top: 1px dashed #EDEDED
+	.buy
+		float: right
+		font-size: 18px
+		height: 42px
+		line-height: 42px
+		padding: 0 16px 0 56px
+		span
+			&:before
+				+s(basket-white)
+				margin: -13px 0 0 -5px  
+.order__number
+	position: relative
+	float: left
+	width: 57px
+	height: 42px
+	background: #fff
+	+border-radius(5px)
+	padding: 2px
+	+box
+	color: #636363
+	font-size: 16px    	 
+.order__more
+	position: absolute
+	top: 2px
+	left: 2px
+	width: 17px
+	height: 18px
+	line-height: 18px 
+	background: #ededed
+	text-align: center
+	+border-radius(5px 0 0 0)
+	cursor: pointer
+.order__less
+	position: absolute
+	bottom: 2px
+	left: 2px	   		  
+	width: 17px
+	height: 18px
+	line-height: 14px 
+	background: #ededed
+	text-align: center
+	+border-radius(0 0 0 5px)
+	cursor: pointer
+.order__count
+	padding-left: 17px
+	text-align: center
+	line-height: 38px
+.order__phone
+	position: relative
+	padding-top: 6px
+	padding-left: 42px
+	font-size: 15px
+	color: #838383
+	&:before
+		content: ""
+		position: absolute
+		top: 9px
+		left: 16px
+		+s(phone2)
+	.hide
+		position: absolute
+		top: 7px
+		right: 32px
+		background: #f9f9f9 	
+.hide
+	font-size: 15px
+	color: #838383
+	line-height: 1
+	border-bottom: 1px dotted
+	cursor: pointer  
 
 			
