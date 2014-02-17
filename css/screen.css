@@ -623,3 +623,9 @@ body { min-width: 1000px; font-size: 13px; font-family: Arial, Calibri, sans-ser
 .article { padding: 17px 0; }
 .article .h4 { margin-bottom: 17px; }
 .article p { margin-bottom: 17px; }
+
+.overlay { position: fixed; top: 0; left: 0; right: 0; bottom: 0; background: rgba(1, 1, 1, 0.7); z-index: 999; }
+
+.popup { position: fixed; top: 200px; left: 50%; -webkit-box-sizing: border-box; -moz-box-sizing: border-box; box-sizing: border-box; padding: 5px; background: rgba(255, 255, 255, 0.2); -webkit-border-radius: 5px; -moz-border-radius: 5px; -ms-border-radius: 5px; -o-border-radius: 5px; border-radius: 5px; z-index: 1000; }
+
+.popup_map { width: 1000px; height: 580px; margin-left: -500px; }

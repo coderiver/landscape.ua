@@ -52,7 +52,18 @@ $(document).ready(function() {
     	if ($(".js-tab-group").length) {
     		tab();
     	};
-  	
+
+  	$(".overlay").hide();
+  	$(".js-popup").hide();
+
+  	// map popup
+
+  	$(".js-map").bind('click', function(){
+  		$(".overlay").show();
+		$(".js-popup").show();
+  		return false;
+  	});
+
 
     // window scroll
     
