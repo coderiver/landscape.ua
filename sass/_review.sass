@@ -1,0 +1,124 @@
+// styles for review page
+.addcom-wrap
+    text-align: center
+    margin-bottom: 25px 
+.addcomm
+    position: relative
+    display: inline-block
+    height: 35px
+    line-height: 35px
+    font-size: 15px
+    color: #fff
+    padding: 0 14px 0 35px
+    background: #aacc5c
+    +border-radius(5px)
+    text-decoration: none
+    font-weight: bold
+    +transition(background 0.15s linear)
+    &:before
+        content: ""
+        position: absolute
+        top: 10px
+        left: 10px
+        +s(wright)
+    &:hover
+        background: #99b853
+        
+.comments__item
+    border-top: 1px dashed #cfcfcf
+    padding: 15px 0
+.comments__top
+    +clr
+    margin-bottom: 5px
+.comments__avatar
+    float: left
+    width: 50px
+    height: 50px
+    margin-right: 13px
+    +border-radius(50%)
+    background: #f9f9f9
+    overflow: hidden
+    img
+        width: 100%
+        height: 100%
+.comments__info
+    overflow: hidden
+.comments__name
+    margin-bottom: 5px
+    font-weight: bold
+.comments__date
+    position: relative
+    padding-left: 23px
+    margin-bottom: 5px
+    &:before
+        content: ""
+        position: absolute
+        top: 0px
+        left: 0px
+        +s(calendar)
+.comments__rating
+    span
+        display: inline-block
+        vertical-align: middle
+        color: #ddd            
+.rating
+    display: inline-block
+    vertical-align: middle
+    font-size: 0
+    margin-right: 7px
+    li
+        display: inline-block
+        vertical-align: middle
+.rating__img
+    display: inline-block
+    +s(rating)
+    &.is-active
+        +s(rating-green)
+.rating_good
+    .rating__img
+        &.is-active
+            +s(rating-green)
+.rating_norm
+    .rating__img
+        &.is-active
+            +s(rating-orange)
+.rating_bad
+    .rating__img
+        &.is-active
+            +s(rating-red)                         
+.comments__content
+    margin-bottom: 5px                                                      
+.comments__answer
+    +clr
+.comments__btn
+    position: relative
+    float: left
+    width: 128px
+    height: 23px
+    line-height: 23px
+    text-align: center 
+    border: 1px solid #ededed
+    +border-radius(5px)
+    background: #fff
+    +transition(background 0.15s linear)
+    cursor: pointer
+    &:hover
+        background: #ededed 
+    &:before
+        content: ""
+        position: absolute
+        top: 6px
+        left: 3px
+        +s(show)
+    &.is-open
+        &:before
+            +s(close2)
+.comments__text
+    float: right
+    width: 615px
+    margin-left: -5px
+    padding: 6px 12px
+    +box  
+    +border-radius(5px)
+    background: #ededed   
+         

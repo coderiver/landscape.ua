@@ -73,12 +73,22 @@ $(document).ready(function() {
   	});
 
   	// body scroll-top	
+	
 	$(".js-scrolltop").click(function (){
 	  	$('html, body').animate({
 	  	 	scrollTop: $(".out").offset().top
 	  	}, 500);
-	 })
+	})
     
+	// toggle company answer
+
+	$(".js-comm-text").hide();
+	$(".js-comm-btn").removeClass('is-open');
+	$(".js-comm-btn").on('click', function(){
+		$(this).toggleClass('is-open');
+		$(this).next().toggle();
+	});
+
     // window scroll
     $(window).scroll(function(){
         
