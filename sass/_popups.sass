@@ -19,16 +19,25 @@
 .popup_map
     width: 1000px
     margin-left: -500px
+.popup_add-comment
+    width: 550px
+    margin-left: -275px
+    .popup__title
+        text-align: left      
 .popup__title
     position: relative 
     color: #636363
     font-size: 18px
     height: 30px
     line-height: 30px
+    padding: 0 10px 
     text-align: center
     background: #ededed
     +border-radius(5px 5px 0 0) 
     +box-shadow(0 2px 3px rgba(1,1,1,.1), inset 0 -2px 0 #d7d7d7)
+    a
+        text-decoration: none
+        color: #89be18
 .popup__close
     position: absolute
     top: 8px
@@ -39,4 +48,27 @@
     height: 535px  
     +border-radius(0 0 5px 5px)
     overflow: hidden
+.popup__comment
+    padding: 22px 18px 15px
+    background: #fff
+    p
+        font-weight: bold
+        margin-bottom: 5px
+    .addcom-wrap
+        margin-bottom: 0    
+.popup__rating
+    font-size: 0
+    padding: 10px 0 0 0 
+    .checkbox
+        display: inline-block
+        vertical-align: top
+        margin-left: 20px
+        font-size: 13px
+        &:first-child
+            margin-left: 0
+        input:checked + span
+            &:after
+                +s(checkbox-green)    
+.popup__rating
+    margin-bottom: 30px                            
         

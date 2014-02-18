@@ -60,7 +60,7 @@ $(document).ready(function() {
 
   	$(".js-map").on('click', function(){
   		$(".overlay").show();
-		$(".js-popup").show();
+		$(".js-popup-map").show();
   		return false;
   	});
   	$(".overlay").on('click', function(){
@@ -88,6 +88,13 @@ $(document).ready(function() {
 		$(this).toggleClass('is-open');
 		$(this).next().toggle();
 	});
+
+	// popup add comment
+	$(".js-popup-comment").on('click', function(){
+		$(".js-popup-comm").show();
+		$(".overlay").show();
+		return false;
+	});	
 
     // window scroll
     $(window).scroll(function(){
