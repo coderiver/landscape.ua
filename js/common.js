@@ -37,7 +37,7 @@ $(document).ready(function() {
          var tab_cont = $(this).parents(".js-tab-group").find(".js-tab-cont");
          tab_cont.hide();
          $(this).parents(".js-tab-group").find(".js-tab1").show();
-            tab_link.bind("click", function() {
+            tab_link.on("click", function() {
              	var index = $(this).attr("href");
              	tab_link.removeClass("is-active");
              	tab_link.parent().removeClass("is-active");
@@ -58,22 +58,28 @@ $(document).ready(function() {
 
   	// map popup
 
-  	$(".js-map").bind('click', function(){
+  	$(".js-map").on('click', function(){
   		$(".overlay").show();
 		$(".js-popup").show();
   		return false;
   	});
-  	$(".overlay").bind('click', function(){
+  	$(".overlay").on('click', function(){
 		$(".js-popup").hide();
 		$(this).hide();
   	});
-  	$(".js-popup-close").bind('click', function(){
+  	$(".js-popup-close").on('click', function(){
 		$(this).parents(".js-popup").hide();
 		$(".overlay").hide();
   	});
 
-    // window scroll
+  	// body scroll-top	
+	$(".js-scrolltop").click(function (){
+	  	$('html, body').animate({
+	  	 	scrollTop: $(".out").offset().top
+	  	}, 500);
+	 })
     
+    // window scroll
     $(window).scroll(function(){
         
     });
