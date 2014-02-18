@@ -63,7 +63,14 @@ $(document).ready(function() {
 		$(".js-popup").show();
   		return false;
   	});
-
+  	$(".overlay").bind('click', function(){
+		$(".js-popup").hide();
+		$(this).hide();
+  	});
+  	$(".js-popup-close").bind('click', function(){
+		$(this).parents(".js-popup").hide();
+		$(".overlay").hide();
+  	});
 
     // window scroll
     
@@ -72,7 +79,7 @@ $(document).ready(function() {
     });
 
     $(document).click(function(event){
-		
+
 	});
 
 });

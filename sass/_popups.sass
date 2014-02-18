@@ -18,6 +18,25 @@
     z-index: 1000
 .popup_map
     width: 1000px
-    height: 580px
-    margin-left: -500px      
+    margin-left: -500px
+.popup__title
+    position: relative 
+    color: #636363
+    font-size: 18px
+    height: 30px
+    line-height: 30px
+    text-align: center
+    background: #ededed
+    +border-radius(5px 5px 0 0) 
+    +box-shadow(0 2px 3px rgba(1,1,1,.1), inset 0 -2px 0 #d7d7d7)
+.popup__close
+    position: absolute
+    top: 8px
+    right: 10px
+    +s(close)
+    cursor: pointer
+.popup__map
+    height: 535px  
+    +border-radius(0 0 5px 5px)
+    overflow: hidden
         
