@@ -96,6 +96,19 @@ $(document).ready(function() {
 		return false;
 	});	
 
+
+  // spinner
+  $( ".spinner" ).slider({
+      range: true,
+      min: 0,
+      max: 500,
+      values: [ 0, 500 ],
+      slide: function( event, ui ) {
+        $( ".spinner-value__min input" ).val( ui.values[ 0 ] );
+        $( ".spinner-value__max input" ).val( ui.values[ 1 ] );
+      }
+    });
+
     // window scroll
     $(window).scroll(function(){
         

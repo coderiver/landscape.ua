@@ -339,11 +339,13 @@
 	margin-left: 17px
 	margin-bottom: 17px
 .request__topper
+	display: block
 	+border-radius(5px 5px 0 0)
 	border: 1px solid #ededed
 	border-bottom: 1px dashed #ededed
 	padding: 22px 10px 0px
 .reqest__img
+	display: block
 	+border-radius(5px)
 	overflow: hidden
 	img
@@ -412,6 +414,7 @@
 	border: 1px solid #ededed
 	border-bottom: 1px dashed #ededed
 .catalog__img
+	display: block
 	+border-radius(5px)
 	overflow: hidden
 	margin-bottom: 10px
@@ -419,6 +422,8 @@
 	img
 		width: 100%
 		height: 100%
+	&:hover
+		+opacity(.6)	
 .buy_small
 	background: #ff9600
 	color: #fff
@@ -444,11 +449,15 @@
 	.buy
 		float: right	
 .catalog__title
+	display: block
 	text-align: center
 	font-size: 13px
 	color: #636363
 	font-weight: bold
+	text-decoration: none
 	line-height: 1.2
+	&:hover
+		text-decoration: underline
 .catalog__details
 	padding: 10px
 	background: #f9f9f9
@@ -466,6 +475,8 @@
 	color: #636363
 	a
 		color: #89be18
+		&:hover
+			text-decoration: none
 .activity
 	padding-left: 14px
 	li
@@ -523,6 +534,7 @@
 	background: #ededed
 	+border-radius(0 5px 5px 0)
 	overflow: hidden
+	z-index: 1
 	li
 		&:before 
 			border-top: 1px dashed #fff
@@ -653,9 +665,14 @@
 	font-size: 18px
 	margin-bottom: 15px
 .viewed__item
-	+clr
-	padding: 8px 0
-	border-bottom: 1px dashed #cfcfcf
+	& > a
+		padding: 8px 0
+		border-bottom: 1px dashed #cfcfcf
+		+clr
+		display: block
+		text-decoration: none
+		&:hover
+			background: #ededed 
 .viewed__img
 	float: left
 	width: 55px
@@ -668,12 +685,9 @@
 		height: 100%
 .viewed__content
 	overflow: hidden
-	a
-		color: #636363
-		text-decoration: none
-		line-height: 1.2
-		&:hover
-			text-decoration: underline
+	color: #636363
+	text-decoration: none
+	line-height: 1.2
 .viewed__price
 	font-size: 18px
 	color: #ff9600

@@ -3,12 +3,13 @@
 <!--[if gt IE 8]><!--><html><!--<![endif]-->
 <head>
 	<meta charset="utf-8">
-	<title>company_page_2</title>
+	<title>plant2</title>
 	<meta name="viewport" content="initial-scale=1"/>
 	<link rel="stylesheet" media="screen" href="css/screen.css" >
 	<!--[if IE]><script src="js/html5shiv.js"></script><![endif]-->
 	<script src="js/jquery.js"></script>
 	<script src="js/cycle.js"></script>
+	<script src="js/jquery-ui-1.10.4.custom.min.js"></script>
 	<script src="js/jquery.cycle2.carousel.min.js"></script>
 	<script src="js/common.js"></script>
 </head>
@@ -59,189 +60,317 @@
 		<nav class="breadcrumbs">
 			<ul>
 				<li><a href="#">Landscape.ua</a></li>
-				<li><a href="#">Компании</a></li>
-				<li><a href="#">Садовые центры</a></li>
-				<li><a href="#">Садовый центр Greensad</a></li>
+				<li><a href="#">Растения</a></li>
+				<li><a href="#">Хвойные растения</a></li>
+				<li><a href="#">Можжевельник</a></li>
+				<li><a href="#">Можжевельник китайский "Blue Alps"</a></li>
 			</ul>
 		</nav>
 		<!-- BEGIN content -->
 		<div class="main">
 			<aside class="sidebar">
-				<div class="sidebar__logo">
-					<img src="img/company-logo1.png" alt="">
+				<div class="dropdown">
+					<div class="dropdown__btn">
+						<p>Каталог растений</p>
+						<span>Landscape</span>
+					</div>
+					<ul class="dropdown__list">
+						<li class="dropdown__item">
+							<a href="#">Системы автополива</a>
+							<ul class="dropdown__sublist">
+								<li><a href="#">Ландшафтный дизайн</a></li>
+								<li><a href="#">Благоустройство</a></li>
+								<li><a href="#">Создание прудов</a></li>
+								<li><a href="#">Посадка крупномеров</a></li>
+								<li><a href="#">Ландшафтное освещение</a></li>
+								<li><a href="#">Дренажные работы</a></li>
+							</ul>
+						</li>
+						<li class="dropdown__item">
+							<a href="#">Создание газона</a>
+							<ul class="dropdown__sublist">
+								<li><a href="#">Ландшафтный дизайн</a></li>
+								<li><a href="#">Благоустройство</a></li>
+								<li><a href="#">Создание прудов</a></li>
+								<li><a href="#">Посадка крупномеров</a></li>
+								<li><a href="#">Ландшафтное освещение</a></li>
+								<li><a href="#">Дренажные работы</a></li>
+							</ul>
+						</li>
+						<li class="dropdown__item"><a href="#">Озеленение</a></li>
+						<li class="dropdown__item"><a href="#">Уход за садом</a></li>
+						<li class="dropdown__item"><a href="#">Ландшафтный дизайн</a></li>
+						<li class="dropdown__item"><a href="#">Благоустройство</a></li>
+						<li class="dropdown__item"><a href="#">Создание прудов</a></li>
+						<li class="dropdown__item"><a href="#">Посадка крупномеров</a></li>
+						<li class="dropdown__item"><a href="#">Ландшафтное освещение</a></li>
+						<li class="dropdown__item"><a href="#">Дренажные работы</a></li>
+					</ul>
 				</div>
-				<nav class="sidebar__links">
-					<ul>
-						<li><a href="#">Каталог услуг</a></li>
-						<li><a href="#">Каталог растений</a></li>
-						<li><a href="#">Каталог товаров</a></li>
-						<li><a href="#">Доставка</a></li>
-						<li><a href="#">Оплата</a></li>
-						<li><a href="#">Вакансии</a></li>
+				<div class="tools">
+					<div class="tools__title">Выбрать по параметрам</div>
+					<div class="tools__content">
+						<ul class="tools__list">
+							<li class="tools__item">
+								<div class="tools__name">Показать предложения:</div>
+								<label class="checkbox">
+									<input type="radio" name="rating">
+									<span>Только из Киева</span>
+								</label>
+								<label class="checkbox">
+									<input type="radio" name="rating">
+									<span>из всех регионов</span>
+								</label>
+							</li>
+							<li class="tools__item">
+								<div class="tools__name">По цене:</div>
+								<div class="spinner"></div>
+								<div class="spinner-amount">
+									<label class="spinner-value__min">
+										<span>от</span>
+										<input type="text" value="0">
+									</label>
+									<label class="spinner-value__max">
+										<span>до</span>
+										<input type="text" value="500">
+										<span>грн</span>
+									</label>
+								</div>
+								<div class="tools__amount">
+									<label class="checkbox">
+										<input type="radio" name="rating">
+										<span>Розница</span>
+										<i></i>
+									</label>
+									<label class="checkbox">
+										<input type="radio" name="rating">
+										<span>ОПТ</span>
+										<i></i>
+									</label>
+								</div>
+							</li>
+							<li class="tools__item">
+								<div class="tools__name">Размер:</div>
+								<div class="tools__size">
+									<label class="checkbox">
+										<input type="radio" name="rating">
+										<span>до 50 см</span>
+									</label>
+									<label class="checkbox">
+										<input type="radio" name="rating">
+										<span>50-100 см</span>
+									</label>
+									<label class="checkbox">
+										<input type="radio" name="rating">
+										<span>1,0-1,5 метра</span>
+									</label>
+									<label class="checkbox">
+										<input type="radio" name="rating">
+										<span>1,5-2 метра</span>
+									</label>
+									<label class="checkbox">
+										<input type="radio" name="rating">
+										<span>2,0-3,0 метра</span>
+									</label>
+									<label class="checkbox">
+										<input type="radio" name="rating">
+										<span>от 3 метров</span>
+									</label>
+								</div>
+							</li>
+						</ul>
+						<div class="tools__submit">
+							<button>Применить фильтр</button>
+						</div>
+					</div>
+				</div>
+				<div class="viewed">
+					<div class="viewed__title">Вы просматривали</div>
+					<ul class="viewed__list">
+						<li class="viewed__item">
+							<a href="#">
+								<div class="viewed__img">
+									<img src="img/pict1.png" alt="">
+								</div>
+								<div class="viewed__content">
+									<p>Роза парковая Westerland (Вестерленд), саженец</p>
+									<div class="viewed__price">1564 грн</div>
+								</div>
+							</a>
+						</li>
+						<li class="viewed__item">
+							<a href="#">
+								<div class="viewed__img">
+									<img src="img/pict1.png" alt="">
+								</div>
+								<div class="viewed__content">
+									<p>Роза парковая Westerland (Вестерленд), саженец</p>
+									<div class="viewed__price">1564 грн</div>
+								</div>
+							</a>
+						</li>
+						<li class="viewed__item">
+							<a href="#">
+								<div class="viewed__img">
+									<img src="img/pict1.png" alt="">
+								</div>
+								<div class="viewed__content">
+									<p>Роза парковая Westerland (Вестерленд), саженец</p>
+									<div class="viewed__price">1564 грн</div>
+								</div>
+							</a>
+						</li>
+						<li class="viewed__item">
+							<a href="#">
+								<div class="viewed__img">
+									<img src="img/pict1.png" alt="">
+								</div>
+								<div class="viewed__content">
+									<p>Роза парковая Westerland (Вестерленд), саженец</p>
+									<div class="viewed__price">1564 грн</div>
+								</div>
+							</a>
+						</li>
 					</ul>
-				</nav>
-				<div class="activity">
-					<div class="activity__title">Виды деятельности:</div>
-					<ul>
-						<li><a href="#">Интернет магазин</a></li>
-						<li><a href="#">Садовый центр</a></li>
-						<li><a href="#">Ландшафтные услуги</a></li>
-					</ul>
-				</div>	
-				<div class="sidebar__download">
-					<a href="#" class="link link_download">Скачать прайс</a>
 				</div>
 				<div class="sidebar__banner">
 					<img src="img/advert2.jpg" alt="">
 				</div>
 			</aside>
-			<div class="content company">
-				<h2 class="h2">Садовый центр «Greensad»: все для вашего сада и дома</h2>
-				<p class="company__text">Садовый центр «Greensad» предоставляет полный спектр услуг по посадке, обслуживанию, уходов, восстановлением зеленых насаждений, садов, газонов, деревьев. Так же мы располагаем питомниками растений, у нас вы можете на прямую купить саженцы, растения и деревья. Питомник декоративных растений это отличный выход если вы хотите выбрать качественные декоративные растения.</p>
-				<div class="company__contacts">
-					<div class="company__adress contacts">
-						<div class="topic">Контакты</div>
-						<div class="contacts__info">
-							<p>
-								<b>Телефон:</b>
-								+380 (44) 232-94-01, для заказов с доставкой по Украине<br>
-								+380 (44) 232-94-03, для заказов с доставкой по Киеву
-							</p>
-							<p>
-								<b>Адрес:</b>
-								г. Киев, с. Чайка (2км по Житомирской трассе, поворот налево на санаторий «Победа»), Киев, Украина
-							</p>
-							<p><strong>E-mail:</strong> <a href="mailto:info@greensad.com.ua">info@greensad.com.ua</a></p>
-							<p>
-								<b>График работы:</b>
-								Пн-Пт: 10.00-20.00;<br>
-								Сб, Вс - выходные
-							</p>
-						</div>
-					</div>
-					<div class="company__map">
-						<div class="topic">Карта</div>
-						<div class="map">
-							<iframe width="100%" height="100%" frameborder="0" scrolling="no" marginheight="0" marginwidth="0" src="https://maps.google.ru/maps?f=q&amp;source=s_q&amp;hl=ru&amp;geocode=&amp;q=%D1%83%D0%BB.+%D0%9F%D0%B0%D0%BD%D0%B0%D1%81%D0%B0+%D0%9C%D0%B8%D1%80%D0%BD%D0%BE%D0%B3%D0%BE,+%D0%9A%D0%B8%D0%B5%D0%B2,+%D0%B3%D0%BE%D1%80%D0%BE%D0%B4+%D0%9A%D0%B8%D0%B5%D0%B2,+%D0%A3%D0%BA%D1%80%D0%B0%D0%B8%D0%BD%D0%B0&amp;aq=0&amp;oq=%D1%83%D0%BB+%D0%BF%D0%B0%D0%BD%D0%B0%D1%81%D0%B0+&amp;sll=50.435723,30.291495&amp;sspn=0.024519,0.066047&amp;t=h&amp;ie=UTF8&amp;hq=&amp;hnear=%D1%83%D0%BB.+%D0%9F%D0%B0%D0%BD%D0%B0%D1%81%D0%B0+%D0%9C%D0%B8%D1%80%D0%BD%D0%BE%D0%B3%D0%BE,+%D0%9A%D0%B8%D0%B5%D0%B2,+%D0%B3%D0%BE%D1%80%D0%BE%D0%B4+%D0%9A%D0%B8%D0%B5%D0%B2,+%D0%A3%D0%BA%D1%80%D0%B0%D0%B8%D0%BD%D0%B0&amp;ll=50.433372,30.540533&amp;spn=0.00613,0.016512&amp;z=14&amp;output=embed"></iframe>
+			<div class="content">
+				<h2 class="h2">Растения</h2>
+				<!-- BEGIN recommendation -->
+				<div class="recommendation">
+					<ul class="catalog">
+						<li class="catalog__item">
+							<div class="catalog__topper">
+								<a href="#" class="catalog__img">
+									<img src="img/pict3.png" alt="">
+								</a>
+								<div class="catalog__buy">
+									<span class="price">4029 грн</span>
+									<a href="#" class="buy buy_small"><span></span>Купить!</a>
+								</div>
+								<a href="#" class="catalog__title">Роза парковая Westerland (Вестерленд), саженец</a>
+							</div>
+							<div class="catalog__details">
+								<p>Контейнер: 20л</p>
+								<p>Размер: 150-171см</p>
+							</div>
+							<div class="catalog__company">
+								Компания: <a href="#">Greensad</a> Из Киева
+							</div>
+						</li>
+						<li class="catalog__item">
+							<div class="catalog__topper">
+								<a href="#" class="catalog__img">
+									<img src="img/pict3.png" alt="">
+								</a>
+								<div class="catalog__buy">
+									<span class="price">4029 грн</span>
+									<a href="#" class="buy buy_small"><span></span>Купить!</a>
+								</div>
+								<a href="#" class="catalog__title">Роза парковая Westerland (Вестерленд), саженец</a>
+							</div>
+							<div class="catalog__details">
+								<p>Контейнер: 20л</p>
+								<p>Размер: 150-171см</p>
+							</div>
+							<div class="catalog__company">
+								Компания: <a href="#">Greensad</a> Из Киева
+							</div>
+						</li>
+						<li class="catalog__item">
+							<div class="catalog__topper">
+								<a href="#" class="catalog__img">
+									<img src="img/pict3.png" alt="">
+								</a>
+								<div class="catalog__buy">
+									<span class="price">4029 грн</span>
+									<a href="#" class="buy buy_small"><span></span>Купить!</a>
+								</div>
+								<a href="#" class="catalog__title">Роза парковая Westerland (Вестерленд), саженец</a>
+							</div>
+							<div class="catalog__details">
+								<p>Контейнер: 20л</p>
+								<p>Размер: 150-171см</p>
+							</div>
+							<div class="catalog__company">
+								Компания: <a href="#">Greensad</a> Из Киева
+							</div>
+						</li>
+						<li class="catalog__item">
+							<div class="catalog__topper">
+								<a href="#" class="catalog__img">
+									<img src="img/pict3.png" alt="">
+								</a>
+								<div class="catalog__buy">
+									<span class="price">4029 грн</span>
+									<a href="#" class="buy buy_small"><span></span>Купить!</a>
+								</div>
+								<a href="#" class="catalog__title">Роза парковая Westerland (Вестерленд), саженец</a>
+							</div>
+							<div class="catalog__details">
+								<p>Контейнер: 20л</p>
+								<p>Размер: 150-171см</p>
+							</div>
+							<div class="catalog__company">
+								Компания: <a href="#">Greensad</a> Из Киева
+							</div>
+						</li>
+						<li class="catalog__item">
+							<div class="catalog__topper">
+								<a href="#" class="catalog__img">
+									<img src="img/pict3.png" alt="">
+								</a>
+								<div class="catalog__buy">
+									<span class="price">4029 грн</span>
+									<a href="#" class="buy buy_small"><span></span>Купить!</a>
+								</div>
+								<a href="#" class="catalog__title">Роза парковая Westerland (Вестерленд), саженец</a>
+							</div>
+							<div class="catalog__details">
+								<p>Контейнер: 20л</p>
+								<p>Размер: 150-171см</p>
+							</div>
+							<div class="catalog__company">
+								Компания: <a href="#">Greensad</a> Из Киева
+							</div>
+						</li>
+						<li class="catalog__item">
+							<div class="catalog__topper">
+								<a href="#" class="catalog__img">
+									<img src="img/pict3.png" alt="">
+								</a>
+								<div class="catalog__buy">
+									<span class="price">4029 грн</span>
+									<a href="#" class="buy buy_small"><span></span>Купить!</a>
+								</div>
+								<a href="#" class="catalog__title">Роза парковая Westerland (Вестерленд), саженец</a>
+							</div>
+							<div class="catalog__details">
+								<p>Контейнер: 20л</p>
+								<p>Размер: 150-171см</p>
+							</div>
+							<div class="catalog__company">
+								Компания: <a href="#">Greensad</a> Из Киева
+							</div>
+						</li>
+					</ul>
+					<div class="pagination pagination_short">
+						<div class="pagination__left">
+							<ul>
+								<li class="is-active"><a href="#">1</a></li>
+								<li><a href="#">2</a></li>
+								<li><a href="#">3</a></li>
+								<li class="is-empty"><a href="#">...</a></li>
+								<li><a href="#">25</a></li>
+								<li class="next"><a href="#">Следующая</a></li>
+							</ul>
 						</div>
 					</div>
 				</div>
-				<ul class="catalog">
-					<li class="catalog__item">
-							<div class="catalog__topper">
-								<a href="#" class="catalog__img">
-									<img src="img/pict3.png" alt="">
-								</a>
-								<div class="catalog__buy">
-									<span class="price">4029 грн</span>
-									<a href="#" class="buy buy_small"><span></span>Купить!</a>
-								</div>
-								<a href="#" class="catalog__title">Роза парковая Westerland (Вестерленд), саженец</a>
-							</div>
-							<div class="catalog__details">
-								<p>Контейнер: 20л</p>
-								<p>Размер: 150-171см</p>
-							</div>
-							<div class="catalog__company">
-								Компания: <a href="#">Greensad</a> Из Киева
-							</div>
-						</li>
-					<li class="catalog__item">
-							<div class="catalog__topper">
-								<a href="#" class="catalog__img">
-									<img src="img/pict3.png" alt="">
-								</a>
-								<div class="catalog__buy">
-									<span class="price">4029 грн</span>
-									<a href="#" class="buy buy_small"><span></span>Купить!</a>
-								</div>
-								<a href="#" class="catalog__title">Роза парковая Westerland (Вестерленд), саженец</a>
-							</div>
-							<div class="catalog__details">
-								<p>Контейнер: 20л</p>
-								<p>Размер: 150-171см</p>
-							</div>
-							<div class="catalog__company">
-								Компания: <a href="#">Greensad</a> Из Киева
-							</div>
-						</li>
-					<li class="catalog__item">
-							<div class="catalog__topper">
-								<a href="#" class="catalog__img">
-									<img src="img/pict3.png" alt="">
-								</a>
-								<div class="catalog__buy">
-									<span class="price">4029 грн</span>
-									<a href="#" class="buy buy_small"><span></span>Купить!</a>
-								</div>
-								<a href="#" class="catalog__title">Роза парковая Westerland (Вестерленд), саженец</a>
-							</div>
-							<div class="catalog__details">
-								<p>Контейнер: 20л</p>
-								<p>Размер: 150-171см</p>
-							</div>
-							<div class="catalog__company">
-								Компания: <a href="#">Greensad</a> Из Киева
-							</div>
-						</li>
-					<li class="catalog__item">
-							<div class="catalog__topper">
-								<a href="#" class="catalog__img">
-									<img src="img/pict3.png" alt="">
-								</a>
-								<div class="catalog__buy">
-									<span class="price">4029 грн</span>
-									<a href="#" class="buy buy_small"><span></span>Купить!</a>
-								</div>
-								<a href="#" class="catalog__title">Роза парковая Westerland (Вестерленд), саженец</a>
-							</div>
-							<div class="catalog__details">
-								<p>Контейнер: 20л</p>
-								<p>Размер: 150-171см</p>
-							</div>
-							<div class="catalog__company">
-								Компания: <a href="#">Greensad</a> Из Киева
-							</div>
-						</li>
-					<li class="catalog__item">
-							<div class="catalog__topper">
-								<a href="#" class="catalog__img">
-									<img src="img/pict3.png" alt="">
-								</a>
-								<div class="catalog__buy">
-									<span class="price">4029 грн</span>
-									<a href="#" class="buy buy_small"><span></span>Купить!</a>
-								</div>
-								<a href="#" class="catalog__title">Роза парковая Westerland (Вестерленд), саженец</a>
-							</div>
-							<div class="catalog__details">
-								<p>Контейнер: 20л</p>
-								<p>Размер: 150-171см</p>
-							</div>
-							<div class="catalog__company">
-								Компания: <a href="#">Greensad</a> Из Киева
-							</div>
-						</li>
-					<li class="catalog__item">
-							<div class="catalog__topper">
-								<a href="#" class="catalog__img">
-									<img src="img/pict3.png" alt="">
-								</a>
-								<div class="catalog__buy">
-									<span class="price">4029 грн</span>
-									<a href="#" class="buy buy_small"><span></span>Купить!</a>
-								</div>
-								<a href="#" class="catalog__title">Роза парковая Westerland (Вестерленд), саженец</a>
-							</div>
-							<div class="catalog__details">
-								<p>Контейнер: 20л</p>
-								<p>Размер: 150-171см</p>
-							</div>
-							<div class="catalog__company">
-								Компания: <a href="#">Greensad</a> Из Киева
-							</div>
-						</li>
-				</ul>
+				<!-- END recommendation -->
 			</div>
 		</div>
 		<!-- END content -->
