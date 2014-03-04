@@ -534,7 +534,7 @@
 	background: #ededed
 	+border-radius(0 5px 5px 0)
 	overflow: hidden
-	z-index: 1
+	z-index: 999
 	li
 		&:before 
 			border-top: 1px dashed #fff
@@ -749,11 +749,44 @@
 	padding: 15px 0 10px 
 	border-bottom: 1px dashed #EDEDED
 	margin-bottom: 14px
+.order_request
+	text-align: center
+.order__head
+	margin-bottom: 5px
 .order__price
 	text-align: center
 	font-size: 24px
 	color: #93c336
 	font-weight: bold
+.order__request
+	position: relative
+	display: inline-block
+	height: 42px
+	line-height: 42px
+	width: 156px
+	padding-left: 46px
+	+border-radius(5px)
+	background: #aacc5c
+	color: #fff
+	text-align: left
+	text-decoration: none
+	font-size: 18px
+	&:before
+		content: ""
+		position: absolute
+		top: 13px 
+		left: 18px
+		+s(join)
+.order__descr 
+	padding: 0 7px
+	text-align: left
+	font-size: 13px
+	a
+		color: #89be18
+		text-decoration: none
+		&:hover
+			text-decoration: underline
+		 	
 .order__buy
 	+clr
 	padding: 7px 
@@ -862,8 +895,51 @@
 	.h4
 		margin-bottom: 17px
 	p
-		margin-bottom: 17px	
+		margin-bottom: 17px
 
+.tab-cont__comments
+	padding-top: 0			
+	.comments__item
+		&:first-child
+			border-top: none
+.count
+	+clr
+	height: 57px
+	line-height: 57px
+	padding: 0 25px 
+	margin-bottom: 60px
+	border-top: 1px dashed #cfcfcf
+	border-bottom: 1px dashed #cfcfcf
+	background: #f9f9f9
+	font-size: 18px
+	color: #636363
+.count__left
+	float: left
+.count__right 
+	float: right
+.count__btn
+	position: relative 
+	display: block
+	margin-top: 12px
+	height: 35px
+	line-height: 35px
+	padding: 0 17px 0 37px
+	+border-radius(7px) 
+	background: #ff9500
+	color: #fff
+	font-size: 14px
+	text-decoration: none
+	+transition(background 150ms linear)	
+	&:before
+		content: ""
+		position: absolute 
+		top: 7px
+		left: 12px
+		+s(count)
+	&:hover
+		background: #f68302
+	&:active
+		+box-shadow(inset 0 2px 0 0px #c56902)			 		
 
 
 			

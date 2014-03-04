@@ -44,6 +44,8 @@
     right: 10px
     +s(close)
     cursor: pointer
+    &:hover
+        +s(close-hover)
 .popup__map
     height: 535px  
     +border-radius(0 0 5px 5px)
@@ -58,7 +60,8 @@
         margin-bottom: 0    
 .popup__rating
     font-size: 0
-    padding: 10px 0 0 0 
+    padding: 10px 0 0 0
+    margin-bottom: 30px 
     .checkbox
         display: inline-block
         vertical-align: top
@@ -68,7 +71,95 @@
             margin-left: 0
         input:checked + span
             &:after
-                +s(checkbox-green)    
-.popup__rating
-    margin-bottom: 30px                            
-        
+                +s(checkbox-green)
+    
+    
+.popup_count
+    width: 475px
+    margin-left: -237px
+    .popup__title
+        text-align: left
+        +box-shadow(none)
+        border-bottom: 2px solid #d3d4d4 
+.popup__content
+    padding: 9px 14px 14px 
+    +border-radius(0 0 5px 5px)
+    background: #fff
+.popup__left, .popup__right
+    width: 210px
+    float: left
+    margin-left: 17px  
+.popup__left
+    margin-left: 0px
+    .textarea
+        margin-bottom: 0
+.popup__input
+    width: 100%
+    +box
+    border: 1px solid #e5e5e5
+    +border-radius(5px)
+    padding: 0 11px
+    margin-bottom: 13px 
+    height: 33px
+    font-family: Arial, Calibri, sans-serif
+    color: #636363
+    font-size: 13px
+    +placeholder-color(#999)
+.popup__header 
+    font-size: 18px
+    margin-bottom: 10px
+.popup__questions
+    .checkbox
+        margin-bottom: 13px
+        input:checked + span
+            &:after
+                +s(checkbox-green)
+    button
+        position: relative
+        display: inline-block
+        width: 100%
+        height: 38px
+        line-height: 38px
+        text-align: center
+        font-size: 15px
+        color: #fff
+        +border-radius(7px)
+        background: #ff9600 
+        &:before
+            content: ""
+            position: absolute
+            top: 9px
+            left: 15px
+            +s(upload)
+        &:hover
+            background: #f68302
+        &:active
+            +box-shadow(inset 0 2px 0 0px #c56902)    
+.upload
+    display: inline-block
+    margin-bottom: 10px
+.popup_thanks 
+    width: 560px
+    margin-left: -280px 
+.thanks
+    position: relative
+    height: 206px
+    padding: 65px 65px 65px 130px
+    +box 
+    +border-radius(5px)
+    font-size: 15px
+    background: #FFF
+.thanks__title
+    position: relative
+    padding-left: 40px
+    margin-bottom: 15px
+    font-size: 18px
+    color: #ff9600
+    &:before
+        content: "" 
+        position: absolute
+        top: -5px
+        left: 0px
+        +s(thanks)                                        
+            
+            

@@ -63,13 +63,9 @@ $(document).ready(function() {
 		$(".js-popup-map").show();
   		return false;
   	});
-  	$(".overlay").on('click', function(){
-		$(".js-popup").hide();
-		$(this).hide();
-  	});
   	$(".js-popup-close").on('click', function(){
-		$(this).parents(".js-popup").hide();
-		$(".overlay").hide();
+		  $(this).parents(".js-popup").hide();
+		  $(".overlay").hide();
   	});
 
   	// body scroll-top	
@@ -98,6 +94,7 @@ $(document).ready(function() {
 
 
   // spinner
+  
   $( ".spinner" ).slider({
       range: true,
       min: 0,
@@ -107,6 +104,39 @@ $(document).ready(function() {
         $( ".spinner-value__min input" ).val( ui.values[ 0 ] );
         $( ".spinner-value__max input" ).val( ui.values[ 1 ] );
       }
+    });
+
+
+    // count popup
+
+    $(".js-count").hide();
+    $(".js-thanks").hide();
+    
+    $(".js-count-btn").on('click', function(){
+      $(".js-count").show();
+      $(".overlay").show();
+      return false;
+    }); 
+    $(".js-count-close").on('click', function(){
+      $(".overlay").hide();
+      $(".js-count").hide();
+    });
+
+    $(".overlay").on('click', function(){
+      $(".js-popup").hide();
+      $(".js-count").hide();
+      $(".js-thanks").hide();
+      $(this).hide();
+    });
+
+    $(".js-thanks-btn").on('click', function(){
+      $(".js-count").hide();
+      $(".js-thanks").show();
+    });
+
+    $(".js-thanks-close").on('click', function(){
+      $(".js-thanks").hide();
+      $(".overlay").hide();
     });
 
     // window scroll
