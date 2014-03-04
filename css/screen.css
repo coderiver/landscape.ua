@@ -21,6 +21,14 @@ table { border-spacing: 0; border-collapse: collapse; width: 100%; }
 
 body { min-width: 1000px; font-size: 13px; font-family: Arial, Calibri, sans-serif; color: #636363; line-height: 1.4; }
 
+.out { min-height: 100%; height: auto !important; height: 100%; margin: 0 auto -353px; }
+
+.out_main { margin: 0 auto -676px; }
+
+.push { height: 353px; }
+
+.push_main { height: 676px; }
+
 .clr { *zoom: 1; }
 .clr:after { content: " "; display: table; clear: both; }
 
@@ -206,7 +214,9 @@ body { min-width: 1000px; font-size: 13px; font-family: Arial, Calibri, sans-ser
 .search__sbmit { position: absolute; top: 0; right: 0; width: 116px; height: 33px; -webkit-border-radius: 0 5px 5px 0; -moz-border-radius: 0 5px 5px 0; -ms-border-radius: 0 5px 5px 0; -o-border-radius: 0 5px 5px 0; border-radius: 0 5px 5px 0; background: #aacc5c; }
 .search__sbmit:before { content: ""; position: absolute; top: 50%; left: 50%; margin: -10px 0 0 -10px; background: url('../img/icons-s75dfbd082a.png') 0 -839px no-repeat; width: 20px; height: 20px; }
 
-.footer { height: 85px; }
+.footer { height: 353px; }
+
+.footer_main { height: 676px; }
 
 .copyrights { float: left; font-size: 14px; line-height: 85px; }
 .copyrights a { font-weight: bold; color: #89be18; text-decoration: none; }
@@ -692,6 +702,12 @@ body { min-width: 1000px; font-size: 13px; font-family: Arial, Calibri, sans-ser
 .count__btn:before { content: ""; position: absolute; top: 7px; left: 12px; background: url('../img/icons-s75dfbd082a.png') 0 -1825px no-repeat; width: 14px; height: 20px; }
 .count__btn:hover { background: #f68302; }
 .count__btn:active { -webkit-box-shadow: inset 0 2px 0 0px #c56902; -moz-box-shadow: inset 0 2px 0 0px #c56902; box-shadow: inset 0 2px 0 0px #c56902; }
+
+.notification__title { font-size: 29px; }
+
+.notification__content { padding: 15px; margin-bottom: 19px; font-size: 18px; color: #89be18; border: 1px solid #dae9b9; -webkit-border-radius: 5px; -moz-border-radius: 5px; -ms-border-radius: 5px; -o-border-radius: 5px; border-radius: 5px; }
+
+.notification__back { display: inline-block; padding: 0 11px; height: 38px; line-height: 38px; font-size: 15px; text-decoration: none; color: white; -webkit-border-radius: 5px; -moz-border-radius: 5px; -ms-border-radius: 5px; -o-border-radius: 5px; border-radius: 5px; background: #a9cb5c; -webkit-box-shadow: inset 0 -2px 0 rgba(0, 0, 0, 0.06); -moz-box-shadow: inset 0 -2px 0 rgba(0, 0, 0, 0.06); box-shadow: inset 0 -2px 0 rgba(0, 0, 0, 0.06); }
 
 .overlay { position: fixed; top: 0; left: 0; right: 0; bottom: 0; background: rgba(1, 1, 1, 0.7); z-index: 999; }
 
