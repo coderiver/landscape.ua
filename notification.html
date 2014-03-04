@@ -53,7 +53,7 @@
 		<div class="notification">
 			<div class="notification__title">Вам выслана ссылка для восстановления пароля</div>
 			<div class="notification__content">В скором времени на указанную Вами почту придет письмо со ссылкой для восстановления пароля.</div>
-			<a href="#" class="notification__back">Вернуться к форме входа</a>
+			<a href="#777" class="btn js-login-btn">Вернуться к форме входа</a>
 		</div>
 	</div>
 	<div class="push"></div>
@@ -121,6 +121,50 @@
 	</div>
 </footer>
 <!-- END footer -->
-
+<!-- BEGIN overlay -->
+<div class="overlay"></div>
+<!-- END overlay -->
+<!-- BEGIN login popup -->
+<div class="popup popup_login js-login">
+	<div class="popup__title">
+		Вход в личный кабинет
+		<span class="popup__close js-login-close"></span>
+	</div>
+	<div class="popup__content">
+		<div class="login-form">
+			<input class="popup__input" type="text" placeholder="E-mail">
+			<input class="popup__input" type="text" placeholder="Пароль">
+			<label class="checkbox">
+				<input type="checkbox">
+				<span>Чужой компьютер</span>
+			</label>
+			<div class="login-form__submit">
+				<button type="submit" class="btn">Войти</button>
+				<div class="login-form__options">
+					<a href="#">Забыли пароль?</a>
+					<a href="#">Зарегистрироваться</a>
+				</div>
+			</div>
+		</div>
+		<div class="login-socials">
+			<div>Войти через социальные сети</div>
+			<ul class="login-socials__list">
+				<li>
+					<a class="odnoklassniki" href="#"><i></i></a>
+				</li>
+				<li>
+					<a class="facebook" href="#"><i></i></a>
+				</li>
+				<li>
+					<a class="vkontakte" href="#"><i></i></a>
+				</li>
+				<li>
+					<a class="googleplus" href="#"><i></i></a>
+				</li>
+			</ul>
+		</div>
+	</div>
+</div>
+<!-- END login popup -->
 </body>
 </html>

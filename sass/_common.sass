@@ -531,7 +531,27 @@ body
 		font-size: 15px
 		+transition(background 200ms linear)
 		&:hover
-			background: darken(#aacc5c, 5%)    				 		
+			background: darken(#aacc5c, 5%)
+.btn
+	position: relative
+	display: inline-block
+	padding: 0 11px
+	height: 38px
+	line-height: 38px
+	font-size: 15px
+	text-decoration: none
+	color: #fff 
+	+border-radius(5px)
+	background: #a9cb5c
+	+box-shadow(inset 0 -2px 0 rgba(0,0,0,.06))
+	&:hover
+		background: #9fbf56 
+	&:active
+		top: 1px
+		background-color: #95b351
+		+box-shadow(inset 0 2px 0 rgba(0,0,0,.19))
+		  
+
 
 				 			
 				

@@ -161,6 +161,61 @@
         top: -5px
         left: 0px
         +s(thanks)
-                                                
-            
+
+// login popup
+.popup_login
+    width: 500px
+    margin-left: -250px
+    .popup__title
+        text-align: left    
+.login-form__submit 
+    +clr
+    padding-top: 10px
+    margin-bottom: 19px 
+    .btn
+        float: left
+        margin-right: 17px
+        width: 172px
+        padding: 0
+.login-form__options
+    a
+        display: block
+        font-size: 13px
+        color: #89be18
+        text-decoration: none
+        &:hover
+            text-decoration: underline
+.login-socials
+    margin: 0 -14px -14px
+    background: #ededed
+    +border-radius(0 0 5px 5px)
+    padding: 9px 14px 14px                         
+.login-socials__list
+    +justify
+    padding: 10px 0 0 
+    li
+        width: 110px 
+        +justify-child
+        a
+            display: block
+            height: 34px
+            line-height: 34px
+            +border-radius(5px)
+            background: #fff
+            text-align: center
+            i
+                display: inline-block
+                vertical-align: middle
+            &.odnoklassniki
+                i
+                    +s(od2)
+            &.facebook
+                i
+                    +s(fb2)
+            &.vkontakte
+                i
+                    +s(vk3)
+            &.googleplus
+                i
+                    +s(gp3)                                      
             

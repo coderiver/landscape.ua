@@ -126,16 +126,33 @@ $(document).ready(function() {
       $(".js-popup").hide();
       $(".js-count").hide();
       $(".js-thanks").hide();
+      $(".js-login").hide();
       $(this).hide();
     });
 
     $(".js-thanks-btn").on('click', function(){
       $(".js-count").hide();
       $(".js-thanks").show();
+      return false;
     });
 
     $(".js-thanks-close").on('click', function(){
       $(".js-thanks").hide();
+      $(".overlay").hide();
+    });
+
+    // login popup
+
+    $(".js-login").hide();
+
+    $(".js-login-btn").on('click', function(){
+      $(".js-login").show();
+      $(".overlay").show();
+      return false;
+    });
+
+    $(".js-login-close").on('click', function(){
+      $(".js-login").hide();
       $(".overlay").hide();
     });
 
