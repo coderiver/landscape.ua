@@ -943,6 +943,7 @@
 
 .notification__title
 	font-size: 29px
+	margin-bottom: 5px
 .notification__content
 	padding: 15px
 	margin-bottom: 19px 
@@ -950,6 +951,35 @@
 	color: #89be18
 	border: 1px solid #dae9b9
 	+border-radius(5px)
+.recovery
+	position: relative 
+	.input-form
+		display: block
+		width: 444px
+		margin-bottom: 3px
+		& + p
+			margin-bottom: 13px
+			color: #999
+	.btn
+		margin-right: 19px		
+.recovery__back
+	display: inline-block
+	font-size: 13px
+	color: #89be18
+	border-bottom: 1px dotted
+	text-decoration: none
+	&:hover
+		border-bottom: none  	 		
+.recovery__hint
+	position: absolute
+	top: 0px
+	left: 46%
+	width: 458px
+	padding: 10px
+	border: 1px dashed #dbdbdb
+	+border-radius(5px)
+	font-size: 12px  			 
+	
 							 		
 
 
