@@ -709,7 +709,7 @@ body { min-width: 1000px; font-size: 13px; font-family: Arial, Calibri, sans-ser
 
 .notification__title { font-size: 29px; margin-bottom: 5px; }
 
-.notification__content { padding: 15px; margin-bottom: 19px; font-size: 18px; color: #89be18; border: 1px solid #dae9b9; -webkit-border-radius: 5px; -moz-border-radius: 5px; -ms-border-radius: 5px; -o-border-radius: 5px; border-radius: 5px; }
+.notification__content { width: 85%; padding: 15px; margin-bottom: 19px; font-size: 18px; color: #89be18; border: 1px solid #dae9b9; -webkit-border-radius: 5px; -moz-border-radius: 5px; -ms-border-radius: 5px; -o-border-radius: 5px; border-radius: 5px; }
 
 .recovery { position: relative; }
 .recovery .input-form { display: block; width: 444px; margin-bottom: 3px; }
