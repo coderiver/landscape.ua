@@ -127,6 +127,7 @@ $(document).ready(function() {
       $(".js-count").hide();
       $(".js-thanks").hide();
       $(".js-login").hide();
+      $(".js-order").hide();
       $(this).hide();
     });
 
@@ -155,6 +156,22 @@ $(document).ready(function() {
       $(".js-login").hide();
       $(".overlay").hide();
     });
+
+    // popup order 
+
+    $(".js-order").hide();
+
+    $(".js-order-btn").on('click', function(){
+      $(".js-order").show();
+      $(".overlay").show();
+      return false;
+    });
+
+    $(".js-order-close").on('click', function(){
+      $(".js-order").hide();
+      $(".overlay").hide();
+    });
+
 
     // window scroll
     $(window).scroll(function(){

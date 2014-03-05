@@ -785,9 +785,9 @@ body { min-width: 1000px; font-size: 13px; font-family: Arial, Calibri, sans-ser
 
 .upload { display: inline-block; margin-bottom: 10px; }
 
-.popup_thanks { width: 560px; margin-left: -280px; }
+.popup_thanks { width: 384px; margin-left: -192px; }
 
-.thanks { position: relative; height: 206px; padding: 65px 65px 65px 130px; -webkit-box-sizing: border-box; -moz-box-sizing: border-box; box-sizing: border-box; -webkit-border-radius: 5px; -moz-border-radius: 5px; -ms-border-radius: 5px; -o-border-radius: 5px; border-radius: 5px; font-size: 15px; background: white; }
+.thanks { position: relative; padding: 35px; -webkit-box-sizing: border-box; -moz-box-sizing: border-box; box-sizing: border-box; -webkit-border-radius: 5px; -moz-border-radius: 5px; -ms-border-radius: 5px; -o-border-radius: 5px; border-radius: 5px; font-size: 15px; background: white; }
 
 .thanks__title { position: relative; padding-left: 40px; margin-bottom: 15px; font-size: 18px; color: #ff9600; }
 .thanks__title:before { content: ""; position: absolute; top: -5px; left: 0px; background: url('../img/icons-s237028005f.png') 0 -1021px no-repeat; width: 27px; height: 27px; }
