@@ -114,27 +114,27 @@
         input:checked + span
             &:after
                 +s(checkbox-green)
-    button
-        position: relative
-        display: inline-block
-        width: 100%
-        height: 38px
-        line-height: 38px
-        text-align: center
-        font-size: 15px
-        color: #fff
-        +border-radius(7px)
-        background: #ff9600 
-        &:before
-            content: ""
-            position: absolute
-            top: 9px
-            left: 15px
-            +s(upload)
-        &:hover
-            background: #f68302
-        &:active
-            +box-shadow(inset 0 2px 0 0px #c56902)    
+.btn-upload
+    position: relative
+    display: inline-block
+    width: 100%
+    height: 38px
+    line-height: 38px
+    text-align: center
+    font-size: 15px
+    color: #fff
+    +border-radius(7px)
+    background: #ff9600 
+    &:before
+        content: ""
+        position: absolute
+        top: 9px
+        left: 15px
+        +s(upload)
+    &:hover
+        background: #f68302
+    &:active
+        +box-shadow(inset 0 2px 0 0px #c56902)    
 .upload
     display: inline-block
     margin-bottom: 10px
