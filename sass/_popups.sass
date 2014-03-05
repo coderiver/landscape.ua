@@ -1,5 +1,5 @@
 // styles for popups
-.overlay
+.overlay, .overlay2
     position: fixed
     top: 0
     left: 0
@@ -141,13 +141,17 @@
 .popup_thanks 
     width: 384px
     margin-left: -192px 
-.thanks
+.thanks, .popup-info, .popup-deliver
     position: relative
     padding: 35px
     +box 
     +border-radius(5px)
     font-size: 15px
     background: #FFF
+.popup-info
+    font-size: 13px
+.popup-deliver
+    +border-radius(0 0 5px 5px)        
 .thanks__title
     position: relative
     padding-left: 40px
@@ -160,6 +164,20 @@
         top: -5px
         left: 0px
         +s(thanks)
+.popup-info__title
+    position: relative
+    font-size: 18px
+    padding-left: 40px 
+    color: #93c336
+    margin-bottom: 15px
+    &:before
+        content: ""
+        position: absolute
+        top: -3px
+        left: 0px
+        +s(info)
+.popup-info__content
+    line-height: 1.2
 
 // login popup
 .popup_login
@@ -216,5 +234,17 @@
                     +s(vk3)
             &.googleplus
                 i
-                    +s(gp3)                                      
+                    +s(gp3)
+.popup_ordering
+    width: 570px
+    margin-left: -285px
+.popup_delivering
+    position: absolute
+    top: 75px
+    width: 694px
+    margin-left: -347px
+.popup-deliver__content
+    font-size: 13px
+    p
+        margin-bottom: 15px                                                                    
             

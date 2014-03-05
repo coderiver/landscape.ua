@@ -803,7 +803,8 @@
 			&:before
 				+s(basket-white)
 				margin: -13px 0 0 -5px  
-.order__number
+.counter
+	+clr
 	position: relative
 	float: left
 	width: 57px
@@ -813,8 +814,8 @@
 	padding: 2px
 	+box
 	color: #636363
-	font-size: 16px    	 
-.order__more
+	font-size: 16px
+.counter__more
 	position: absolute
 	top: 2px
 	left: 2px
@@ -825,7 +826,9 @@
 	text-align: center
 	+border-radius(5px 0 0 0)
 	cursor: pointer
-.order__less
+	&:hover
+		background: #dedede
+.counter__less
 	position: absolute
 	bottom: 2px
 	left: 2px	   		  
@@ -836,10 +839,18 @@
 	text-align: center
 	+border-radius(0 0 0 5px)
 	cursor: pointer
-.order__count
-	padding-left: 17px
+	&:hover
+		background: #dedede 
+.counter__count
+	margin-left: 20px
 	text-align: center
 	line-height: 38px
+	+border-radius(0 5px 5px 0)
+.counter_dark
+	float: none
+	margin: 0 auto 
+	.counter__count
+		background: #f9f9f9 	
 .order__phone
 	position: relative
 	padding-top: 6px
@@ -990,6 +1001,8 @@
 	border: 1px solid #ededed
 	.checkbox
 		margin-bottom: 15px
+	.textarea
+		resize: none	
 .apply__btn
 	margin-top: 15px 	
 .service__filter

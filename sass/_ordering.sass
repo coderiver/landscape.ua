@@ -1,0 +1,140 @@
+// ordering page styles
+.ordering__form
+	float: left
+	margin-right: 23px
+	width: 295px
+	padding: 13px 12px
+	+box 
+	background: #ededed
+	border-top: 1px dashed #cfcfcf
+	border-bottom: 1px dashed #cfcfcf
+	.textarea
+		resize: none
+	.h4
+		margin-bottom: 10px
+	.checkbox 
+		margin-bottom: 5px
+.confidential
+	display: inline-block
+	margin-left: 22px
+	line-height: 1
+	color: #999
+	text-decoration: none 
+	border-bottom: 1px dotted 		
+.ordering__btn
+	margin-top: 14px
+	text-align: center
+	.btn-upload
+		display: inline-block
+		width: 172px
+		&:before
+			left: 8px
+.ordering__details
+	overflow: hidden					
+	.h4
+		a
+			color: #89be18
+			text-decoration: none
+.ordering__company
+	margin-bottom: 35px			
+.ordering__topper
+	+clr 
+	+border-radius(5px)
+	margin-bottom: 16px
+	border: 1px solid #e0e0e0
+	background: #f9f9f9 
+	& > div
+		float: left
+		text-align: center
+		border-left: 1px solid #e0e0e0
+		padding: 7px 0 
+		&:first-child
+			border-left: none
+.ordering__item
+	position: relative
+	display: table
+	padding-bottom: 16px
+	border-bottom: 1px dashed #cfcfcf
+	margin-bottom: 18px 
+	& > div
+		display: table-cell
+		vertical-align: middle
+.ordering__photo
+	width: 88px
+	img
+		display: inline-block
+		width: 90px
+		height: 90px
+		+border-radius(5px)  
+.ordering__name
+	width: 219px
+	padding: 0 16px
+	+box
+	a
+		color: #89be18
+		text-decoration: none 
+.ordering__price
+	width: 129px
+	text-align: center
+	span
+		font-size: 18px 
+.ordering__count 
+	width: 90px
+.ordering__cost
+	width: 150px
+	padding-left: 17px
+	+box 
+	span
+		font-size: 18px
+.ordering__remove 
+	position: absolute
+	top: 50%
+	right: 0px
+	width: 22px
+	height: 22px
+	margin-top: -17px
+	+border-radius(5px)
+	background: #ededed
+	cursor: pointer
+	&:before
+		content: ""
+		position: absolute
+		top: 5px
+		left: 5px
+		+s(close)
+	&:hover
+		background: #636363
+		&:before
+			+s(close-white)
+.ordering__bottom 
+	+clr
+.ordering__links
+	float: left
+	padding-top: 3px
+	a
+		display: inline-block
+		color: #a1a1a1
+		text-decoration: none
+		border-bottom: 1px dotted
+		line-height: 1
+		&:hover
+			color: #636363
+.ordering__full-price
+	float: right
+	font-size: 0
+	span, div
+		display: inline-block
+		vertical-align: middle
+	span	
+		font-size: 13px
+		color: #a1a1a1
+.ordering__value
+	height: 43px
+	line-height: 43px
+	padding: 0 18px
+	margin-left: 17px 
+	+border-radius(5px)
+	border: 1px solid #ededed
+	font-size: 27px
+
+			

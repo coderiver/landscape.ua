@@ -1,0 +1,256 @@
+<!doctype html>
+<!--[if lte IE 8]><html class="lteie8"><![endif]-->
+<!--[if gt IE 8]><!--><html><!--<![endif]-->
+<head>
+	<meta charset="utf-8">
+	<title>ordering</title>
+	<meta name="viewport" content="initial-scale=1"/>
+	<link rel="stylesheet" media="screen" href="css/screen.css" >
+	<!--[if IE]><script src="js/html5shiv.js"></script><![endif]-->
+	<script src="js/jquery.js"></script>
+	<script src="js/cycle.js"></script>
+	<script src="js/jquery-ui-1.10.4.custom.min.js"></script>
+	<script src="js/jquery.cycle2.carousel.min.js"></script>
+	<script src="js/common.js"></script>
+</head>
+<body>
+
+<!-- BEGIN  out-->
+<div class="out">
+	<!-- BEGIN header -->
+	<header class="header container">
+		<h1 class="logo">
+			<a href="#">landscape</a>
+		</h1>
+		<div class="header__toolbar">
+			<div class="header__tools">
+				<div class="log-in">
+					<a href="#">Войти в кабинет</a>	
+				</div>
+				<div class="registration">
+					<a href="#">Зарегистрироваться</a>	
+				</div>
+				<div class="language">
+					<ul>
+						<li><a href="#">Укр</a></li>
+						<li><a href="#">Рус</a></li>
+					</ul>
+				</div>
+				<div class="basket">
+					<i class="basket__icon"></i>
+					<span>Корзина</span>
+					<span class="basket__item">12</span>
+				</div>
+			</div>
+			<div class="search">
+				<input class="search__input" type="text" placeholder="Поиск...">
+				<button class="search__sbmit" type="submit"></button>
+			</div>
+		</div>
+	</header>
+	<!-- END header -->
+	<div class="container">
+		<h2 class="h2">Оформление заказа</h2>
+		<div class="ordering clr">
+			<div class="ordering__form">
+				<input type="text" class="input-form" placeholder="Имя">
+				<input type="text" class="input-form" placeholder="E-mail">
+				<input type="text" class="input-form" placeholder="Ваш телефон">
+				<input type="text" class="input-form" placeholder="Город">
+				<textarea class="textarea textarea_small" placeholder="Адрес доставки"></textarea>
+				<h4 class="h4">Выберите оплату</h4>
+				<label class="checkbox checkbox_green">
+					<input type="radio" name="payment">
+					<span>Наличными</span>
+				</label>
+				<label class="checkbox checkbox_green">
+					<input type="radio" name="payment">
+					<span>По безналу</span>
+				</label>
+				<label class="checkbox checkbox_green">
+					<input type="radio" name="payment">
+					<span>На карточку</span>
+				</label>
+				<h4 class="h4">Выберите доставку</h4>
+				<label class="checkbox checkbox_green">
+					<input type="radio" name="payment">
+					<span>Самовывоз</span>
+				</label>
+				<label class="checkbox checkbox_green">
+					<input type="radio" name="payment">
+					<span>Курьером по Киеву</span>
+				</label>
+				<label class="checkbox checkbox_green">
+					<input type="radio" name="payment">
+					<span>Доставка по Украине</span>
+				</label>
+				<textarea class="textarea" placeholder="Коментарий к заказу"></textarea>
+				<label class="checkbox">
+					<input type="radio" name="payment">
+					<span>Я соглашаюсь с</span>
+				</label>
+				<a href="#" class="confidential">политикой конфиденциальности</a>
+				<div class="ordering__btn">
+					<button type="submit" class="btn-upload">Отправить заказ</button>
+				</div>
+			</div>
+			<div class="ordering__details">
+				<ul class="ordering__list">
+					<li class="ordering__company">
+						<h4 class="h4">Заказ в компании: <a href="#">Садовый центр Greensad</a></h4>
+						<div class="ordering__table">
+							<div class="ordering__topper">
+								<div class="ordering__photo">Фото:</div>
+								<div class="ordering__name"> Название:</div>
+								<div class="ordering__price">Цена:</div>
+								<div class="ordering__count">Кол-во:</div>
+								<div class="ordering__cost">Стоимость:</div>
+							</div>
+							<ul class="ordering__sublist">
+								<li class="ordering__item">
+									<div class="ordering__photo">
+										<img src="img/pict3.png" alt="">
+									</div>
+									<div class="ordering__name">
+										<a href="#">Ель колючая голубая ''Kaibab'', 120-140 см</a>
+									</div>
+									<div class="ordering__price"><span>1 989 грн</span></div>
+									<div class="ordering__count">
+										<div class="counter counter_dark">
+     										<div class="counter__more">+</div>
+     										<div class="counter__less">-</div>
+     										<div class="counter__count">12</div>
+     									</div>
+									</div>
+									<div class="ordering__cost">
+										<span>23 868 грн</span>
+									</div>
+									<span class="ordering__remove">
+										
+									</span>
+								</li>
+								<li class="ordering__item">
+									<div class="ordering__photo">
+										<img src="img/pict3.png" alt="">
+									</div>
+									<div class="ordering__name">
+										<a href="#">Ель колючая голубая ''Kaibab'', 120-140 см</a>
+									</div>
+									<div class="ordering__price"><span>1 989 грн</span></div>
+									<div class="ordering__count">
+										<div class="counter counter_dark">
+     										<div class="counter__more">+</div>
+     										<div class="counter__less">-</div>
+     										<div class="counter__count">12</div>
+     									</div>
+									</div>
+									<div class="ordering__cost">
+										<span>23 868 грн</span>
+									</div>
+									<span class="ordering__remove">
+										
+									</span>
+								</li>
+							</ul>
+							<div class="ordering__bottom">
+								<ul class="ordering__links">
+									<li><a href="#">График работи</a></li>
+									<li><a href="#">Условия оплаты и доставки</a></li>
+								</ul>
+								<div class="ordering__full-price">
+									<span>К оплате:</span>
+									<div class="ordering__value">23 868 грн</div>
+								</div>
+							</div>
+						</div>
+					</li>
+					<li class="ordering__company">
+						<h4 class="h4">Заказ в компании: <a href="#">Компания 2</a></h4>
+						<div class="ordering__table">
+							<div class="ordering__topper">
+								<div class="ordering__photo">Фото:</div>
+								<div class="ordering__name"> Название:</div>
+								<div class="ordering__price">Цена:</div>
+								<div class="ordering__count">Кол-во:</div>
+								<div class="ordering__cost">Стоимость:</div>
+							</div>
+							<ul class="ordering__sublist">
+								<li class="ordering__item">
+									<div class="ordering__photo">
+										<img src="img/pict4.jpg" alt="">
+									</div>
+									<div class="ordering__name">
+										<a href="#">Ель колючая голубая ''Kaibab'', 120-140 см</a>
+									</div>
+									<div class="ordering__price"><span>1 989 грн</span></div>
+									<div class="ordering__count">
+										<div class="counter counter_dark">
+     										<div class="counter__more">+</div>
+     										<div class="counter__less">-</div>
+     										<div class="counter__count">12</div>
+     									</div>
+									</div>
+									<div class="ordering__cost">
+										<span>23 868 грн</span>
+									</div>
+									<span class="ordering__remove">
+										
+									</span>
+								</li>
+							</ul>
+							<div class="ordering__bottom">
+								<ul class="ordering__links">
+									<li><a href="#">График работи</a></li>
+									<li><a href="#">Условия оплаты и доставки</a></li>
+								</ul>
+								<div class="ordering__full-price">
+									<span>К оплате:</span>
+									<div class="ordering__value">23 868 грн</div>
+								</div>
+							</div>
+						</div>
+					</li>
+				</ul>
+			</div>
+		</div>
+	</div>
+</div>
+<!-- END out-->
+<!-- BEGIN overlay -->
+<div class="overlay2"></div>
+<!-- END overlay -->
+<!-- BEGIN count-popup -->
+<div class="popup popup_delivering">
+	<div class="popup__title">
+		Карта
+		<span class="popup__close"></span>
+	</div>
+	<div class="popup-deliver">
+		<div class="popup-deliver__content">
+			<p><b>Условия доставки и оплаты</b></p>
+			<p>Минимальный заказ с доставкой растений и товаров по Киеву и области - от 100 грн</p>
+			<p>Стоимость доставки. Существуют несколько вариантов доставки товаров и растений по Киеву в зависимости от веса и обьема заказа:</p>
+			<p>заказы до 5кг по Киеву доставляются курьерами, стоимость доставки - 35 грн;
+			заказы от 5кг до 200 кг по Киеву доставляются на автомобилях, стоимость доставки - 59 грн.
+			заказы до 200кг по пригороду Киева доставляются на автомобилях, минимальная стоимость от 59 грн (насчитывается по тарифу 3 грн/км от садового центра с Чайки);
+			заказы свыше 200кг по Киеву и пригороду доставляются по индивидуальным тарифам.
+			Бесплатно доставляем:</p>
+			<p>
+				по Киеву заказы до 200 кг на суму от 1500 грн доставляем бесплатно!
+				по пригороду Киева (на расстояние до 50 км от садового центра) заказы до 200 кг на суму от 3000 грн доставляем бесплатно!
+				заказы весом больше 200 кг (крупногабаритные) в не зависимости от сумы заказа доставляем на платной основе по индивидуальным тарифам.
+				Срок доставки. Обычно заказы доставляем на следующий день (более точно согласовать дату и время доставки можно с менеджером).
+			</p>
+			<p>Помните, что заказ всегда можно забрать самовывозом из садового центра Greensad на Чайке (карта проезда в контактах).</p>
+			<p><b>Способы оплаты за растения и товары</b></p>
+			<p>Для Вашего удобства мы предлагаем несколько способов оплаты за Ваши заказы. Выбирайте максимально удобные для Вас.</p>
+			<p>При заказе по Украине - выбирайте способы оплаты с предоплатой за растения или наложенным платежем за товары.</p>
+			<p>Растения по Украине мы отправляем только с предоплатой.</p>
+			<p>Товары для сада и огорода можем отправить наложенным платежем (крупногабаритные товари - отправляем по предоплате).</p>
+			<p>Почему заказы по Украине возможны только с предоплатой? Мы не раз сталкивались с тем, что часть клиентов по разным причинам не забирают отправленные им заказы и поскольку мы часто отправляем живые растения можете только представить в каком виде мы получаем незабранные посылки назад. Считаем очень важным, что если клиент делает предоплату для него есть действительно важным </p>
+		</div>
+	</div>
+</div>
+<!-- END count-popup -->
+</body>
+</html>
