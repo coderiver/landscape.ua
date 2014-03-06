@@ -1,0 +1,153 @@
+// registering
+.registering
+	.tab-wrap
+		position: relative
+	.tab
+		position: absolute
+		top: 35px
+		left: 0
+		height: 75px
+		border-bottom: none
+		+border-radius(5px)
+	.tab__item
+		width: 230px
+		height: 75px
+		padding: 0 
+		background: #ededed
+		+border-radius(0 5px 5px 0)
+		border: none
+		&:first-child
+			+border-radius(5px 0 0 5px)
+			.tab__link
+				+border-radius(5px 0 0 5px)
+	.tab__link
+		position: relative
+		display: block
+		height: 75px
+		padding: 0 25px 
+		line-height: 75px
+		font-weight: normal
+		text-align: center
+		+border-radius(0 5px 5px 0)
+		+box-shadow(inset 0 -2px 0 #cfcfcf)
+		&:hover
+			background: #e3e3e3
+		&.is-active
+			background: #d7d7d7
+			+box-shadow(inset 0 1px 4px rgba(0,0,0,.36))
+			&:before
+				content: ""
+				position: absolute
+				bottom: -6px
+				left: 50%
+				margin-left: -8px  
+				+s(tab-arr)
+.register
+	+clr
+	padding-top: 100px
+.register__left
+	float: left
+	width: 460px
+.register__socials
+	margin-bottom: 20px
+	+justify
+	li
+		width: 110px 
+		+justify-child
+		a
+			display: block
+			height: 34px
+			line-height: 34px
+			+border-radius(5px)
+			background: #fff
+			text-align: center
+			i
+				display: inline-block
+				vertical-align: middle
+			&.odnoklassniki
+				border: 1px solid #ffdaa6
+				i
+					+s(od2)
+			&.facebook
+				border: 1px solid #c6cfe1
+				i
+					+s(fb2)
+			&.vkontakte
+				border: 1px solid #bed1df
+				i
+					+s(vk3)
+			&.googleplus
+				border: 1px solid #f6d6ce
+				i
+					+s(gp3)
+.register__head
+	margin-bottom: 15px 
+	text-align: center
+.register__form
+	.checkbox
+		margin-left: 20px
+		margin-bottom: 20px
+		span
+			color: #636363
+			a
+				text-decoration: none
+				color: #89be18
+				border-bottom: 1px dotted
+.register__right
+	float: right
+	width: 470px
+.benefits
+	margin-top: -112px
+	margin-bottom: 22px
+	padding: 20px 20px 15px 
+	+border-radius(5px)
+	background: #ededed
+.benefits__title
+	font-size: 31px
+	padding-bottom: 15px
+	margin-bottom: 25px
+	border-bottom: 1px dashed #c2c2c2
+.benefits__list
+	padding-left: 72px
+.benefits__item
+	position: relative
+	margin-bottom: 35px
+	font-size: 15px		 	 	 				 	
+	i
+		position: absolute
+		top: 0px
+		left: -56px
+		width: 40px
+		height: 40px
+		line-height: 40px
+		+border-radius(50%)
+		background: #a8a8a8
+		text-align: center
+		font-size: 30px
+		color: #fff
+		font-style: normal  							  	 	
+.benefits__bottom
+	font-size: 19px
+	padding-left: 16px
+.video
+	position: relative
+	padding: 22px 50px 22px 114px  
+	+border-radius(5px)
+	border: 1px dashed #aacc5c
+	&:before
+		content: ""
+		position: absolute
+		top: 50%
+		left: 31px
+		margin-top: -26px
+		+s(video)
+	p
+		font-size: 17px
+		margin-bottom: 0
+	a
+		font-size: 17px
+		text-decoration: none
+		color: #89be18
+		border-bottom: 1px dotted	
+			
+			
