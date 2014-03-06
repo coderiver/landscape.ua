@@ -110,4 +110,210 @@
 		top: 50%
 		left: 50%
 		margin: -10px 0 0 -10px
-		+s(search)     
+		+s(search)
+.header_logged
+	padding-top: 0
+	.header__toolbar
+		width: auto
+	.logo
+		margin-top: 39px 
+.header__menu 
+	+clr
+	background: #f9f9f9
+	+border-radius(0 0 5px 5px)
+	border: 1px solid #e0e0e0
+	margin-bottom: 16px  
+	& > li
+		float: left
+		border-left: 1px solid #e0e0e0
+		&:first-child
+			border-left: none 
+		a
+			position: relative
+			display: block
+			padding: 0 18px 0 38px
+			height: 33px
+			color: #838383
+			line-height: 33px
+			&:hover
+				text-decoration: none
+				background: #ededed
+				color: #5c5c5c
+				&.home
+					&:before
+						+s(home-dark-hover)
+				&.mycompany
+					&:before
+						+s(case-hover)
+				&.support
+					&:before
+						+s(support-hover)
+				&.mybasket
+					&:before
+						+s(basket-hover)						 
+			&.home
+				&:before
+					content: ""
+					position: absolute
+					top: 9px
+					left: 9px
+					+s(home-dark)
+			&.mycompany
+				&:before
+					content: ""
+					position: absolute
+					top: 9px
+					left: 9px
+					+s(case)
+			&.support
+				&:before
+					content: ""
+					position: absolute
+					top: 9px
+					left: 9px
+					+s(support)
+			&.mybasket
+				&:before
+					content: ""
+					position: absolute
+					top: 9px
+					left: 9px
+					+s(basket)		
+		&.language
+			padding: 0 15px
+			margin-right: 0
+			li
+				&:before
+					top: 7px
+			a
+				padding: 0
+				&:hover
+					color: #5c5c5c
+			&:hover
+				background: #ededed
+.mylinks
+	+justify
+	margin-bottom: 15px
+	li
+		width: 24.5% 
+		+justify-child
+		text-align: center
+		a
+			display: block
+			text-align: center
+			i
+				display: block
+				margin: 0 auto 10px
+				min-height: 50px 
+				&.cabinet-icon
+					+s(cabinet)
+				&.catalog-icon
+					+s(catalog)
+				&.orders-icon
+					+s(order)
+				&.tender-icon
+					+s(tender)
+			&:hover
+				text-decoration: none
+				color: #89be18
+				i													
+					&.cabinet-icon
+						+s(cabinet-green)
+					&.catalog-icon
+						+s(catalog-green)
+					&.orders-icon
+						+s(order-green)
+					&.tender-icon
+						+s(tender-green)
+.dropdown_inner
+	.dropdown__btn
+		&:before
+			display: none
+	.dropdown__list
+		a
+			&:before
+				top: 13px
+				+s(arr-inner)
+			&:hover
+				&:before
+					+s(arr-inner)
+.content_logged
+	border-top: 1px dashed #cfcfcf
+	padding-top: 6px 															 							
+.steps-wrap
+	+justify
+	margin-bottom: 45px
+.steps
+	position: relative
+	width: 220px 
+	+justify-child
+.steps_1, .steps_3
+	position: relative
+	padding-top: 30px
+.steps_1
+	&:before
+		content: ""
+		position: absolute
+		top: 60px
+		left: 199px
+		+s(link1)	
+.steps_2
+	position: relative
+	&:before
+		content: ""
+		position: absolute
+		top: 60px
+		left: 199px
+		+s(link2)
+	.step__number
+		top: 110px		
+.steps__img
+	position: relative
+	width: 174px
+	height: 174px
+	padding: 5px
+	margin: 0 auto 
+	+box
+	+border-radius(50%)
+	border: 1px dashed #8a8a8a
+	margin-bottom: 44px
+	img
+		width: 100%   	
+		height: 100%
+	&:before
+		content: ""
+		position: absolute
+		bottom: -33px
+		left: 50%
+		margin-left: -63px
+		+s(shadow)	
+.step__number
+	position: absolute
+	top: 146px
+	left: 19px
+	width: 31px
+	height: 31px
+	line-height: 31px
+	border: 2px solid #fff
+	+border-radius(50%)
+	background: #838383 
+	text-align: center
+	color: #fff
+	font-size: 27px
+.step__text
+	padding-left: 50px
+	color: #89be18
+	font-size: 15px
+	p
+		font-size: 18px
+.questions
+	display: inline-block
+	height: 36px
+	line-height: 36px
+	margin-bottom: 20px 
+	+border-radius(5px)
+	padding: 0 22px 	
+	border: 1px dashed #bababa
+	font-size: 19px
+	a
+		color: #89be18		 		 
