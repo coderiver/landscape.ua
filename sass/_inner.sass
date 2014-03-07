@@ -1040,7 +1040,87 @@
 		&:active
 			background: #e18400
 			+box-shadow(inset 0 2px 0 rgba(0,0,0,.14))
-	 										 		
-
-
+			
+// manage
+.manage__topper
+	+clr
+	.breadcrumbs
+		float: left
+.manage__site
+	float: right
+	span, a
+		display: inline-block
+		vertical-align: middle		
+	a
+		height: 20px
+		line-height: 20px 
+		padding: 0 4px
+		+border-radius(4px)
+		background: #aacc5c
+		color: #fff
+		text-decoration: none
+		&:hover
+			background: #9cbb54 	  										 		
+.search_small
+	.search__sbmit
+		width: 38px
+.rank
+	background: #f9f9f9 
+	+border-radius(5px)
+	overflow: hidden
+.rank__title
+	position: relative
+	height: 35px
+	line-height: 35px
+	background: #ededed  
+	+border-radius(5px 5px 0 0)
+	text-align: center
+	font-size: 18px
+	z-index: 2 			
+	&:before
+		content: ""
+		position: absolute
+		top: 9px
+		left: 16px
+		+s(manage)
+.rank__list
+	margin-top: -1px
+	li	
+		a
+			position: relative
+			display: block
+			color: #636363
+			text-decoration: none
+			&:hover
+				background: #ededed
+			span
+				display: block
+				padding: 8px 0px 8px 22px
+				margin-left: 13px
+				margin-right: 13px 
+				border-top: 1px dashed #e3e3e3
+			&.rank__open
+				&:before
+					content: ""
+					position: absolute
+					top: 11px
+					left: 13px
+					+s(show2)		
+				&.is-open
+					&:before
+						+s(remove)		
+.rank__sublist
+	padding-left: 22px
+	li
+		a
+			&:hover
+				&:after
+					content: ""
+					position: absolute
+					top: 0
+					bottom: 0
+					right: 100%
+					width: 100px
+					background: #ededed	  
+					
 			

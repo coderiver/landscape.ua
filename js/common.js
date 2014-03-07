@@ -186,6 +186,24 @@ $(document).ready(function() {
       $(".js-feedback").hide();
     });
 
+    // rank
+    
+    function rank(){
+        
+        var sublist = $(".rank__sublist");
+        var btn = $(".rank__open");
+        
+        sublist.hide();
+
+        btn.on('click', function(){
+            $(this).toggleClass('is-open').next().slideToggle('fast');
+        });
+    
+    }
+    if ($(".rank").length) {
+      rank();
+    };
+    
     // window scroll
     $(window).scroll(function(){
         
