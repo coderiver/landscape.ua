@@ -141,7 +141,7 @@
 					</li>
 				</ul>
 				<div class="questions">
-					Появились вопросы? Задайте их нам - <a href="#">Обратная связь</a>
+					Появились вопросы? Задайте их нам - <a href="#" class="js-feedback-btn">Обратная связь</a>
 				</div>
 			</div>
 		</div>
@@ -173,6 +173,27 @@
 	</div>
 </footer>
 <!-- END footer -->
-
+<!-- BEGIN overlay -->
+<div class="overlay"></div>
+<!-- END overlay -->
+<!-- BEGIN login popup -->
+<div class="popup popup_login js-feedback">
+	<div class="popup__title">
+		Написать в службу поддержки
+		<span class="popup__close js-feedback-close"></span>
+	</div>
+	<div class="popup__content">
+		<div class="feedback-form">
+			<p>Постарайтесь описать Ваш вопрос или пожелание как можно детальней</p>
+			<input class="popup__input" type="text" placeholder="Тема">
+			<textarea class="textarea" placeholder="Сообщение"></textarea>
+			<input type="file">
+			<div class="feedback-form__btn">
+				<button type="submit">Отправить сообщение</button>
+			</div>
+		</div>
+	</div>
+</div>
+<!-- END login popup -->
 </body>
 </html>

@@ -128,6 +128,7 @@ $(document).ready(function() {
       $(".js-thanks").hide();
       $(".js-login").hide();
       $(".js-order").hide();
+      $(".js-feedback").hide();
       $(this).hide();
     });
 
@@ -172,6 +173,18 @@ $(document).ready(function() {
       $(".overlay").hide();
     });
 
+
+    // feedback popup on steps page
+    $(".js-feedback").hide();
+
+    $(".js-feedback-btn").on('click', function(){
+      $(".overlay").show();
+      $(".js-feedback").show();
+    });
+    $(".js-feedback-close").on('click', function(){
+      $(".overlay").hide();
+      $(".js-feedback").hide();
+    });
 
     // window scroll
     $(window).scroll(function(){
