@@ -1,0 +1,233 @@
+// styles for manage page
+.manage__header
+    +clr
+    margin-bottom: 16px
+    .h2
+        float: left
+        color: #b4b4b4
+    .btn_add
+        position: relative
+        float: right
+        padding-left: 42px
+        height: 33px
+        line-height: 33px
+        background: #ff9600
+        font-size: 17px
+        &:hover
+            background: #ff8400
+            .hint
+                display: block
+        &:before
+            content: ""
+            position: absolute
+            top: 7px
+            left: 11px
+            +s(plus-white)
+        .hint
+            display: none
+            position: absolute
+            top: 0px
+            left: 110% 
+            height: 31px
+            line-height: 31px
+            padding: 0 10px
+            border: 1px solid #ddd
+            +border-radius(5px)
+            color: #636363
+            +text-overflow
+            overflow: visible
+            font-size: 13px
+            &:before
+                content: ""
+                position: absolute 
+                top: 10px
+                left: -8px
+                +arr(8, 11, #ddd, l)
+            &:after
+                content: ""
+                position: absolute 
+                top: 10px
+                left: -6px
+                +arr(8, 11, #fff, l)
+.manage__table
+    background: #f9f9f9
+    width: 100%
+    margin-bottom: 26px
+    border-bottom: 1px dashed #cfcfcf 
+    thead
+        td
+            div
+                vertical-align: middle
+                text-align: center
+                height: 31px
+                line-height: 31px
+                border: 1px solid #ddd
+                border-left: none  
+    tbody
+        td
+            height: 70px
+            padding: 5px 0 
+            vertical-align: middle
+            text-align: center
+            &.manage__position
+                text-align: left
+                padding: 0 13px
+                +box         
+    tr
+        &.dark
+            background: #ededed                       
+.manage__close
+    display: inline-block
+    +s(close-thin)
+.manage__checkbox
+    width: 30px
+    div
+        border-left: 1px solid #ddd!important
+        +border-radius(5px 0 0 0) 
+    .checkbox
+        span
+            &:before
+                top: -10px
+                left: -18px
+                background: #f8f8f8 
+        input:checked + span        
+            &:after
+                top: -8px
+                left: -16px    
+.manage__name
+    width: 70px                                  
+.manage__position
+    width: 342px
+.manage__availability
+    width: 93px        
+.manage__price
+    width: 142px    
+.manage__remove
+    width: 62px
+    div
+        +border-radius(0 5px 0 0)
+    button
+        position: relative
+        display: inline-block
+        +s(remove2)    
+.manage__img
+    +box
+    width: 70px 
+    border: 1px solid #ddd
+    +border-radius(5px)
+    height: 70px
+    line-height: 70px
+    text-align: center
+    overflow: hidden
+    font-size: 0
+    background: #f9f9f9
+    img
+        display: inline-block
+        vertical-align: middle
+.availability
+    text-align: center
+    font-size: 11px
+    color: #b3b3b3
+    line-height: 1.2
+    p
+        position: relative
+        margin: 0 auto 2px
+        width: 12px
+        height: 12px
+        +border-radius(2px)
+        border: 1px solid #cfcfcf
+        background: #fff
+    &.is-available
+        p
+            &:before
+                content: ""
+                position: absolute
+                top: 2px
+                left: 0px
+                +s(available)
+.manage__value
+    height: 29px 
+    line-height: 29px
+    text-align: center
+    +border-radius(5px)
+    border: 1px solid #cfcfcf
+    background: #fff
+.manage__bottom
+    .pagination
+        margin: 0 0 29px
+        padding-bottom: 24px
+        border-bottom: 1px dashed #cfcfcf                              
+.btn_grey
+    background: #ededed
+    color: #636363
+    &:hover
+        background: #dfdfdf
+        +box-shadow(none)
+.price-modifier
+    font-size: 0
+    span, button, input[type="text"]
+        display: inline-block
+        vertical-align: middle
+        font-size: 13px
+    input[type="text"]
+        width: 36px
+        height: 29px
+        padding: 0 5px 
+        margin: 0 9px 0 12px  
+        +border-radius(5px)
+        color: #636363
+        font-size: 13px
+        border: 1px solid #ddd
+.manage__tools
+    +clr
+    margin-bottom: 25px        
+.manage__left
+    float: left
+        font-size: 0
+    span, button
+        display: inline-block
+        vertical-align: middle
+        font-size: 13px
+    button
+        height: 27px
+        line-height: 27px
+        margin-left: 5px
+        padding: 0 12px
+        +border-radius(5px)
+        color: #fff
+        &:active
+            +box-shadow(inset 0 2px 0 rgba(0,0,0,.23))      
+.manage__right
+    float: right
+.manage__delete
+    background: #ff6d6d
+    &:hover
+        background: #f36868
+    &:active
+        background: #e86363
+.manage__move
+    background: #ffba01
+    &:hover
+        background: #faab00
+    &:active
+        background: #e79e00
+.manage__duplicate
+    background: #aacc5c
+    &:hover
+        background: #a1c157
+    &:hover
+        background: #97b552
+.manage__save
+    display: inline-block
+    height: 27px
+    line-height: 27px
+    padding: 0 12px
+    color: #636363 
+    +box
+    +border-radius(5px)
+    border: 1px solid #ddd
+    background: #fff
+    &:hover
+        border: 1px solid #ededed
+        background: #ededed            
+             
