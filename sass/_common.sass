@@ -561,6 +561,73 @@ body
 		top: 1px
 		background-color: #95b351
 		+box-shadow(inset 0 2px 0 rgba(0,0,0,.19))
+
+// select
+.select
+	position: relative
+.select__text
+	position: relative
+	padding: 0 33px 0 12px 
+	+border-radius(5px)
+	+box
+	height: 29px
+	line-height: 29px
+	+text-overflow
+	width: 237px 
+	border: 1px solid #e3e3e3
+	background: #fff
+	cursor: pointer
+	z-index: 2
+	&:before
+		content: ""
+		position: absolute
+		top: 0
+		right: 0
+		bottom: 0
+		width: 21px
+		background: #e3e3e3
+	&:after
+		content: "" 
+		position: absolute
+		top: 10px
+		right: 5px
+		+s(arr-down-grey)
+.dropdown
+	position: absolute
+	top: 25px
+	left: 0
+	right: 0
+	border: 1px solid #e3e3e3
+	padding-top: 4px
+	background: #fff
+	+border-radius(0 0 5px 5px)
+	overflow: hidden
+	z-index: 1
+	li
+		a
+			display: block
+			height: 22px
+			line-height: 22px 
+			padding: 0 12px
+			text-decoration: none
+			color: #636363
+			&:hover
+				background: #aacc5c
+				color: #fff
+.booking__message
+	+clr
+	clear: both
+	span
+		float: left
+		width: 108px
+		text-align: right
+		font-weight: bold
+	p
+		overflow: hidden
+		padding-left: 14px
+		color: #999 				  
+			
+
 		  
 
 

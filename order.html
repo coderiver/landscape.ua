@@ -1,0 +1,286 @@
+<!doctype html>
+<!--[if lte IE 8]><html class="lteie8"><![endif]-->
+<!--[if gt IE 8]><!--><html><!--<![endif]-->
+<head>
+	<meta charset="utf-8">
+	<title>order</title>
+	<meta name="viewport" content="initial-scale=1"/>
+	<link rel="stylesheet" media="screen" href="css/screen.css" >
+	<!--[if IE]><script src="js/html5shiv.js"></script><![endif]-->
+	<script src="js/jquery.js"></script>
+	<script src="js/cycle.js"></script>
+	<script src="js/jquery-ui-1.10.4.custom.min.js"></script>
+	<script src="js/jquery.cycle2.carousel.min.js"></script>
+	<script src="js/common.js"></script>
+</head>
+<body>
+
+<!-- BEGIN  out-->
+<div class="out out_small">
+	<!-- BEGIN header -->
+	<header class="header header_logged container">
+		<h1 class="logo">
+			<a href="#">landscape</a>
+		</h1>
+		<div class="header__toolbar">
+			<ul class="header__menu">
+				<li><a href="#" class="home">На главную</a></li>
+				<li><a href="#" class="mycompany">Моя компания</a></li>
+				<li><a href="#" class="support">Поддержка</a></li>
+				<li class="language">
+					<ul>
+						<li><a href="#">Укр</a></li>
+						<li><a href="#">Рус</a></li>
+					</ul>
+				</li>
+				<li><a href="#" class="mybasket">Корзина</a></li>
+			</ul>
+			<ul class="mylinks">
+				<li>
+					<a href="#">
+						<i class="cabinet-icon"></i>
+						<span>Кабинет компании</span>
+					</a>
+				</li>
+				<li>
+					<a href="#">
+						<i class="catalog-icon"></i>
+						<span>Каталог товаров</span>
+					</a>
+				</li>
+				<li>
+					<a href="#">
+						<i class="orders-icon"></i>
+						<span>Заказы и заявки</span>
+					</a>
+				</li>
+				<li>
+					<a href="#">
+						<i class="tender-icon"></i>
+						<span>Тендеры и объявления</span>
+					</a>
+				</li>
+			</ul>
+		</div>
+	</header>
+	<!-- END header -->
+	<div class="container booking-wrap">
+		<div class="divide"></div>
+		<div class="manage__topper">
+			<nav class="breadcrumbs">
+				<ul>
+					<li><a href="#">Landscape.ua</a></li>
+					<li><a href="#">Компании</a></li>
+					<li><a href="#">Садовые центры</a></li>
+					<li><a href="#">Садовый центр Greensad</a></li>
+				</ul>
+			</nav>	
+		</div>
+		
+		<!-- BEGIN content -->
+		<div class="main">
+			<aside class="sidebar">
+				<div class="search search_small">
+					<input class="search__input" type="text" placeholder="Поиск продуктов">
+					<button class="search__sbmit" type="submit"></button>
+				</div>
+				<div class="orders">
+					<div class="orders__title">Заказы и заявки</div>
+					<ul>
+						<li><a href="#">Заказы<span>12</span></a></li>
+						<li><a href="#">Заявки от клиентов<span>4</span></a></li>
+					</ul>
+				</div>
+			</aside>
+			<div class="content booking">
+				<h2 class="h2 h2_orders">Заказ <span>№100235</span> от 7 января 2014</h2>
+				<div class="booking__form">
+					<div class="booking__col">
+						<div class="booking__item">
+							<span>Имя:</span>
+							<input type="text" class="input-form">
+						</div>
+						<div class="booking__item">
+							<span>Email:</span>
+							<input type="text" class="input-form">
+						</div>
+						<div class="booking__item">
+							<span>Телефон:</span>
+							<input type="text" class="input-form">
+						</div>
+					</div>
+					<div class="booking__col">
+						<div class="booking__item">
+							<span>Адрес:</span>
+							<input type="text" class="input-form">
+						</div>
+						<div class="booking__item">
+							<span>Оплата:</span>
+							<div class="select js-select">
+					    		<div class="select__text js-select-text">Наличными</div>
+					    		<input type="hidden" class="js-select-input" value="1">
+					    		<ul class="dropdown js-select-list" style="display: none;">
+					        		<li data-id="0"><a href="#">Наличными</a></li>
+					        		<li data-id="1"><a href="#">По безналу</a></li>
+					        		<li data-id="2"><a href="#">На карточку</a></li>
+					    		</ul>
+							</div>
+						</div>
+						<div class="booking__item">
+							<span>Доставка:</span>
+							<div class="select js-select">
+					    		<div class="select__text js-select-text">Самовывоз</div>
+					    		<input type="hidden" class="js-select-input" value="1">
+					    		<ul class="dropdown js-select-list" style="display: none;">
+					        		<li data-id="0"><a href="#">Самовывоз</a></li>
+					        		<li data-id="1"><a href="#">Курьером по Киеву</a></li>
+					        		<li data-id="2"><a href="#">Доставка по Украине</a></li>
+					    		</ul>
+							</div>
+						</div>
+					</div>
+					<div class="booking__message">
+						<span>Сообщение:</span>
+						<p>Давно выяснено, что при оценке дизайна и композиции читаемый текст мешает сосредоточиться. Lorem Ipsum используют потому, что тот обеспечивает
+						</p>
+					</div>
+				</div>
+				<ul class="ordering__list">
+					<li class="ordering__company">
+						<h4 class="h4">Товары и услуги</h4>
+						<div class="ordering__table">
+							<div class="ordering__topper">
+								<div class="ordering__photo">Фото:</div>
+								<div class="ordering__name"> Название:</div>
+								<div class="ordering__price">Цена:</div>
+								<div class="ordering__count">Кол-во:</div>
+								<div class="ordering__cost">Стоимость:</div>
+							</div>
+							<ul class="ordering__sublist">
+								<li class="ordering__item">
+									<div class="ordering__photo">
+										<img src="img/pict3.png" alt="">
+									</div>
+									<div class="ordering__name">
+										<a href="#">Ель колючая голубая ''Kaibab'', 120-140 см</a>
+									</div>
+									<div class="ordering__price"><span>1 989 грн</span></div>
+									<div class="ordering__count">
+										<div class="counter counter_dark">
+     										<div class="counter__more">+</div>
+     										<div class="counter__less">-</div>
+     										<div class="counter__count">12</div>
+     									</div>
+									</div>
+									<div class="ordering__cost">
+										<span>23 868 грн</span>
+									</div>
+									<span class="ordering__remove">
+										
+									</span>
+								</li>
+								<li class="ordering__item">
+									<div class="ordering__photo">
+										<img src="img/pict3.png" alt="">
+									</div>
+									<div class="ordering__name">
+										<a href="#">Ель колючая голубая ''Kaibab'', 120-140 см</a>
+									</div>
+									<div class="ordering__price"><span>1 989 грн</span></div>
+									<div class="ordering__count">
+										<div class="counter counter_dark">
+     										<div class="counter__more">+</div>
+     										<div class="counter__less">-</div>
+     										<div class="counter__count">12</div>
+     									</div>
+									</div>
+									<div class="ordering__cost">
+										<span>23 868 грн</span>
+									</div>
+									<span class="ordering__remove">
+										
+									</span>
+								</li>
+							</ul>
+							<div class="ordering__bottom">
+								<div class="ordering__full-price">
+									<span>К оплате:</span>
+									<div class="ordering__value">23 868 грн</div>
+								</div>
+							</div>
+						</div>
+					</li>
+				</ul>
+				<div class="booking__bottom">
+					<div class="booking__status">
+						<div class="booking__item">
+							<span>Статус заказа:</span>
+							<div class="select js-select">
+					    		<div class="select__text js-select-text">Выберите статус</div>
+					    		<input type="hidden" class="js-select-input" value="1">
+					    		<ul class="dropdown js-select-list" style="display: none;">
+					        		<li data-id="0"><a href="#">В обработке</a></li>
+					        		<li data-id="1"><a href="#">Оплачен</a></li>
+					        		<li data-id="2"><a href="#">Отменен</a></li>
+					    		</ul>
+							</div>
+						</div>
+					</div>
+					<div class="booking__save">
+						<button type="submit">Сохранить</button>
+					</div>
+				</div>
+			</div>
+		</div>
+		<!-- END content -->
+	</div>
+	<div class="push push_small"></div>
+</div>
+<!-- END out-->
+<!-- BEGIN footer -->
+<footer class="footer footer_small">
+	<div class="container clr">
+		<div class="copyrights">
+			<a href="#">© 2013 Landscape.ua</a>
+		</div>
+		<ul class="socials clr">
+			<li><a href="#" class="f"></a></li>
+			<li><a href="#" class="vk"></a></li>
+			<li><a href="#" class="yt"></a></li>
+			<li><a href="#" class="tw"></a></li>
+			<li><a href="#" class="od"></a></li>
+			<li><a href="#" class="gp"></a></li>
+		</ul>
+		<div class="feedback">
+			<div class="feedback__inner">
+				<span class="feedback__tel">(044) 111-22-33</span>
+				<a href="#" class="feedback__link">Написать в поддержку</a>
+			</div>
+		</div>
+	</div>
+</footer>
+<!-- END footer -->
+<!-- BEGIN overlay -->
+<div class="overlay"></div>
+<!-- END overlay -->
+<!-- BEGIN login popup -->
+<div class="popup popup_login js-feedback">
+	<div class="popup__title">
+		Написать в службу поддержки
+		<span class="popup__close js-feedback-close"></span>
+	</div>
+	<div class="popup__content">
+		<div class="feedback-form">
+			<p>Постарайтесь описать Ваш вопрос или пожелание как можно детальней</p>
+			<input class="popup__input" type="text" placeholder="Тема">
+			<textarea class="textarea" placeholder="Сообщение"></textarea>
+			<input type="file">
+			<div class="feedback-form__btn">
+				<button type="submit">Отправить сообщение</button>
+			</div>
+		</div>
+	</div>
+</div>
+<!-- END login popup -->
+</body>
+</html>
