@@ -1,0 +1,201 @@
+<!doctype html>
+<!--[if lte IE 8]><html class="lteie8"><![endif]-->
+<!--[if gt IE 8]><!--><html><!--<![endif]-->
+<head>
+	<meta charset="utf-8">
+	<title>order_new</title>
+	<meta name="viewport" content="initial-scale=1"/>
+	<link rel="stylesheet" media="screen" href="css/screen.css" >
+	<!--[if IE]><script src="js/html5shiv.js"></script><![endif]-->
+	<script src="js/jquery.js"></script>
+	<script src="js/cycle.js"></script>
+	<script src="js/jquery-ui-1.10.4.custom.min.js"></script>
+	<script src="js/jquery.cycle2.carousel.min.js"></script>
+	<script src="js/common.js"></script>
+</head>
+<body>
+
+<!-- BEGIN  out-->
+<div class="out out_small">
+	<!-- BEGIN header -->
+	<header class="header header_logged container">
+		<h1 class="logo">
+			<a href="#">landscape</a>
+		</h1>
+		<div class="header__toolbar">
+			<ul class="header__menu">
+				<li><a href="#" class="home">На главную</a></li>
+				<li><a href="#" class="mycompany">Моя компания</a></li>
+				<li><a href="#" class="support">Поддержка</a></li>
+				<li class="language">
+					<ul>
+						<li><a href="#">Укр</a></li>
+						<li><a href="#">Рус</a></li>
+					</ul>
+				</li>
+				<li><a href="#" class="mybasket">Корзина</a></li>
+			</ul>
+			<ul class="mylinks">
+				<li>
+					<a href="#">
+						<i class="cabinet-icon"></i>
+						<span>Кабинет компании</span>
+					</a>
+				</li>
+				<li>
+					<a href="#">
+						<i class="catalog-icon"></i>
+						<span>Каталог товаров</span>
+					</a>
+				</li>
+				<li>
+					<a href="#">
+						<i class="orders-icon"></i>
+						<span>Заказы и заявки</span>
+					</a>
+				</li>
+				<li>
+					<a href="#">
+						<i class="tender-icon"></i>
+						<span>Тендеры и объявления</span>
+					</a>
+				</li>
+			</ul>
+		</div>
+	</header>
+	<!-- END header -->
+	<div class="container booking-wrap">
+		<div class="divide"></div>
+		<div class="manage__topper">
+			<nav class="breadcrumbs">
+				<ul>
+					<li><a href="#">Landscape.ua</a></li>
+					<li><a href="#">Компании</a></li>
+					<li><a href="#">Садовые центры</a></li>
+				</ul>
+			</nav>
+			<div class="manage__site">
+				<span>Ваш сайт:</span>
+				<a href="#">http://greensad.landscape.ua</a>
+			</div>	
+		</div>
+		
+		<h2 class="h2">Добавление новой позиции <i>(растение / товар / услуга)</i></h2>
+		<!-- BEGIN content -->
+		<div class="main neworder-wrap">
+			<div class="tab-wrap js-tab-group">
+  					<!-- tab list -->
+  					<ul class="tab js-tab">
+  					  <li class="tab__item is-active">
+  					    <a href="js-tab1" class="tab__link rus is-active">Редактировать рус. версию</a>
+  					  </li>
+  					  <li class="tab__item tab__item_last">
+  					    <a href="js-tab2" class="tab__link ua">Редагувати укр. версію</a>
+  					  </li>
+  					</ul>
+  					<!-- END tab list -->
+  					<!-- tab content -->
+  					<div class="tab-cont js-tab-cont js-tab1">
+    					<div class="clr">
+    						<div class="neworder neworder_short">
+    							<div class="neworder__left">
+    								Название <span>*</span>
+    							</div>
+    							<div class="neworder__right">
+    								<input type="text" class="neworder__name">
+    								<div class="neworder__hint"></div>
+    							</div>
+    						</div>
+    						<div class="neworder neworder_short">
+    							<div class="neworder__left">
+    								Код товара
+    							</div>
+    							<div class="neworder__right">
+    								<input type="text" class="neworder__code">
+    								<span class="neworder__hint"></span>
+    							</div>
+    						</div>
+    						<div class="neworder neworder_short">
+    							<div class="neworder__left">
+    								Цена <span>*</span>
+    							</div>
+    							<div class="neworder__right">
+    								<input type="text" class="neworder__price">
+    								<span>грн. за</span>
+    								<div class="select js-select">
+					    				<div class="select__text js-select-text">шт.</div>
+					    				<input type="hidden" class="js-select-input" value="1">
+					    				<ul class="select__dropdown js-select-list">
+					        				<li data-id="0"><a href="#">шт.</a></li>
+					        				<li data-id="1"><a href="#">Упаковка</a></li>
+					        				<li data-id="2"><a href="#">Услуга</a></li>
+					        				<li data-id="3"><a href="#">Моток</a></li>
+					        				<li data-id="4"><a href="#">Кг.</a></li>
+					        				<li data-id="5"><a href="#">Метр</a></li>
+					        				<li data-id="6"><a href="#">Мешок</a></li>
+					        				<li class="edit-list"><a href="#">Ред. список</a></li>
+					    				</ul>
+									</div>
+    								<div class="neworder__hint"></div>
+    							</div>
+    						</div>
+    					</div>
+  					</div>
+  					<div class="tab-cont js-tab-cont js-tab2">
+						Lorem ipsum dolor sit amet, consectetur adipisicing elit. Vitae, animi cupiditate similique? Culpa, dolorem, quaerat, perspiciatis debitis magni distinctio dolor dignissimos porro nihil cumque ducimus at fugit praesentium accusantium facilis.
+  					</div>
+  					<!-- END tab content -->
+				</div>
+		</div>
+		<!-- END content -->
+	</div>
+	<div class="push push_small"></div>
+</div>
+<!-- END out-->
+<!-- BEGIN footer -->
+<footer class="footer footer_small">
+	<div class="container clr">
+		<div class="copyrights">
+			<a href="#">© 2013 Landscape.ua</a>
+		</div>
+		<ul class="socials clr">
+			<li><a href="#" class="f"></a></li>
+			<li><a href="#" class="vk"></a></li>
+			<li><a href="#" class="yt"></a></li>
+			<li><a href="#" class="tw"></a></li>
+			<li><a href="#" class="od"></a></li>
+			<li><a href="#" class="gp"></a></li>
+		</ul>
+		<div class="feedback">
+			<div class="feedback__inner">
+				<span class="feedback__tel">(044) 111-22-33</span>
+				<a href="#" class="feedback__link">Написать в поддержку</a>
+			</div>
+		</div>
+	</div>
+</footer>
+<!-- END footer -->
+<!-- BEGIN overlay -->
+<div class="overlay"></div>
+<!-- END overlay -->
+<!-- BEGIN login popup -->
+<div class="popup popup_login js-feedback">
+	<div class="popup__title">
+		Написать в службу поддержки
+		<span class="popup__close js-feedback-close"></span>
+	</div>
+	<div class="popup__content">
+		<div class="feedback-form">
+			<p>Постарайтесь описать Ваш вопрос или пожелание как можно детальней</p>
+			<input class="popup__input" type="text" placeholder="Тема">
+			<textarea class="textarea" placeholder="Сообщение"></textarea>
+			<input type="file">
+			<div class="feedback-form__btn">
+				<button type="submit">Отправить сообщение</button>
+			</div>
+		</div>
+	</div>
+</div>
+<!-- END login popup -->
+</body>
+</html>
