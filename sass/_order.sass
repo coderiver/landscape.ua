@@ -315,8 +315,112 @@
         top: 0
         left: 0
         +s(recycle)
-    
-                      
-                           
-
-    
+.chars
+    padding: 14px 10px
+    border-top: 1px dashed #e3e3e3
+    border-bottom: 1px dashed #e3e3e3
+    background: #f9f9f9
+    +justify
+    .select
+        width: 271px
+        +justify-child
+        margin-bottom: 10px                   
+.neworder_editor
+    .neworder__left
+        position: relative
+        .neworder__hint
+            position: absolute
+            top: 6px
+            left: -22px
+            margin: 0 
+.editor
+    +border-radius(5px)
+    border: 1px solid #e3e3e3
+.editor__toolbar
+    height: 33px
+    +border-radius(5px 5px 0 0)
+    background: #f9f9f9 
+    border-bottom: 1px solid #e3e3e3     
+.editor__field
+    width: 100%
+    max-width: 100%
+    min-width: 100% 
+    padding: 10px
+    min-height: 230px
+    border: none
+    +box
+    outline: none
+.editor__block
+    float: left
+    +clr
+    height: 33px 
+    border-right: 1px solid #e3e3e3
+.editor__btn
+    float: left
+    width: 35px
+    height: 33px
+    line-height: 33px
+    text-align: center
+    font-size: 15px 
+    cursor: pointer
+    &:hover
+        background: #e9e9e9
+    &:active, &.is-active
+        background: #ddd
+        +box-shadow(inset 0 0 7px rgba(0,0,0,.19))
+    i
+        display: inline-block
+        &.space-icon
+            +s(space)
+        &.left-icon
+            +s(align-left)
+        &.center-icon
+            +s(align-center)
+        &.right-icon
+            +s(align-right)
+        &.justify-icon
+            +s(align-justify)
+        &.list-icon
+            +s(list2)
+        &.numeric-icon
+            +s(list-numeric)
+        &.link-icon
+            +s(link3)
+        &.grid-icon
+            +s(grid)
+        &.picture-icon
+            +s(picture)
+        &.videos-icon
+            +s(play)                                            
+    &.bold, &.italic, &.underline
+        font-family: 'Times New Roman', serif
+        font-weight: bold
+        font-size: 15px
+    &.italic
+        font-style: italic            
+    &.underline
+        text-decoration: underline    
+.editor__resize
+    float: right
+    width: 35px
+    height: 33px
+    line-height: 33px
+    text-align: center
+    cursor: pointer
+    i
+        display: inline-block
+.resize-icon
+    +s(resize)
+.editor__bottom
+    height: 20px
+    line-height: 20px
+    padding: 0 10px
+    +border-radius(0 0 5px 5px) 
+    border-top: 1px solid #e3e3e3
+    background: #f9f9f9
+    color: #a7a7a7
+    font-size: 12px
+.neworder_submit
+    margin-top: 24px
+    .btn
+        margin-right: 18px    

@@ -246,6 +246,14 @@ $(document).ready(function() {
         event.stopPropagation();
     });
     
+
+    // editor
+
+    $(".editor__btn").on('click', function(){
+      $(this).toggleClass('is-active');
+    })
+
+
     // window scroll
     $(window).scroll(function(){
         
