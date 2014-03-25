@@ -107,7 +107,903 @@
 				</div>
 			</aside>
 			<div class="content content_logged">
-				
+				<div class="main neworder-wrap">
+					<h2 class="h2">Редактирование информации о компании:</h2>
+					<div class="tab-wrap js-tab-group">
+  						<!-- tab list -->
+  						<ul class="tab js-tab">
+  					  		<li class="tab__item is-active">
+  					    		<a href="js-tab1" class="tab__link rus is-active">Редактировать рус. версию</a>
+  					  		</li>
+  					  		<li class="tab__item tab__item_last">
+  					   			<a href="js-tab2" class="tab__link ua">Редагувати укр. версію</a>
+  					  		</li>
+  						</ul>
+  						<!-- END tab list -->
+  						<div class="tab-cont js-tab-cont js-tab1">
+  							<div class="edit edit_name">
+    							<div class="edit__left">
+    								Название <span>*</span>
+    							</div>
+    							<div class="edit__right">
+    								<i class="russia"></i>
+    								<input type="text">
+    								<i class="valide"></i>
+    							</div>
+    						</div>
+    						<div class="edit edit_logo">
+    							<div class="edit__left">
+    								Логотип:
+    							</div>
+    							<div class="edit__right">
+    								<div class="edit__upload">
+    									<input type="file">
+    									<div class="edit__upload-btn">Прикрепить файл</div>
+    								</div>
+    								
+    							</div>
+    							<div class="upload-img__files">
+    								<div class="uploading">
+    									<div class="uploading__img">
+    										<img src="img/pict5.jpg" alt="">
+    									</div>
+    									<div class="uploading__name">Google.jpg</div>
+    									<div class="uploading__line">
+    										<div class="uploading__progress" style="width: 30%"></div>
+    									</div>
+    									<button class="uploading__cancel"></button>
+    								</div>
+    								<div class="uploading">
+    									<div class="uploading__img">
+    										<img src="img/pict5.jpg" alt="">
+    									</div>
+    									<div class="uploading__name">Google.jpg</div>
+    									<button class="uploading__delete"></button>
+    								</div>
+    							</div>
+    						</div>
+    						<div class="edit edit_name">
+    							<div class="edit__left">
+    								Контактное лицо <span>*</span>
+    							</div>
+    							<div class="edit__right">
+    								<input type="text">
+    							</div>
+    						</div>
+    						<div class="edit">
+    							<div class="edit__title">
+    								Информация о компании <span>*</span>
+    							</div>
+    							<div class="editor editor_short">
+    								<div class="editor__toolbar">
+    									<div class="editor__block">
+    										<div class="editor__btn tag">&lt; /&gt;</div>
+    										<div class="editor__btn space"><i class="space-icon"></i></div>
+    									</div>
+    									<div class="editor__block">
+    										<div class="editor__btn bold">B</div>
+    										<div class="editor__btn italic">I</div>
+    										<div class="editor__btn underline">U</div>
+    									</div>
+    									<div class="editor__block">
+    										<div class="editor__btn left"><i class="left-icon"></i></div>
+    										<div class="editor__btn center"><i class="center-icon"></i></div>
+    										<div class="editor__btn right"><i class="right-icon"></i></div>
+    										<div class="editor__btn justify"><i class="justify-icon"></i></div>
+    									</div>
+    									<div class="editor__block">
+    										<div class="editor__btn list"><i class="list-icon"></i></div>
+    										<div class="editor__btn numeric"><i class="numeric-icon"></i></div>
+    									</div>
+    									<div class="editor__block">
+    										<div class="editor__btn links"><i class="link-icon"></i></div>
+    										<div class="editor__btn grid"><i class="grid-icon"></i></div>
+    									</div>
+    									<div class="editor__block">
+    										<div class="editor__btn picture"><i class="picture-icon"></i></div>
+    										<div class="editor__btn videos"><i class="videos-icon"></i></div>
+    									</div>
+    									<div class="editor__resize"><i class="resize-icon"></i></div>
+    								</div>
+    								<textarea class="editor__field"></textarea>
+    								<div class="editor__bottom">
+    									Количество символов: 330 из 10 000
+    								</div>
+    							</div>
+    						</div>
+    						<div class="edit">
+    							<div class="edit__title">График работы</div>
+    							<div class="schedule">
+    								<div class="schedule__day">
+    									<span>Пн.</span>
+    									<input type="text" value="09:00" class="schedule__time">
+    									<span>-</span>
+    									<input type="text" value="18:00" class="schedule__time">
+    									<label class="checkbox">
+											<input type="checkbox" class="js-weekend">
+											<span>Рабочий день</span>
+										</label>
+										<label class="checkbox">
+											<input type="checkbox" class="js-work-day">
+											<span>Есть перерыв</span>
+										</label>
+										<div class="break">
+											<input type="text" value="09:00">
+    										<span>-</span>
+    										<input type="text" value="18:00">
+										</div>
+    								</div>
+    								<div class="schedule__day">
+    									<span>Вт.</span>
+    									<input type="text" value="09:00" class="schedule__time">
+    									<span>-</span>
+    									<input type="text" value="18:00" class="schedule__time">
+    									<label class="checkbox">
+											<input type="checkbox" class="js-weekend">
+											<span>Рабочий день</span>
+										</label>
+										<label class="checkbox">
+											<input type="checkbox" class="js-work-day">
+											<span>Есть перерыв</span>
+										</label>
+										<div class="break">
+											<input type="text" value="09:00">
+    										<span>-</span>
+    										<input type="text" value="18:00">
+										</div>
+    								</div>
+    								<div class="schedule__day">
+    									<span>Ср.</span>
+    									<input type="text" value="09:00" class="schedule__time">
+    									<span>-</span>
+    									<input type="text" value="18:00" class="schedule__time">
+    									<label class="checkbox">
+											<input type="checkbox" class="js-weekend">
+											<span>Рабочий день</span>
+										</label>
+										<label class="checkbox">
+											<input type="checkbox" class="js-work-day">
+											<span>Есть перерыв</span>
+										</label>
+										<div class="break">
+											<input type="text" value="09:00">
+    										<span>-</span>
+    										<input type="text" value="18:00">
+										</div>
+    								</div>
+    								<div class="schedule__day">
+    									<span>Чт.</span>
+    									<input type="text" value="09:00" class="schedule__time">
+    									<span>-</span>
+    									<input type="text" value="18:00" class="schedule__time">
+    									<label class="checkbox">
+											<input type="checkbox" class="js-weekend">
+											<span>Рабочий день</span>
+										</label>
+										<label class="checkbox">
+											<input type="checkbox" class="js-work-day">
+											<span>Есть перерыв</span>
+										</label>
+										<div class="break">
+											<input type="text" value="09:00">
+    										<span>-</span>
+    										<input type="text" value="18:00">
+										</div>
+    								</div>
+    								<div class="schedule__day">
+    									<span>Пт.</span>
+    									<input type="text" value="09:00" class="schedule__time">
+    									<span>-</span>
+    									<input type="text" value="18:00" class="schedule__time">
+    									<label class="checkbox">
+											<input type="checkbox" class="js-weekend">
+											<span>Рабочий день</span>
+										</label>
+										<label class="checkbox">
+											<input type="checkbox" class="js-work-day">
+											<span>Есть перерыв</span>
+										</label>
+										<div class="break">
+											<input type="text" value="09:00">
+    										<span>-</span>
+    										<input type="text" value="18:00">
+										</div>
+    								</div>
+    								<div class="schedule__day">
+    									<span>Сб.</span>
+    									<input type="text" value="09:00" class="schedule__time">
+    									<span>-</span>
+    									<input type="text" value="18:00" class="schedule__time">
+    									<label class="checkbox">
+											<input type="checkbox" class="js-weekend">
+											<span>Рабочий день</span>
+										</label>
+										<label class="checkbox">
+											<input type="checkbox" class="js-work-day">
+											<span>Есть перерыв</span>
+										</label>
+										<div class="break">
+											<input type="text" value="09:00">
+    										<span>-</span>
+    										<input type="text" value="18:00">
+										</div>
+    								</div>
+    								<div class="schedule__day">
+    									<span>Вс.</span>
+    									<input type="text" value="09:00" class="schedule__time">
+    									<span>-</span>
+    									<input type="text" value="18:00" class="schedule__time">
+    									<label class="checkbox">
+											<input type="checkbox" class="js-weekend">
+											<span>Рабочий день</span>
+										</label>
+										<label class="checkbox">
+											<input type="checkbox" class="js-work-day">
+											<span>Есть перерыв</span>
+										</label>
+										<div class="break">
+											<input type="text" value="09:00">
+    										<span>-</span>
+    										<input type="text" value="18:00">
+										</div>
+    								</div>
+    							</div>
+    						</div>
+    						<div class="edit edit_delivery">
+    							<h4 class="h4">Доставка и оплата</h4>
+    							<button class="edit__btn">Редактировать</button>
+    							<div class="box">
+    								<div class="edit__col">
+    									<div class="edit__title">Условия оплаты <span>*</span></div>
+    									<label class="checkbox">
+											<input type="radio" name="payment" class="js-weekend">
+											<span>Наличными</span>
+										</label>
+										<label class="checkbox">
+											<input type="radio" name="payment" class="js-weekend">
+											<span>По безналу</span>
+										</label>
+										<label class="checkbox">
+											<input type="radio" name="payment" class="js-weekend">
+											<span>На карту</span>
+										</label>
+    								</div>
+    								<div class="edit__col">
+    									<div class="edit__title">Условия доставки</div>
+    									<label class="checkbox">
+											<input type="radio" name="delivery" class="js-weekend">
+											<span>Самовывоз</span>
+										</label>
+										<label class="checkbox">
+											<input type="radio" name="delivery" class="js-weekend">
+											<span>По Украине</span>
+										</label>
+										<label class="checkbox">
+											<input type="radio" name="delivery" class="js-weekend">
+											<span>По Киеву</span>
+										</label>
+    								</div>
+    							</div>
+    						</div>
+    						<div class="edit edit_contacts">
+    							<h4 class="h4">Контакты</h4>
+    							<div class="box">
+    								<div class="edit__item phone">
+    									<div class="edit__item-left">
+    										<span>Контактный телефон:</span>
+    									</div>
+    									<div class="edit__item-right">
+    										<input type="text">
+    										<a href="#" class="addmore"></a>
+    									</div>
+    								</div>
+    								<div class="edit__item">
+    									<div class="edit__item-left">
+    										<span>Контактный email:</span>
+    									</div>
+    									<div class="edit__item-right">
+    										<input type="text">
+    									</div>
+    								</div>
+    								<div class="edit__item">
+    									<div class="edit__item-left">
+    										<span>Skype:</span>
+    									</div>
+    									<div class="edit__item-right">
+    										<input type="text">
+    									</div>
+    								</div>
+    								<div class="edit__item">
+    									<div class="edit__item-left">
+    										<span>Страна:</span>
+    									</div>
+    									<div class="edit__item-right">
+    										<input type="text">
+    									</div>
+    								</div>
+    								<div class="edit__item">
+    									<div class="edit__item-left">
+    										<span>Регион:</span>
+    									</div>
+    									<div class="edit__item-right">
+    										<div class="select select_pos js-select">
+					    						<div class="select__text js-select-text">Выберите область</div>
+					    						<input type="hidden" class="js-select-input" value="1">
+					    						<ul class="select__dropdown js-select-list">
+					        						<li data-id="0"><a href="#">Винницкая область</a></li>
+					        						<li data-id="1"><a href="#">Волынская область</a></li>
+					        						<li data-id="2"><a href="#">Днепропетровская область</a></li>
+					    						</ul>
+											</div>
+    									</div>
+    								</div>
+    								<div class="edit__item">
+    									<div class="edit__item-left">
+    										<span>Город:</span>
+    									</div>
+    									<div class="edit__item-right">
+    										<input type="text">
+    									</div>
+    								</div>
+    								<div class="edit__item">
+    									<div class="edit__item-left">
+    										<span>Почтовый индекс:</span>
+    									</div>
+    									<div class="edit__item-right">
+    										<input type="text">
+    									</div>
+    								</div>
+    								<div class="edit__item">
+    									<div class="edit__item-left">
+    										<span>Физический адрес:</span>
+    									</div>
+    									<div class="edit__item-right">
+    										<input type="text">
+    									</div>
+    								</div>
+    							</div>
+    						</div>
+    						<div class="edit edit_contacts">
+    							<h4 class="h4">Положение на карте</h4>
+    							<div class="edit__map">
+    								<iframe width="100%" height="100%" frameborder="0" scrolling="no" marginheight="0" marginwidth="0" src="https://maps.google.com.ua/?hl=ru&amp;ie=UTF8&amp;ll=50.463842,30.442858&amp;spn=0.049009,0.132093&amp;t=m&amp;z=14&amp;output=embed"></iframe>
+    							</div>
+    						</div>
+    						<div class="edit edit_price">
+    							<h4 class="h4">Прайс</h4>
+    							<div class="pricelist">
+    								<div class="pricelist__download">
+    									<input type="file">
+    									<button class="btn">Загрузить прайс</button>
+    									<span>Выберите файл<br> у себя на компьютере</span>
+    									<label class="checkbox">
+											<input type="checkbox">
+											<span>Сделать доступным для скачивания</span>
+										</label>
+    								</div>
+    							</div>
+    						</div>
+    						<div class="edit edit_details">
+    							<h4 class="h4">Реквизиты компании</h4>
+    							<div class="box">
+    								<div class="edit__item">
+    									<div class="edit__item-left">
+    										<span>Название Юр. Лица:</span>
+    									</div>
+    									<div class="edit__item-right">
+    										<input type="text">
+    									</div>
+    								</div>
+    								<div class="edit__item">
+    									<div class="edit__item-left">
+    										<span>ЕГРПО:</span>
+    									</div>
+    									<div class="edit__item-right">
+    										<input type="text">
+    									</div>
+    								</div>
+    								<div class="edit__item">
+    									<div class="edit__item-left">
+    										<span>№ Расчетного счета:</span>
+    									</div>
+    									<div class="edit__item-right">
+    										<input type="text">
+    									</div>
+    								</div>
+    								<div class="edit__item">
+    									<div class="edit__item-left">
+    										<span>Банк:</span>
+    									</div>
+    									<div class="edit__item-right">
+    										<input type="text">
+    									</div>
+    								</div>
+    								<div class="edit__item">
+    									<div class="edit__item-left">
+    										<span>МФО:</span>
+    									</div>
+    									<div class="edit__item-right">
+    										<input type="text">
+    									</div>
+    								</div>
+    								<div class="edit__item">
+    									<div class="edit__item-left">
+    										<span>ИНН:</span>
+    									</div>
+    									<div class="edit__item-right">
+    										<input type="text">
+    									</div>
+    								</div>
+    								<div class="edit__item">
+    									<div class="edit__item-left">
+    										<span>Номер свидетельства:</span>
+    									</div>
+    									<div class="edit__item-right">
+    										<input type="text">
+    									</div>
+    								</div>
+    								<div class="edit__item">
+    									<div class="edit__item-left">
+    										<span>Юридический адрес:</span>
+    									</div>
+    									<div class="edit__item-right">
+    										<input type="text">
+    									</div>
+    								</div>
+    								<div class="documents">
+    									<input type="file">
+    									<button class="btn">Прикрепить регистрационные документы</button>
+    									<span>Выберите файл<br> у себя на компьютере</span>
+    								</div>
+    							</div>	
+    						</div>
+    						<div class="edit__bottom">
+    							<button class="btn btn_orange">Зберегти</button>
+    						</div>
+  						</div>
+  						<div class="tab-cont js-tab-cont js-tab2">
+  							<div class="edit edit_name">
+    							<div class="edit__left">
+    								Назва <span>*</span>
+    							</div>
+    							<div class="edit__right">
+    								<i class="russia"></i>
+    								<input type="text">
+    								<i class="valide"></i>
+    							</div>
+    						</div>
+    						<div class="edit edit_logo">
+    							<div class="edit__left">
+    								Логотип:
+    							</div>
+    							<div class="edit__right">
+    								<div class="edit__upload">
+    									<input type="file">
+    									<div class="edit__upload-btn">Прикріпити файл</div>
+    								</div>
+    								
+    							</div>
+    							<div class="upload-img__files">
+    								<div class="uploading">
+    									<div class="uploading__img">
+    										<img src="img/pict5.jpg" alt="">
+    									</div>
+    									<div class="uploading__name">Google.jpg</div>
+    									<div class="uploading__line">
+    										<div class="uploading__progress" style="width: 30%"></div>
+    									</div>
+    									<button class="uploading__cancel"></button>
+    								</div>
+    								<div class="uploading">
+    									<div class="uploading__img">
+    										<img src="img/pict5.jpg" alt="">
+    									</div>
+    									<div class="uploading__name">Google.jpg</div>
+    									<button class="uploading__delete"></button>
+    								</div>
+    							</div>
+    						</div>
+    						<div class="edit edit_name">
+    							<div class="edit__left">
+    								Контактне лице <span>*</span>
+    							</div>
+    							<div class="edit__right">
+    								<input type="text">
+    							</div>
+    						</div>
+    						<div class="edit">
+    							<div class="edit__title">
+    								Інформація про компанію <span>*</span>
+    							</div>
+    							<div class="editor editor_short">
+    								<div class="editor__toolbar">
+    									<div class="editor__block">
+    										<div class="editor__btn tag">&lt; /&gt;</div>
+    										<div class="editor__btn space"><i class="space-icon"></i></div>
+    									</div>
+    									<div class="editor__block">
+    										<div class="editor__btn bold">B</div>
+    										<div class="editor__btn italic">I</div>
+    										<div class="editor__btn underline">U</div>
+    									</div>
+    									<div class="editor__block">
+    										<div class="editor__btn left"><i class="left-icon"></i></div>
+    										<div class="editor__btn center"><i class="center-icon"></i></div>
+    										<div class="editor__btn right"><i class="right-icon"></i></div>
+    										<div class="editor__btn justify"><i class="justify-icon"></i></div>
+    									</div>
+    									<div class="editor__block">
+    										<div class="editor__btn list"><i class="list-icon"></i></div>
+    										<div class="editor__btn numeric"><i class="numeric-icon"></i></div>
+    									</div>
+    									<div class="editor__block">
+    										<div class="editor__btn links"><i class="link-icon"></i></div>
+    										<div class="editor__btn grid"><i class="grid-icon"></i></div>
+    									</div>
+    									<div class="editor__block">
+    										<div class="editor__btn picture"><i class="picture-icon"></i></div>
+    										<div class="editor__btn videos"><i class="videos-icon"></i></div>
+    									</div>
+    									<div class="editor__resize"><i class="resize-icon"></i></div>
+    								</div>
+    								<textarea class="editor__field"></textarea>
+    								<div class="editor__bottom">
+    									Кількість символів: 330 із 10 000
+    								</div>
+    							</div>
+    						</div>
+    						<div class="edit">
+    							<div class="edit__title">Графік роботи</div>
+    							<div class="schedule">
+    								<div class="schedule__day">
+    									<span>Пн.</span>
+    									<input type="text" value="09:00" class="schedule__time">
+    									<span>-</span>
+    									<input type="text" value="18:00" class="schedule__time">
+    									<label class="checkbox">
+											<input type="checkbox" class="js-weekend">
+											<span>Робочий день</span>
+										</label>
+										<label class="checkbox">
+											<input type="checkbox" class="js-work-day">
+											<span>Є перерва</span>
+										</label>
+										<div class="break">
+											<input type="text" value="09:00">
+    										<span>-</span>
+    										<input type="text" value="18:00">
+										</div>
+    								</div>
+    								<div class="schedule__day">
+    									<span>Вт.</span>
+    									<input type="text" value="09:00" class="schedule__time">
+    									<span>-</span>
+    									<input type="text" value="18:00" class="schedule__time">
+    									<label class="checkbox">
+											<input type="checkbox" class="js-weekend">
+											<span>Робочий день</span>
+										</label>
+										<label class="checkbox">
+											<input type="checkbox" class="js-work-day">
+											<span>Є перерва</span>
+										</label>
+										<div class="break">
+											<input type="text" value="09:00">
+    										<span>-</span>
+    										<input type="text" value="18:00">
+										</div>
+    								</div>
+    								<div class="schedule__day">
+    									<span>Ср.</span>
+    									<input type="text" value="09:00" class="schedule__time">
+    									<span>-</span>
+    									<input type="text" value="18:00" class="schedule__time">
+    									<label class="checkbox">
+											<input type="checkbox" class="js-weekend">
+											<span>Робочий день</span>
+										</label>
+										<label class="checkbox">
+											<input type="checkbox" class="js-work-day">
+											<span>Є перерва</span>
+										</label>
+										<div class="break">
+											<input type="text" value="09:00">
+    										<span>-</span>
+    										<input type="text" value="18:00">
+										</div>
+    								</div>
+    								<div class="schedule__day">
+    									<span>Чт.</span>
+    									<input type="text" value="09:00" class="schedule__time">
+    									<span>-</span>
+    									<input type="text" value="18:00" class="schedule__time">
+    									<label class="checkbox">
+											<input type="checkbox" class="js-weekend">
+											<span>Робочий день</span>
+										</label>
+										<label class="checkbox">
+											<input type="checkbox" class="js-work-day">
+											<span>Є перерва</span>
+										</label>
+										<div class="break">
+											<input type="text" value="09:00">
+    										<span>-</span>
+    										<input type="text" value="18:00">
+										</div>
+    								</div>
+    								<div class="schedule__day">
+    									<span>Пт.</span>
+    									<input type="text" value="09:00" class="schedule__time">
+    									<span>-</span>
+    									<input type="text" value="18:00" class="schedule__time">
+    									<label class="checkbox">
+											<input type="checkbox" class="js-weekend">
+											<span>Робочий день</span>
+										</label>
+										<label class="checkbox">
+											<input type="checkbox" class="js-work-day">
+											<span>Є перерва</span>
+										</label>
+										<div class="break">
+											<input type="text" value="09:00">
+    										<span>-</span>
+    										<input type="text" value="18:00">
+										</div>
+    								</div>
+    								<div class="schedule__day">
+    									<span>Сб.</span>
+    									<input type="text" value="09:00" class="schedule__time">
+    									<span>-</span>
+    									<input type="text" value="18:00" class="schedule__time">
+    									<label class="checkbox">
+											<input type="checkbox" class="js-weekend">
+											<span>Робочий день</span>
+										</label>
+										<label class="checkbox">
+											<input type="checkbox" class="js-work-day">
+											<span>Є перерва</span>
+										</label>
+										<div class="break">
+											<input type="text" value="09:00">
+    										<span>-</span>
+    										<input type="text" value="18:00">
+										</div>
+    								</div>
+    								<div class="schedule__day">
+    									<span>Нд.</span>
+    									<input type="text" value="09:00" class="schedule__time">
+    									<span>-</span>
+    									<input type="text" value="18:00" class="schedule__time">
+    									<label class="checkbox">
+											<input type="checkbox" class="js-weekend">
+											<span>Робочий день</span>
+										</label>
+										<label class="checkbox">
+											<input type="checkbox" class="js-work-day">
+											<span>Є перерва</span>
+										</label>
+										<div class="break">
+											<input type="text" value="09:00">
+    										<span>-</span>
+    										<input type="text" value="18:00">
+										</div>
+    								</div>
+    							</div>
+    						</div>
+    						<div class="edit edit_delivery">
+    							<h4 class="h4">Доставка і оплата</h4>
+    							<button class="edit__btn">Редагувати</button>
+    							<div class="box">
+    								<div class="edit__col">
+    									<div class="edit__title">Умови оплати <span>*</span></div>
+    									<label class="checkbox">
+											<input type="radio" name="payment" class="js-weekend">
+											<span>Готівкою</span>
+										</label>
+										<label class="checkbox">
+											<input type="radio" name="payment" class="js-weekend">
+											<span>Безготівково</span>
+										</label>
+										<label class="checkbox">
+											<input type="radio" name="payment" class="js-weekend">
+											<span>На карту</span>
+										</label>
+    								</div>
+    								<div class="edit__col">
+    									<div class="edit__title">Умови доставки</div>
+    									<label class="checkbox">
+											<input type="radio" name="delivery" class="js-weekend">
+											<span>Самовивіз</span>
+										</label>
+										<label class="checkbox">
+											<input type="radio" name="delivery" class="js-weekend">
+											<span>По Україні</span>
+										</label>
+										<label class="checkbox">
+											<input type="radio" name="delivery" class="js-weekend">
+											<span>По Києву</span>
+										</label>
+    								</div>
+    							</div>
+    						</div>
+    						<div class="edit edit_contacts">
+    							<h4 class="h4">Контакти</h4>
+    							<div class="box">
+    								<div class="edit__item phone">
+    									<div class="edit__item-left">
+    										<span>Контактний телефон:</span>
+    									</div>
+    									<div class="edit__item-right">
+    										<input type="text">
+    										<a href="#" class="addmore"></a>
+    									</div>
+    								</div>
+    								<div class="edit__item">
+    									<div class="edit__item-left">
+    										<span>Контактний email:</span>
+    									</div>
+    									<div class="edit__item-right">
+    										<input type="text">
+    									</div>
+    								</div>
+    								<div class="edit__item">
+    									<div class="edit__item-left">
+    										<span>Skype:</span>
+    									</div>
+    									<div class="edit__item-right">
+    										<input type="text">
+    									</div>
+    								</div>
+    								<div class="edit__item">
+    									<div class="edit__item-left">
+    										<span>Країна:</span>
+    									</div>
+    									<div class="edit__item-right">
+    										<input type="text">
+    									</div>
+    								</div>
+    								<div class="edit__item">
+    									<div class="edit__item-left">
+    										<span>Регіон:</span>
+    									</div>
+    									<div class="edit__item-right">
+    										<div class="select select_pos js-select">
+					    						<div class="select__text js-select-text">Виберіть область</div>
+					    						<input type="hidden" class="js-select-input" value="1">
+					    						<ul class="select__dropdown js-select-list">
+					        						<li data-id="0"><a href="#">Вінницька область</a></li>
+					        						<li data-id="1"><a href="#">Волинська область</a></li>
+					        						<li data-id="2"><a href="#">Дніпропетровська область</a></li>
+					    						</ul>
+											</div>
+    									</div>
+    								</div>
+    								<div class="edit__item">
+    									<div class="edit__item-left">
+    										<span>Місто:</span>
+    									</div>
+    									<div class="edit__item-right">
+    										<input type="text">
+    									</div>
+    								</div>
+    								<div class="edit__item">
+    									<div class="edit__item-left">
+    										<span>Поштовий індекс:</span>
+    									</div>
+    									<div class="edit__item-right">
+    										<input type="text">
+    									</div>
+    								</div>
+    								<div class="edit__item">
+    									<div class="edit__item-left">
+    										<span>Фізична адреса:</span>
+    									</div>
+    									<div class="edit__item-right">
+    										<input type="text">
+    									</div>
+    								</div>
+    							</div>
+    						</div>
+    						<div class="edit edit_contacts">
+    							<h4 class="h4">Положення на карті</h4>
+    							<div class="edit__map">
+    								<iframe width="100%" height="100%" frameborder="0" scrolling="no" marginheight="0" marginwidth="0" src="https://maps.google.com.ua/?hl=ru&amp;ie=UTF8&amp;ll=50.463842,30.442858&amp;spn=0.049009,0.132093&amp;t=m&amp;z=14&amp;output=embed"></iframe>
+    							</div>
+    						</div>
+    						<div class="edit edit_price">
+    							<h4 class="h4">Прайс</h4>
+    							<div class="pricelist">
+    								<div class="pricelist__download">
+    									<input type="file">
+    									<button class="btn">Завантажити прайс</button>
+    									<span>Виберіть файл<br> у себе на комп'ютері</span>
+    									<label class="checkbox">
+											<input type="checkbox">
+											<span>Зробити доступним для скачування</span>
+										</label>
+    								</div>
+    							</div>
+    						</div>
+    						<div class="edit edit_details">
+    							<h4 class="h4">Реквізити компанії</h4>
+    							<div class="box">
+    								<div class="edit__item">
+    									<div class="edit__item-left">
+    										<span>Назва Юр. Лиця:</span>
+    									</div>
+    									<div class="edit__item-right">
+    										<input type="text">
+    									</div>
+    								</div>
+    								<div class="edit__item">
+    									<div class="edit__item-left">
+    										<span>ЕГРПО:</span>
+    									</div>
+    									<div class="edit__item-right">
+    										<input type="text">
+    									</div>
+    								</div>
+    								<div class="edit__item">
+    									<div class="edit__item-left">
+    										<span>№ Розрахункового рахунку:</span>
+    									</div>
+    									<div class="edit__item-right">
+    										<input type="text">
+    									</div>
+    								</div>
+    								<div class="edit__item">
+    									<div class="edit__item-left">
+    										<span>Банк:</span>
+    									</div>
+    									<div class="edit__item-right">
+    										<input type="text">
+    									</div>
+    								</div>
+    								<div class="edit__item">
+    									<div class="edit__item-left">
+    										<span>МФО:</span>
+    									</div>
+    									<div class="edit__item-right">
+    										<input type="text">
+    									</div>
+    								</div>
+    								<div class="edit__item">
+    									<div class="edit__item-left">
+    										<span>ІНН:</span>
+    									</div>
+    									<div class="edit__item-right">
+    										<input type="text">
+    									</div>
+    								</div>
+    								<div class="edit__item">
+    									<div class="edit__item-left">
+    										<span>Номер свідоцтва:</span>
+    									</div>
+    									<div class="edit__item-right">
+    										<input type="text">
+    									</div>
+    								</div>
+    								<div class="edit__item">
+    									<div class="edit__item-left">
+    										<span>Юридична адреса:</span>
+    									</div>
+    									<div class="edit__item-right">
+    										<input type="text">
+    									</div>
+    								</div>
+    								<div class="documents">
+    									<input type="file">
+    									<button class="btn">Прикріпіть реєстраційні документи</button>
+    									<span>Виберіть файл<br> у себе на комп'ютері</span>
+    								</div>
+    							</div>	
+    						</div>
+    						<div class="edit__bottom">
+    							<button class="btn btn_orange">Зберегти</button>
+    						</div>
+  						</div>
+  					</div>	
+				</div>	
 			</div>
 		</div>
 		<!-- END content -->
@@ -138,27 +1034,5 @@
 	</div>
 </footer>
 <!-- END footer -->
-<!-- BEGIN overlay -->
-<div class="overlay"></div>
-<!-- END overlay -->
-<!-- BEGIN login popup -->
-<div class="popup popup_login js-feedback">
-	<div class="popup__title">
-		Написать в службу поддержки
-		<span class="popup__close js-feedback-close"></span>
-	</div>
-	<div class="popup__content">
-		<div class="feedback-form">
-			<p>Постарайтесь описать Ваш вопрос или пожелание как можно детальней</p>
-			<input class="popup__input" type="text" placeholder="Тема">
-			<textarea class="textarea" placeholder="Сообщение"></textarea>
-			<input type="file">
-			<div class="feedback-form__btn">
-				<button type="submit">Отправить сообщение</button>
-			</div>
-		</div>
-	</div>
-</div>
-<!-- END login popup -->
 </body>
 </html>

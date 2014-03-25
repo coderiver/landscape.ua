@@ -316,10 +316,6 @@
         left: 0
         +s(recycle)
 .chars
-    padding: 14px 10px
-    border-top: 1px dashed #e3e3e3
-    border-bottom: 1px dashed #e3e3e3
-    background: #f9f9f9
     +justify
     .select
         width: 271px
@@ -424,3 +420,251 @@
     margin-top: 24px
     .btn
         margin-right: 18px    
+.edit
+    position: relative
+    margin-bottom: 14px 
+    +clr
+.edit__left
+    float: left
+    width: 140px
+    line-height: 29px
+    font-weight: bold
+    span
+        color: #ff0000 
+.edit__right
+    position: relative
+    float: right
+    width: 600px
+.edit_name 
+    input[type="text"]
+        width: 443px 
+        display: inline-block
+        vertical-align: middle
+        height: 29px
+        +box
+        padding: 0 10px
+        background: #fff 
+        +border-radius(5px)
+        border: 1px solid #e5e5e5
+.russia
+    position: absolute
+    top: 4px
+    left: -30px
+    +s(rus)
+.valide
+    display: inline-block
+    vertical-align: middle
+    +s(valide)
+.edit_logo
+    .upload-img__files
+        clear: both
+.edit__upload
+    position: relative
+    width: 163px
+    height: 34px
+    overflow: hidden
+    +border-radius(5px)
+    input[type="file"]
+        position: relative
+        +opacity(0)
+        font-size: 50px
+        cursor: pointer
+        z-index: 2
+    .edit__upload-btn
+        position: absolute
+        top: 0
+        left: 0
+        right: 0
+        +border-radius(5px)
+        background: #ededed
+        height: 34px
+        line-height: 34px
+        padding-left: 39px
+        z-index: 1
+        &:before
+            content: ""
+            position: absolute
+            top: 8px 
+            left: 10px
+            +s(plus2)
+.edit__title
+    font-weight: bold
+    margin-bottom: 15px
+    span
+        color: #ff0000             
+.editor_short
+    width: 580px     
+.schedule__day
+    position: relative
+    width: 420px
+    height: 39px
+    line-height: 39px
+    padding-left: 9px
+    margin-bottom: 10px
+    +box 
+    +border-radius(5px)
+    background: #ededed
+    span
+        display: inline-block
+        vertical-align: middle
+        font-weight: bold
+    input[type="text"]
+        display: inline-block
+        vertical-align: middle
+        width: 65px
+        height: 27px
+        margin: 0 3px 
+        text-align: center
+        font-size: 18px
+        color: #636363
+        +box
+        +border-radius(5px)
+        border: 1px solid #dedede
+        background: #fff
+    .checkbox
+        display: inline-block
+        vertical-align: middle           
+        span
+            font-weight: normal
+            &:before
+                top: 12px
+        input:checked + span        
+            &:after
+                top: 14px
+    &.is-disabled
+        span
+            color: #bbb
+        input[type="text"]
+            color: #bbb
+        .js-weekend + span
+            color: #636363                        
+.break
+    position: absolute
+    top: 0
+    left: 100%
+    bottom: 0
+    width: 161px
+    line-height: 1 
+    padding: 5px 0 5px 2px 
+    +border-radius(0 5px 5px 0)
+    +box
+    border: 1px solid #dedede
+.edit_delivery
+    width: 420px     
+    .h4
+        display: inline-block
+        margin-right: 5px
+    .box
+        +clr    
+.edit__btn
+    display: inline-block
+    height: 26px
+    +box
+    padding: 0 10px
+    +border-radius(5px)
+    border: 1px solid #d9e8b5
+    color: #89be18
+    background: #fff                      
+    &:hover
+        border: 1px solid #aacc5c
+        background: #aacc5c
+        color: #fff
+.edit__col
+    float: left
+    width: 50%
+    +box
+    &:first-child
+        padding-left: 50px
+    .checkbox
+        margin-bottom: 5px
+.edit_contacts, .edit_price, .edit_details
+    width: 420px
+.edit__item
+    +clr
+    margin-bottom: 10px
+    &.phone
+        .edit__item-right
+            input[type="text"]
+                width: 238px                           
+.edit__item-left
+    float: left
+    width: 130px
+    text-align: right
+    span
+        line-height: 29px
+.edit__item-right
+    float: right
+    width: 263px    
+    input[type="text"]
+        display: inline-block
+        vertical-align: middle
+        width: 100%
+        height: 29px
+        +box
+        +border-radius(5px)
+        border: 1px solid #dedede
+        background: #fff
+    .select__text
+        width: auto     
+.addmore
+    display: inline-block
+    vertical-align: middle
+    +s(plus2)
+.edit__map
+    height: 300px
+    +border-radius(5px)
+    overflow: hidden
+.pricelist
+    position: relative
+    min-height: 112px
+    padding: 25px 50px 25px 125px
+    +border-radius(5px)
+    background: #ededed
+    +box
+    &:before
+        content: ""
+        position: absolute
+        top: 19px
+        left: 29px
+        +s(pricelist)
+.pricelist__download, .documents
+    position: relative    
+    input[type="file"]
+        position: relative
+        display: inline-block
+        height: 38px
+        width: 121px
+        margin-right: 10px
+        +opacity(0)
+        z-index: 2
+    .btn
+        position: absolute
+        top: 0px
+        left: 0px
+        height: 33px
+        line-height: 33px 
+        font-size: 13px
+    span
+        position: absolute
+        top: 0
+        color: #a4a4a4
+        font-size: 11px
+    .checkbox
+        span
+            position: relative
+            padding-top: 1px
+            font-size: 12px
+            color: #838383
+.edit_details 
+    .box
+        padding: 14px 10px 14px 5px
+        .edit__item-left 
+            width: 135px                      
+.documents
+    input[type="file"]
+        width: 267px
+.edit__bottom
+    width: 420px 
+    text-align: center
+    .btn
+        width: 180px          

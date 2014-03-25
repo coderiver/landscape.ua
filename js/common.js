@@ -254,6 +254,47 @@ $(document).ready(function() {
     })
 
 
+    // schedule
+
+    function schedule(){
+      
+      var pause = $(".js-work-day");
+      var weekend = $(".js-weekend"); 
+      
+      $('.schedule__day').addClass('is-disabled');
+      $('.schedule__day').find(pause).attr('disabled', 'disabled');
+      $('.schedule__day').find('.schedule__time').attr('disabled', 'disabled');
+      $('.schedule__day').find('.break input').attr('disabled', 'disabled');
+      
+      $('.break').hide();
+      
+      pause.change(function(){
+        if ($(this).is(':checked')) {
+          $(this).parents('.schedule__day').find('.break').show();
+        }
+        else{
+          $(this).parents('.schedule__day').find('.break').hide();
+        }
+      });
+      weekend.change(function(){
+        if ($(this).is(':checked')) {
+          $(this).parents('.schedule__day').removeClass('is-disabled');
+          $(this).parents('.schedule__day').find(pause).attr('disabled', false);
+          $(this).parents('.schedule__day').find('.schedule__time').attr('disabled', false);
+          $(this).parents('.schedule__day').find('.break input').attr('disabled', false);
+        }
+        else{
+          $(this).parents('.schedule__day').addClass('is-disabled');
+          $(this).parents('.schedule__day').find(pause).attr('disabled', 'disabled');
+          $(this).parents('.schedule__day').find('.schedule__time').attr('disabled', 'disabled');
+          $(this).parents('.schedule__day').find('.break input').attr('disabled', 'disabled');
+        }
+      });
+    
+    }
+    schedule();
+    
+
     // window scroll
     $(window).scroll(function(){
         
