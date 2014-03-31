@@ -660,7 +660,78 @@ body
 	padding: 14px 10px
 	border-top: 1px dashed #e3e3e3
 	border-bottom: 1px dashed #e3e3e3
-	background: #f9f9f9						  
+	background: #f9f9f9
+	
+// multidrop
+.multidrop
+	position: relative
+.multidrop__topper
+	position: relative
+	padding: 0 33px 0 12px
+	+border-radius(5px)
+	+box
+	height: 29px
+	line-height: 29px
+	+text-overflow
+	border: 1px solid #e3e3e3
+	background: #fff
+	cursor: pointer
+	z-index: 1
+	&:before
+		content: ""
+		position: absolute
+		top: 0
+		right: 0
+		bottom: 0
+		width: 21px
+		background: #e3e3e3
+	&:after
+		content: ""
+		position: absolute
+		top: 10px
+		right: 5px
+		+s(arr-down-grey)
+.multidrop__dropdown
+	position: absolute
+	top: 25px
+	left: 0
+	right: 0
+	border: 1px solid #e3e3e3
+	background: #fff
+	+border-radius(5px)
+	overflow: hidden
+	z-index: 9
+	li
+		& > ul
+			li
+				a
+					display: block
+					padding-left: 25px
+				& > ul
+					li
+						a
+							display: block
+							padding-left: 50px
+						& > ul
+							li
+								a
+									display: block
+									padding-left: 75px	
+		a
+			height: 22px
+			line-height: 22px
+			color: #636363
+			text-decoration: none
+			&:hover
+				background: #aacc5c
+				color: #fff						 
+.multidrop__category
+	height: 22px
+	line-height: 22px
+	background: #e9f2d5
+	color: #89be18
+	font-weight: bold
+	padding: 0 13px  										  
 			
 
 		  
