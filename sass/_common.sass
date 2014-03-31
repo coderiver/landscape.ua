@@ -358,13 +358,15 @@ body
 		overflow: hidden
 		li
 			float: left
-			width: 36px 
+			min-width: 36px  
 			margin-left: 1px
 			background: #ededed 
 			&:first-child
 				margin-left: 0 
 			a
 				display: block
+				+box
+				padding: 0 10px 
 				position: relative
 				text-align: center
 				height: 37px

@@ -667,4 +667,104 @@
     width: 420px 
     text-align: center
     .btn
-        width: 180px          
+        width: 180px
+        
+// orders
+.bookings__topper 
+    font-size: 0
+    margin-bottom: 15px
+    span
+        display: inline-block
+        vertical-align: middle
+        font-size: 13px 
+.bookings__new, .bookings__inprogress, .bookings__done
+    display: inline-block
+    vertical-align: middle
+    margin-left: 10px
+    height: 27px
+    line-height: 27px
+    padding: 0 10px
+    +border-radius(5px)
+    .checkbox
+        span
+            color: #fff
+            &:before
+                top: 7px
+        input:checked + span
+            &:after
+                top: 8px        
+.bookings__new
+    background: #aacc5c
+    .checkbox
+        span
+            &:before
+                border: 1px solid #9ab953
+        input:checked + span
+            &:after
+                +s(checkbox-green)     
+.bookings__inprogress
+    background: #ff6d6d
+    .checkbox
+        span
+            &:before
+                border: 1px solid #de5f5f
+        input:checked + span
+            &:after
+                +s(checkbox-pink)                   
+.bookings__done
+    background: #838383
+    .checkbox
+        span
+            &:before
+                border: 1px solid #636363
+.bookings__table
+    width: 100%
+    margin-bottom: 34px
+    thead
+        +border-radius(5px 5px 0 0)
+        td
+            font-weight: bold
+            font-size: 12px
+            height: 38px
+            vertical-align: middle
+            +box
+            background: #f9f9f9
+            &:first-child
+                div
+                    +border-radius(5px 0 0 0)
+                    border-left: 1px solid #ddd
+            &:last-child
+                div
+                    +border-radius(0 5px 0 0)
+    td
+        height: 38px
+        vertical-align: middle
+        text-align: center
+        font-size: 12px
+        border: 1px solid #ddd
+        &.new
+            color: #89be18
+        &.inprogress
+            color: #ff6d6d       
+        a
+            color: #89be18
+            text-decoration: none
+            &:hover
+                text-decoration: underline
+    tbody
+        tr
+            &:hover
+                td
+                    background: #f9f9f9                             
+.bookings__number
+    width: 84px                         
+.bookings__date
+    width: 74px
+.bookings__client
+    width: 248px
+.bookings__phone
+    width: 121px
+.bookings__price
+    width: 87px
+.bookings__status
+    width: 118px             

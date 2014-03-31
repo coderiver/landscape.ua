@@ -293,6 +293,7 @@ $(document).ready(function() {
     
     }
     schedule();
+
     
 
     // window scroll
