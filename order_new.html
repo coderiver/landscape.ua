@@ -235,45 +235,46 @@
     								Категория
     							</div>
     							<div class="neworder__right">
-    								<div class="multidrop">
-    									<div class="multidrop__topper">
+    								<div class="multidrop js-multidrop">
+    									<div class="multidrop__topper js-multidrop-preview">
     										Выберите категорию
     									</div>
-    									<ul class="multidrop__dropdown">
+                                        <input type="hidden" class="js-multidrop-input">
+    									<ul class="multidrop__dropdown js-multidrop-dropdown">
     										<li>
     											<div class="multidrop__category">Категория 1</div>
-    											<ul>
-    												<li><a href="#">- Подкатегория категори 1</a></li>
+    											<ul class="level1" data-level="Категория 1">
+    												<li><a href="#" data-val="1">- Подкатегория категори 1</a></li>
     												<li>
-    													<ul>
-    														<li><a href="#">-- Подкатегория категори 1</a></li>
+    													<ul class="level2" data-level="Категория 1_2">
+    														<li><a href="#" data-val="2">-- Подкатегория категори 2</a></li>
     														<li>
-    															<ul>
-    																<li><a href="#">--- Подкатегория 3 -го уровня категории 1</a></li>
+    															<ul class="level3" data-level="Категория 1_3">
+    																<li><a href="#" data-val="3">--- Подкатегория 3 -го уровня категории 1</a></li>
     															</ul>
     														</li>
     													</ul>
     												</li>
-    												<li><a href="#">- Подкатегория категори 1</a></li>
-    												<li><a href="#">- Подкатегория категори 1</a></li>
+    												<li><a href="#" data-val="4">- Подкатегория категори 1</a></li>
+    												<li><a href="#" data-val="5">- Подкатегория категори 1</a></li>
     											</ul>
     										</li>
     										<li>
     											<div class="multidrop__category">Категория 2</div>
     											<ul>
-    												<li><a href="#">- Подкатегория категори 1</a></li>
+    												<li><a href="#" data-val="6">- Подкатегория категори 1</a></li>
     												<li>
     													<ul>
-    														<li><a href="#">-- Подкатегория категори 1</a></li>
+    														<li><a href="#" data-val="7">-- Подкатегория категори 2</a></li>
     														<li>
     															<ul>
-    																<li><a href="#">--- Подкатегория 3 -го уровня категории 1</a></li>
+    																<li><a href="#" data-val="8">--- Подкатегория 3 -го уровня категории 1</a></li>
     															</ul>
     														</li>
     													</ul>
     												</li>
-    												<li><a href="#">- Подкатегория категори 1</a></li>
-    												<li><a href="#">- Подкатегория категори 1</a></li>
+    												<li><a href="#" data-val="9">- Подкатегория категори 1</a></li>
+    												<li><a href="#" data-val="10">- Подкатегория категори 1</a></li>
     											</ul>
     										</li>
     									</ul>

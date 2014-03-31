@@ -294,6 +294,48 @@ $(document).ready(function() {
     }
     schedule();
 
+    // multidrop
+
+    function multidrop(){
+      var dropdown = $(".js-multidrop-dropdown");
+      var drop = $(".js-multidrop");
+      var preview = $(".js-multidrop-preview");
+      var input = $(".js-multidrop-input");
+      
+      dropdown.hide();
+      
+      preview.on('click', function(event){
+        $(this).parent().find('.js-multidrop-dropdown').slideDown('fast');
+        event.stopPropagation();
+      });
+      
+      dropdown.find('a').on('click', function(){
+        var text = $(this).text();
+        var val = $(this).attr('data-val');
+        
+        if($(this).parents('.level3')){
+          var attr3 = $(this).parents('.level3').attr('data-level');
+        }
+
+        if($(this).parents('.level2')){
+          var attr2 = $(this).parents('.level2').attr('data-level');
+        }
+        if($(this).parents('.level1')){
+          var attr1 = $(this).parents('.level1').attr('data-level');
+        }
+
+        preview.text(attr1 +' > '+ attr2 +' > '+ attr3 +' > '+ text); 
+
+        $(this).parents(drop).find(input).val(val);
+        $(this).parents(drop).find(dropdown).slideUp('fast');
+        return false;
+      });
+
+
+
+    }
+    multidrop();
+    
     
 
     // window scroll
@@ -302,7 +344,7 @@ $(document).ready(function() {
     });
 
     $(document).click(function(event){
-
+      $(".js-multidrop-dropdown").slideUp('fast');
 	});
 
 });
