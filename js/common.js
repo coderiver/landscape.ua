@@ -312,19 +312,14 @@ $(document).ready(function() {
       dropdown.find('a').on('click', function(){
         var text = $(this).text();
         var val = $(this).attr('data-val');
+        var attr = $(this).parent().parent().attr('data-level');
         
-        if($(this).parents('.level3')){
-          var attr3 = $(this).parents('.level3').attr('data-level');
+        if( attr ){
+          preview.text(attr + text);
         }
-
-        if($(this).parents('.level2')){
-          var attr2 = $(this).parents('.level2').attr('data-level');
+        else{
+          preview.text(text);
         }
-        if($(this).parents('.level1')){
-          var attr1 = $(this).parents('.level1').attr('data-level');
-        }
-
-        preview.text(attr1 +' > '+ attr2 +' > '+ attr3 +' > '+ text); 
 
         $(this).parents(drop).find(input).val(val);
         $(this).parents(drop).find(dropdown).slideUp('fast');
