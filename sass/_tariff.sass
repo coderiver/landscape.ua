@@ -1,0 +1,69 @@
+// tariff
+
+.content_tariff
+    float: none
+    width: 100%
+.tariff__left
+    width: 224px
+.tariff__free, .tariff__silver, .tariff__gold, .tariff__platinum
+    width: 192px
+    height: 135px
+    margin-left: 2px
+    background: #f3f3f3
+    +border-radius(5px 5px 0 0)
+.free, .silver, .gold, .platinum
+    position: relative
+    height: 112px
+    padding-top: 9px
+    +box
+    +border-radius(5px 5px 0 0)
+    color: #fff
+    text-align: center
+.free    
+    background: #aacc5c
+    &:before
+        content: ""
+        position: absolute
+        top: 100%
+        left: 0
+        +s(tr-free)
+.silver
+    background: #8e8e8e
+    &:before
+        content: ""
+        position: absolute
+        top: 100%
+        left: 0
+        +s(tr-silver)
+.gold
+    background: #feac0d
+    &:before
+        content: ""
+        position: absolute
+        top: 100%
+        left: 0
+        +s(tr-gold)
+.platinum
+    background: #fa5662
+    &:before
+        content: ""
+        position: absolute
+        top: 100%
+        left: 0
+        +s(tr-platinum)
+.tariff__rating
+    text-align: center
+    li
+        display: inline-block
+        +s(rating-white)
+.tariff__title
+    font-size: 31px
+    font-weight: 700
+    line-height: 1.2
+.tariff__descr  
+    font-size: 11px
+    font-weight: normal
+    line-height: 1.2
+     
+
+    
