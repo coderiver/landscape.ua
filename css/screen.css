@@ -1534,6 +1534,8 @@ body { min-width: 1000px; font-size: 13px; font-family: Arial, Calibri, sans-ser
 .tariff__popular { position: absolute; top: -5px; right: -5px; width: 95px; height: 96px; background: url(../img/popular.png) 0 0 no-repeat; z-index: 1; }
 .tariff__popular span { position: relative; top: 29px; left: 11px; display: block; -moz-transform: rotate(45deg); -o-transform: rotate(45deg); -webkit-transform: rotate(45deg); -ms-transform: rotate(45deg); transform: rotate(45deg); filter: progid:DXImageTransform.Microsoft.Matrix(M11=$m11, M12=$m12,M21=$m21, M22=$m22, sizingMethod='auto expand'); zoom: 1; }
 
+.lteie8 .tariff__popular span { top: 2px; left: 18px; -ms-filter: "progid:DXImageTransform.Microsoft.Matrix(M11=0.7071067811865474, M12=-0.7071067811865476, M21=0.7071067811865476, M22=0.7071067811865474, SizingMethod='auto expand')"; }
+
 .free, .silver, .gold, .platinum { position: relative; height: 112px; padding-top: 9px; -webkit-box-sizing: border-box; -moz-box-sizing: border-box; box-sizing: border-box; -webkit-border-radius: 5px 5px 0 0; -moz-border-radius: 5px 5px 0 0; -ms-border-radius: 5px 5px 0 0; -o-border-radius: 5px 5px 0 0; border-radius: 5px 5px 0 0; color: white; text-align: center; }
 
 .free { background: #aacc5c; }
