@@ -907,6 +907,33 @@ body { min-width: 1000px; font-size: 13px; font-family: Arial, Calibri, sans-ser
 .banners__text { font-size: 15px; margin-bottom: 25px; }
 .banners__text p { margin-bottom: 15px; }
 
+.banners__price { width: 682px; margin: 0 auto 5px; border: 1px solid #d4d2d2; }
+.banners__price thead { background: #e9f5cf; }
+.banners__price td { height: 40px; border: 1px solid #d4d2d2; text-align: center; vertical-align: middle; font-size: 15px; }
+
+.banners__price-hint { width: 682px; margin: 0 auto 30px; font-style: italic; font-size: 15px; }
+
+.banners__position { text-align: center; }
+
+.banners__item { display: inline-block; width: 503px; }
+
+.index-banner { height: 268px; padding-top: 100px; text-align: center; margin-bottom: 18px; background: url(../img/index-banner.jpg) 0 0 no-repeat; color: white; font-size: 14px; }
+
+.inner-banner { position: relative; height: 615px; margin-bottom: 42px; background: url(../img/inner-banner.jpg) 0 0 no-repeat; }
+
+.banner__order { width: 650px; margin: 0 auto; -webkit-box-sizing: border-box; -moz-box-sizing: border-box; box-sizing: border-box; border-radius: 4px; padding: 35px 38px 26px 48px; margin-bottom: 90px; border: 1px dashed #cccccc; font-size: 16px; color: #1d1d1d; }
+.banner__order > div { clear: both; margin-bottom: 15px; }
+.banner__order a { color: #7e9e32; }
+
+.banner__contacts { float: right; text-align: right; }
+.banner__contacts span { font-size: 26px; }
+.banner__contacts a { color: #1d1d1d; text-decoration: none; font-size: 21px; }
+.banner__contacts a:hover { text-decoration: underline; }
+
+.banners__bottom { text-align: center; }
+
+.banners__btn { text-align: center; width: 282px; height: 66px; border: 2px solid #d6d6d6; border-radius: 6px; background: #afca73; background-image: -webkit-gradient(linear, 50% 100%, 50% 0%, color-stop(0%, #91b344), color-stop(100%, #d5e5ad)); background-image: -webkit-linear-gradient(bottom, #91b344 0%, #d5e5ad 100%); background-image: -moz-linear-gradient(bottom, #91b344 0%, #d5e5ad 100%); background-image: -o-linear-gradient(bottom, #91b344 0%, #d5e5ad 100%); background-image: linear-gradient(bottom, #91b344 0%, #d5e5ad 100%); font-weight: bold; font-size: 17px; color: #393939; text-shadow: 1px 1px 0px #d0e2a5, -1px -1px 0px #d0e2a5; }
+
 .overlay, .overlay2 { position: fixed; top: 0; left: 0; right: 0; bottom: 0; background: rgba(1, 1, 1, 0.7); z-index: 999; }
 
 .popup { position: fixed; top: 200px; left: 50%; -webkit-box-sizing: border-box; -moz-box-sizing: border-box; box-sizing: border-box; padding: 5px; background: rgba(255, 255, 255, 0.2); -webkit-border-radius: 5px; -moz-border-radius: 5px; -ms-border-radius: 5px; -o-border-radius: 5px; border-radius: 5px; z-index: 1000; }
