@@ -1,0 +1,540 @@
+<!doctype html>
+<!--[if lte IE 8]><html class="lteie8"><![endif]-->
+<!--[if gt IE 8]><!--><html><!--<![endif]-->
+<head>
+	<meta charset="utf-8">
+	<title>company</title>
+	<meta name="viewport" content="initial-scale=1"/>
+	<link rel="stylesheet" media="screen" href="css/screen.css" >
+	<!--[if IE]><script src="js/html5shiv.js"></script><![endif]-->
+	<script src="js/jquery.js"></script>
+	<script src="js/cycle.js"></script>
+	<script src="js/jquery-ui-1.10.4.custom.min.js"></script>
+	<script src="js/jquery.cycle2.carousel.min.js"></script>
+	<script src="js/common.js"></script>
+</head>
+<body>
+
+<!-- BEGIN  out-->
+<div class="out out_main">
+	<!-- BEGIN header -->
+	<header class="header container">
+		<h1 class="logo">
+			<a href="#">landscape</a>
+		</h1>
+		<div class="header__toolbar">
+			<div class="header__tools">
+				<div class="log-in">
+					<a href="#">Войти в кабинет</a>	
+				</div>
+				<div class="registration">
+					<a href="#">Зарегистрироваться</a>	
+				</div>
+				<div class="language">
+					<ul>
+						<li><a href="#">Укр</a></li>
+						<li><a href="#">Рус</a></li>
+					</ul>
+				</div>
+				<div class="basket">
+					<i class="basket__icon"></i>
+					<span>Корзина</span>
+					<span class="basket__item">12</span>
+				</div>
+			</div>
+			<div class="search">
+				<input class="search__input" type="text" placeholder="Поиск...">
+				<button class="search__sbmit" type="submit"></button>
+			</div>
+		</div>
+	</header>
+	<!-- END header -->
+	<!-- BEGIN banner -->
+	<div class="banner">
+		<div class="banner__inner container">
+			<img class="banner__hands" src="img/hands.png" alt="">
+			<div class="banner__content">
+				<a href="#" class="banner__logo"></a>
+				<div class="banner__slogan">
+					<span>Всеукраинский портал</span><br>
+					<span><strong>растений и товаров для сада!</strong></span>
+				</div>
+				<div class="banner__text">
+					<p>Растения и товары от лучших Компаний </p>
+					<p>и производителей!</p>
+				</div>	
+			</div>
+		</div>
+	</div>
+	<!-- END banner -->
+	<div class="container">
+		<!-- BEGIN category -->
+		<ul class="category">
+			<li class="category__item plants">
+				<a href="#">
+					<div class="category__img"></div>
+					<div class="category__title">Растения</div>
+					<p>456000 растений от 228 компаний</p>
+				</a>
+			</li>
+			<li class="category__item goods">
+				<a href="#">
+					<div class="category__img"></div>
+					<div class="category__title">Товары</div>
+					<p>156 растений от 45 компаний</p>
+				</a>
+			</li>
+			<li class="category__item companies">
+				<a href="#">
+					<div class="category__img"></div>
+					<div class="category__title">Компании</div>
+					<p>156 растений от 45 компаний</p>
+				</a>
+			</li>
+			<li class="category__item serv">
+				<a href="#">
+					<div class="category__img"></div>
+					<div class="category__title">Растения</div>
+					<p>156 растений от 45 компаний</p>
+				</a>
+			</li>
+		</ul>
+		<!-- END category -->
+		<!-- BEGIN bestsellers -->
+		<div class="bestsellers">
+			<h2 class="title">Товары и растения в каталоге:</h2>
+			<div class="center">
+        		<span class="bestsellers__prev"></span>
+        		<span class="bestsellers__next"></span>
+    		</div>
+			<div class="cycle-slideshow"
+			data-cycle-timeout="0"
+			data-cycle-prev=".bestsellers__prev"
+        	data-cycle-next=".bestsellers__next"
+        	data-cycle-fx="carousel"
+        	data-cycle-carousel-visible="4"
+        	data-cycle-slides="> div"
+			>
+				<div class="card">
+					<div class="card__img">
+						<img src="img/pict1.png" alt="">
+					</div>
+					<div class="card__descr">
+						<p>Роза парковая Westerland</p>
+						<p>(Вестерленд), саженец</p>
+					</div>
+					<div class="card__price">
+						<span class="price">4029 грн</span>
+					</div>
+					<div class="card__btn">
+						<a href="#" class="buy"><span></span>Купить!</a>
+					</div>
+				</div>
+				<div class="card">
+					<div class="card__img">
+						<img src="img/pict2.png" alt="">
+					</div>
+					<div class="card__descr">
+						<p>Бонсай императорский сосны</p>
+						<p>гималайской, 200см</p>
+					</div>
+					<div class="card__price">	
+						<span class="old-price">24000 грн</span>
+						<span class="price">19999 грн</span>
+					</div>
+					<div class="card__btn">
+						<a href="#" class="buy"><span></span>Купить!</a>
+					</div>
+				</div>
+				<div class="card">
+					<div class="card__img">
+						<img src="img/pict4.png" alt="">
+					</div>
+					<div class="card__descr">
+						<p></p>
+						<p>Девичий виноград, 3л</p>
+					</div>
+					<div class="card__price">
+						<span class="price">37 грн</span>
+					</div>
+					<div class="card__btn">
+						<a href="#" class="buy"><span></span>Купить!</a>
+					</div>
+				</div>
+				<div class="card">
+					<div class="card__img">
+						<img src="img/pict5.png" alt="">
+					</div>
+					<div class="card__descr">
+						<p>Платан западный кленолистый,</p>
+						<p>400-420 см</p>
+					</div>
+					<div class="card__price">	
+						<span class="price">1495 грн</span>
+					</div>
+					<div class="card__btn">
+						<a href="#" class="buy"><span></span>Купить!</a>
+					</div>
+				</div>
+				<div class="card">
+					<div class="card__img">
+						<img src="img/pict1.png" alt="">
+					</div>
+					<div class="card__descr">
+						<p>Роза парковая Westerland</p>
+						<p>(Вестерленд), саженец</p>
+					</div>
+					<div class="card__price">	
+						<span class="old-price">5289 грн</span>
+						<span class="price">4029 грн</span>
+					</div>
+					<div class="card__btn">
+						<a href="#" class="buy"><span></span>Купить!</a>
+					</div>
+				</div>
+				<div class="card">
+					<div class="card__img">
+						<img src="img/pict2.png" alt="">
+					</div>
+					<div class="card__descr">
+						<p>Роза парковая Westerland</p>
+						<p>(Вестерленд), саженец</p>
+					</div>
+					<div class="card__price">
+						<span class="price">4029 грн</span>
+					</div>
+					<div class="card__btn">
+						<a href="#" class="buy"><span></span>Купить!</a>
+					</div>
+				</div>
+			</div>
+		</div>
+		<!-- END bestsellers -->
+	</div>
+	<!-- BEGIN leaders -->
+	<div class="leaders">
+		<div class="title">Лидеры рынка на портале:</div>
+		<div class="divide"></div>
+		<div class="container">
+			<div class="center">
+				<span class="leaders__prev"></span>
+        		<span class="leaders__next"></span>
+			</div>
+			<div class="cycle-slideshow"
+			data-cycle-timeout="0"
+			data-cycle-prev=".leaders__prev"
+        	data-cycle-next=".leaders__next"
+        	data-cycle-fx="carousel"
+        	data-cycle-carousel-visible="4"
+        	data-cycle-slides="> div"
+			>
+				<div class="leaders__item">
+					<a href="#"><img src="img/leader6.png" alt=""></a>
+				</div>
+				<div class="leaders__item">
+					<a href="#"><img src="img/leader8.png" alt=""></a>
+				</div>
+				<div class="leaders__item">
+					<a href="#"><img src="img/leader7.png" alt=""></a>
+				</div>
+				<div class="leaders__item">
+					<a href="#"><img src="img/leader5.png" alt=""></a>
+				</div>
+				<div class="leaders__item">
+					<a href="#"><img src="img/leader6.png" alt=""></a>
+				</div>
+				<div class="leaders__item">
+					<a href="#"><img src="img/leader8.png" alt=""></a>
+				</div>
+			</div>
+		</div>
+		<div class="divide"></div>	
+	</div>
+	<!-- END leaders -->
+	<div class="container">
+		<!-- begin happen  -->
+		<div class="happen">
+			<div class="happen__news">
+				<p class="happen__title">Новости рынка</p>
+				<div class="happen__block">
+					<a href="#" class="inblock">
+						<img src="img/news.jpg" alt="Цветочная клумба">
+							<div class="inblock__info">
+								<p class="inblock__title">Цветочная клумба зимой тоже может быть красивой...</p>
+								<p class="inblock__text">Начался новый сезон и питомник декоративных растений «НАТАЛИС» поздравляет вас с ранней и теплой весной!</p>
+							</div>							
+						<i></i>
+					</a>
+					<a href="#" class="inblock">
+						<img src="img/news1.jpg" alt="Цветочная клумба">
+						<div class="inblock__info">
+								<p class="inblock__title">Цветочная клумба зимой тоже может быть красивой...</p>
+								<p class="inblock__text">Начался новый сезон и питомник декоративных растений «НАТАЛИС» поздравляет вас с ранней и теплой весной!</p>
+						</div>	
+						<i></i>
+					</a>
+					<a href="#" class="inblock">
+						<img src="img/news2.jpg" alt="Цветочная клумба">
+						<div class="inblock__info">
+								<p class="inblock__title">Цветочная клумба зимой тоже может быть красивой...</p>
+								<p class="inblock__text">Начался новый сезон и питомник декоративных растений «НАТАЛИС» поздравляет вас с ранней и теплой весной!</p>
+						</div>	
+						<i></i>
+					</a>					
+				</div>	
+				<div class="allnews">
+					<a href="#">Все новости</a>
+				</div>			
+			</div>
+			<div class="happen__events">
+				<p class="happen__title">События</p>
+				<div class="event__block">
+					<a href="#" class="inblock event">
+						<div class="eventimg"><span>14</span>июня</div>
+						<div class="inblock__info">
+							<p class="inblock__text">Начинается Курс практического ландшафтного дизайна.</p>
+						</div>	
+						<i></i>
+					</a>
+					<a href="#" class="inblock event">
+						<div class="eventimg"><span>15</span>июня</div>
+						<div class="inblock__info">
+							<p class="inblock__text">Начинается Курс практического садоводства и паркового дизайна паркового дизайна.
+							Стоимость курса от 1500 грн.</p>
+						</div>	
+						<i></i>
+					</a>
+					<a href="#" class="inblock event">
+						<div class="eventimg"><span>15</span>июня</div>
+						<div class="inblock__info">
+							<p class="inblock__text">Начинается Курс практического садоводства и паркового дизайна паркового дизайна.</p>
+						</div>	
+						<i></i>
+					</a>	
+					<a href="#" class="inblock event">
+						<div class="eventimg"><span>15</span>июня</div>
+						<div class="inblock__info">
+							<p class="inblock__text">Начинается Курс практического садоводства и паркового дизайна паркового дизайна.</p>
+						</div>	
+						<i></i>
+					</a>				
+				</div>	
+				<div class="allnews">
+					<a href="#">Все события</a>
+				</div>
+			</div>
+		</div>
+		<!-- end happen -->
+	</div>
+	<div class="push push_main"></div>
+</div>
+<!-- END out-->
+<!-- BEGIN footer -->
+<footer class="footer footer_main">
+	<!-- BEGIN info -->	
+	<div class="info info_main">
+		<div class="up up_grey js-scrolltop">
+			<i></i>
+			<span>Вверх</span>
+		</div>
+		<div class="container clr">
+			<div class="vid">
+				<span class="vid__prev"></span>
+				<span class="vid__next"></span>
+				<div class="cycle-slideshow"
+				data-cycle-timeout="0"
+				data-cycle-prev=".vid__prev"
+        		data-cycle-next=".vid__next"
+        		data-cycle-fx="carousel"
+        		data-cycle-slides="> iframe"
+        		data-cycle-pager=".custom-pager"
+        		data-cycle-pager-template="<a href=#> {{slideNum}}</a>"
+				>
+					<iframe width="450" height="253" src="http://www.youtube.com/embed/S1T2Hn25dOo" frameborder="0" allowfullscreen></iframe>
+					<iframe width="450" height="253" src="http://www.youtube.com/embed/NRijloFZL88" frameborder="0" allowfullscreen></iframe>
+					<iframe width="450" height="253" src="http://www.youtube.com/embed/AID9C_FSGlc" frameborder="0" allowfullscreen></iframe>
+					<iframe width="450" height="253" src="http://www.youtube.com/embed/fUz6CJLpIcA" frameborder="0" allowfullscreen></iframe>
+					<iframe width="450" height="253" src="http://www.youtube.com/embed/7rqbQmo3S84" frameborder="0" allowfullscreen></iframe>
+				<div class="custom-pager"></div>
+				</div>
+			</div>			
+			<div class="reg-form reg-form_main">
+				<div class="reg-form__title">Регистрация компании</div>
+				<form action="">
+					<div class="input input_contant">
+						<input type="text" placeholder="Контактное лицо">
+						<span></span>
+					</div>
+					<div class="input input_phone">
+						<input type="text" placeholder="Телефон">
+						<span></span>
+					</div>
+					<div class="input input_mail">
+						<input type="text" placeholder="E-mail">
+						<span></span>
+					</div>
+					<div class="input input_pass">
+						<input type="password" name="password" placeholder="Пароль">
+						<span></span>
+					</div>
+					<div class="reg-form__btn">
+						<button type="submit" class="submit">Продолжить регистрацию</button>
+					</div>
+				</form>
+			</div>
+		</div>
+	</div>
+	<!-- END info -->
+	<!-- BEGIN products -->
+	<div class="products">
+		<ul class="products__list container clr">
+			<li class="products__item">
+				<div class="products__title products__title_plants"><i></i>Растения</div>
+				<ul>
+					<li><a href="#">Хвойные</a></li>
+					<li><a href="#">Лиственные</a></li>
+					<li><a href="#">Вересковые</a></li>
+					<li><a href="#">Вьющиеся</a></li>
+					<li><a href="#">Многолетники</a></li>
+					<li><a href="#">Розы</a></li>
+					<li><a href="#">Плодово-ягодные</a></li>
+					<li><a href="#">Для водоемов</a></li>
+					<li><a href="#">Одно и двухлетние</a></li>
+				</ul>
+			</li>
+			<li class="products__item">
+				<div class="products__title products__title_goods"><i></i>Товары</div>
+				<ul>
+					<li><a href="#">Товары для растениеводов</a></li>
+					<li><a href="#">Семена</a></li>
+					<li><a href="#">Все для рассады</a></li>
+					<li><a href="#">Средства защиты растений</a></li>
+					<li><a href="#">Удобрения</a></li>
+					<li><a href="#">Садово-огородний инвентарь</a></li>
+					<li><a href="#">Садовая техника</a></li>
+					<li><a href="#">Субстраты и грунт</a></li>
+					<li><a href="#">Материалы для сада и огорода</a></li>
+				</ul>
+			</li>
+			<li class="products__item">
+				<div class="products__title products__title_companies"><i></i>Компании</div>
+				<ul>
+					<li><a href="#">Садовые центры</a></li>
+					<li><a href="#">Питомники</a></li>
+					<li><a href="#">Ландшафтные фирмы</a></li>
+					<li><a href="#">Производственные компании</a></li>
+					<li><a href="#">Ботанические сады</a></li>
+					<li><a href="#">Издательства и и-нет ресурсы</a></li>
+					<li><a href="#">Цветочные магазины</a></li>
+					<li><a href="#">Профессиональные обьеденения</a></li>
+					<li><a href="#">Интернет магазины</a></li>
+					<li><a href="#">Импортеры и дистрибъюторы</a></li>
+				</ul>
+			</li>
+			<li class="products__item">
+				<div class="products__title products__title_serv"><i></i>Услуги</div>
+				<ul>
+					<li><a href="#">Системы автополива</a></li>
+					<li><a href="#">Создание газона</a></li>
+					<li><a href="#">Озеленение</a></li>
+					<li><a href="#">Уход за садом</a></li>
+					<li><a href="#">Ландшафтный дизайн</a></li>
+					<li><a href="#">Благоустройство</a></li>
+					<li><a href="#">Создание прудов</a></li>
+					<li><a href="#">Посадка крупномеров</a></li>
+					<li><a href="#">Ландшафтное освещение</a></li>
+					<li><a href="#">Дренажные работы</a></li>
+				</ul>
+			</li>
+		</ul>
+	</div>
+	<!-- END products -->
+	<!-- begin container  -->
+	<div class="container">
+		<div class="container__text">
+			<h1>Первый садовый портал Украины</h1>
+			<p class="container__p">Садовый портал Landscape.ua – это первая в Украине интернет-площадка, которая объединяет любителей и профессионалов в сфере <a href="#">садоводства, огородничества и ландшафтных услуг</a>. Наша цель — развитие “зеленого рынка”, а также создание площадки для взаимодействия между представителями компаний и знатоками-садоводами.</p>
+			<p>Ключевые разделы Landscape.ua — это:</p>
+			<ul class="container__list">
+				<li><a href="#">каталог растений</a> (от лиственных и плодовых до хвойных и декоративных);</li>
+				<li>товары для ухода за саженцами, деревьями, кустарниками (<a href="#">все для дачи</a> и огорода, <a href="#">садовый инструментарий</a>, удобрения, грунт и другие необходимые материалы);</li>
+				<li>список компаний (распределенных по таким категориям, как <a href="#">садовый центр</a>, питомник, ландшафтная фирма, дистрибьютор);</li>
+				<li>список услуг (комплексное озеленение, ландшафтный дизайн, создание газона).</li>
+			</ul>
+			<h2>Все для сада у нас!</h2>
+			<p class="container__p">Вы ищете <a href="#">садовые растения</a> для озеленения участка или хотите превратить свою усадьбу в цветущий сад? Чтобы поиски не занимали много времени мы собрали товары, растения и услуги от лучших компаний, питомников и садоводов в нашем каталоге. Вы можете оформить свой заказ, пользуясь предложениями нескольких компаний одновременно!</p>
+			<p>Акции и скидки станут приятным бонусом, а удобная поисковая система и простой интерфейс личного кабинета облегчит покупку нужного товара.</p>
+			<h2>Садовым компаниям</h2>
+			<p class="container__p">Ваша компания занимается поставками саженцев, растений и семян или предоставляет работы по созданию газона и систем автополива? Разместите предложения на портале Landscape.ua, и следите за тем, как быстро растет количество клиентов!</p>
+			<p class="container__p">Регистрация на нашем сайте – это способ организовать свой “офис в интернете” с минимальными затратами и поднять уровень продаж. Делайте закупки по оптовым ценам, находите лучшие предложения и клиентов для ваших услуг.</p>
+			<p class="container__p">Садовый портал Landscape.ua предлагает комплексный сервис по продвижению садовых товаров и растений в интернете. Для каждой компании - начинающей или уверенно стоящей на рынке, мы разработаем индивидуальное решение для развития бизнеса.</p>
+			<p class="container__p">Любые тематические события (акции, ярмарки, выставки) получат новостное освещение на портале и обязательно привлекут к себе внимание клиентов. Помимо этого, на сайте представлены другие услуги: от создания и размещения баннеров и наполнения товарами садового каталога вашей фирмы до проведения фото, видео и 3D-съемок.</p>
+			<p class="container__p">Мы проводим тренинги, мастер-классы и семинары по <a href="#">садоводству</a> и ландшафтному бизнесу. Участвуйте, будьте в курсе новинок в отрасли, развивайте “зеленый бизнес” в Украине вместе с нами!</p>
+			<p class="container__p">Команда Landscape.ua на связи, чтобы проконсультировать Вас по различным вопросам и решить любую ситуацию, связанную с работой портала. Звоните <span class="bold">(044) 111-22-33</span> или пишите на support@landscape.ua.</p>
+		</div>
+	</div>
+	<!-- end container -->
+	<!-- BEGIN footer -->
+	<footer class="footer">
+		<!-- BEGIN info -->
+		<div class="info">
+			<div class="up js-scrolltop">
+				<i></i>
+				<span>Вверх</span>
+			</div>
+			<div class="container clr">
+				<div class="information">
+					<div class="information__title">ИНФОРМАЦИЯ</div>
+					<div class="divide"></div>
+					<ul>
+						<li><a href="#">Реклама на Landscape</a></li>
+						<li><a href="#">Сравнение платных пакетов услуг</a></li>
+						<li><a href="#">Работа на Landscape</a></li>
+						<li><a href="#">Безопасность</a></li>
+						<li><a href="#">Политика конфиденциальности</a></li>
+						<li><a href="#">Контакты</a></li>
+					</ul>
+				</div>
+				<div class="information">
+					<div class="information__title">ДОПОЛНИТЕЛЬНО</div>
+					<div class="divide"></div>
+					<ul>
+						<li><a href="#">Карта Ландшафтной индустрии</a></li>
+						<li><a href="#">Тендеры - Объявления</a></li>
+						<li><a href="#">Правила оформления товарных позиций</a></li>
+						<li><a href="#">Семинары и тренинги</a></li>
+						<li><a href="#">Вакансии рынка</a></li>
+						<li><a href="#">Новости рынка</a></li>
+						<li><a href="#">Статьи</a></li>
+						<li><a href="#">Landscape TV (Видеообзоры)</a></li>
+					</ul>
+				</div>
+				<div class="reg-form">
+					<a href="#"><img src="img/advert4.jpg" alt=""></a>
+				</div>
+			</div>
+		</div>
+		<!-- END info -->
+		<div class="container clr">
+			<div class="copyrights">
+				<a href="#">© 2013 Landscape.ua</a>
+			</div>
+			<ul class="socials clr">
+				<li><a href="#" class="f"></a></li>
+				<li><a href="#" class="vk"></a></li>
+				<li><a href="#" class="yt"></a></li>
+				<li><a href="#" class="tw"></a></li>
+				<li><a href="#" class="od"></a></li>
+				<li><a href="#" class="gp"></a></li>
+			</ul>
+			<div class="feedback">
+				<div class="feedback__inner">
+					<span class="feedback__tel">(044) 111-22-33</span>
+					<a href="#" class="feedback__link">Написать в поддержку</a>
+				</div>
+			</div>
+		</div>
+	</footer>
+	<!-- END footer -->
+</body>
+</html>
