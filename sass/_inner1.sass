@@ -1,0 +1,117 @@
+//sidebar menu
+.dropdown_plants
+	&.rose
+		margin-bottom: 60px
+		border-bottom: 1px solid #cfcfcf 
+		.dropdown__btn
+			&.rose		 
+				padding: 15px 20px 15px 26px  
+		.dropdown__list
+			&.rose
+				background: #f9f9f9
+				.dropdown__item 
+					&:hover
+						a
+							background: #f9f9f9
+							color: #636363 
+							&:before	
+								+s(list-green)
+						.is-active
+							background: #aacc5c
+							color: #fff	
+							&:before
+								position: absolute
+								content: ""
+								+s(list-white)	 
+					a
+						&:hover
+							background: #f9f9f9
+							color: #8db432 
+							text-decoration: none 
+							&:before	
+								+s(list)	
+					.is-active
+						background: #aacc5c
+						color: #fff	
+						&:before
+							position: absolute
+							content: "" 
+							+s(list-white)										
+		.rose__sublist
+			li
+				
+				&:last-child
+					border-bottom: none 
+				a	
+					padding: 0 15px 0 60px 			
+					color: #636363				
+					&:before
+						+s(list-green)
+						content: ""
+						position: absolute  
+						top: 13px
+						left: 45px	
+					
+//ratings
+.h2
+	&.rate
+		margin-bottom: 10px
+		
+.comments__rating
+	a
+		color: #9D9D9D
+		text-decoration: none 
+		border-bottom: 1px dotted #9D9D9D
+		font-size: 14px    		
+.rating
+	vertical-align: baseline
+
+.rating__img
+	+rotate(270)
+	margin-bottom: 15px 	
+	
+//order block
+.order__price
+	font-size: 19px 
+	padding: 0 8px 15px 
+	.grey
+		color: #A7A7A7
+		font-size: 17px 
+		font-weight: normal 
+		text-align: left 
+	a
+		color: #838383  
+		font-size: 13px
+		font-weight: normal 
+		text-decoration: none 
+		border-bottom: 1px dotted #838383   					
+
+//details block
+.details li
+	padding-left: 18px
+	 
+.details__phone
+	.hide
+		right: 9px
+	&:before
+		left: -4px
+		
+.details__map
+	&:before
+		left: -4px
+		
+.details__comment
+	&:before
+		left: -4px
+		
+.details__message
+	&:before
+		content: ""
+		position: absolute
+		top: 2px 
+		left: -4px
+		+s(maildark)
+
+//tabs
+.tab-wrap
+	margin-bottom: 50px 		

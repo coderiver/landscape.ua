@@ -4,6 +4,7 @@ $(document).ready(function() {
 	// dropdown
 	
 	$(".js-dropdown-list").hide();
+  $(".is-open").show();
 	$(".js-dropdown").click(function(){
 		$(this).parent().find('.js-dropdown-list').slideToggle();
 	});
@@ -343,3 +344,5 @@ $(document).ready(function() {
 	});
 
 });
+
+
