@@ -130,6 +130,7 @@ $(document).ready(function() {
       $(".js-login").hide();
       $(".js-order").hide();
       $(".js-feedback").hide();
+      $(".priceload__popup").hide();
       $(this).hide();
     });
 
@@ -343,6 +344,15 @@ $(document).ready(function() {
       $(".js-multidrop-dropdown").slideUp('fast');
 	});
 
+    // priceload popup 
+    $(".overlay").show();
+    $(".link_download").on('click', function(){
+      $(".overlay").show();
+      $(".priceload__popup").show();
+    });   
+    $(".popup__close").on('click', function(){
+      $(".overlay").hide();
+      $(".priceload__popup").hide();
+    });   
+
 });
-
-

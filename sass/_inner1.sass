@@ -115,3 +115,37 @@
 //tabs
 .tab-wrap
 	margin-bottom: 50px 		
+	
+//priceload popup
+.priceload__popup
+	width: 425px
+	height: 245px  	
+	background: #f9f9f9
+	position: fixed
+	top: 50%
+	left: 50%
+	margin: -212.5px 0 0 -122.5px
+	border: 1px solid #E4E4E4
+	border-radius: 4px
+	text-align: center 
+	z-index: 1000
+	button
+		background: #AACC5C
+		color: #fff  
+		border-radius: 4px
+		font-weight: bold
+		text-transform: uppercase   
+		font-size: 16px
+		padding: 10px 25px  
+		&:active
+			background: darken(#AACC5C, 15%)
+	.popup__close
+		+s(price-close)
+		content: ""
+	.priceload__content
+		margin: 75px 55px 30px 
+		font-size: 17px
+		text-align: left 
+		
+	
+  
