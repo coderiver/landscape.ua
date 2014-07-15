@@ -146,6 +146,171 @@
 		margin: 75px 55px 30px 
 		font-size: 17px
 		text-align: left 
+			
+//for page article
+.sidebar
+	&.right
+		float: right
+		margin: 0 0 0 20px
 		
+.dropdown
+	&.articles
+		margin-bottom: 30px
+		.dropdown__btn 
+			padding: 0 
+			position: relative
+			text-align: center 
+			background: #F9F9F9
+			border: 1px solid #d8d8d8 
+			&:before
+				display: none 
+			&:after
+				content: ""
+				position: absolute
+				left: 50%
+				z-index: 1
+				margin-left: -6.5px 
+				+arr(13, 7, #d8d8d8, b)
+			p
+				font-size: 16px
+				color: #636363  	
+				padding: 15px 93px 10px 
+		.dropdown__list
+			border: 1px solid #f4f4f4		
+		.dropdown__item
+			background: #FFF 	
+			a
+				color: #838383  
+				&:before
+					display: none 
+				&:hover
+					background: #fff
+					color: #0096df	
+			.is-active
+				background: #f9f9f9 
+				&:hover
+					background: #f9f9f9 
+					color: #636363 	
+
+.mailing
+	background: #EDECEC   
+	margin-bottom: 35px 
+	border: 1px solid #d8d8d8
+	border-radius: 4px
+	text-align: center 
+	p
+		color: #636363
+		font-size: 16px
+		padding: 15px 0 10px 0
+	input
+		width: 210px
+		height: 30px 
+		padding-left: 7px
+		border: 1px solid #e1e1e1  
+		+box
+	button
+		width: 109px
+		height: 28px 
+		margin: 10px 0   	
+		background: #46addf
+		text-transform: uppercase
+		color: #FFF
+		font-size: 12px 
+		border-radius: 4px
+
+.paper
+	margin-bottom: 30px 
+		
+.paper__date
+	background: url(../img/icons/dash.png) bottom repeat-x 
+	span
+		display: inline-block
+		padding: 5px 10px			   
+		color: #636363
+		background: #F2F2F2
+		
+.paper__title
+	color: #027cb8
+	font-size: 26px
+	font-weight: normal 
+	margin-top: 20px   		
+			
+.paper__content
+	+clr
+	margin: 20px 0  
+	img
+		float: left
+		margin-right: 20px
+		max-width: 260px
+		max-height: 200px
+	p
+		color: #838383
+		font-size: 16px
+		overflow: hidden 
+
+.readmoar
+	width: 122px
+	height: 33px
+	position: relative
+	padding: 0 8px
+	margin-top: 15px
+	float: right
+	border-radius: 4px
+	font-size: 15px
+	background: #5db218
+	color: #FFF	
+	text-align: left 
+	&:active
+		background: darken(#5db218, 10%) 
+	i
+		content: ""
+		position: absolute
+		top: 14.5px
+		right: 6px 
+		+s(readmoar)      	 			
+
+.paper__tags
+	+clr
+	background: #F8F8F8 url(../img/icons/dash.png) bottom repeat-x
+	padding: 10px
 	
-  
+.tags__left
+	float: left
+	width: 68.919%
+
+.tags__right
+	float: right
+	width: 31.081% 
+	text-align: right 
+	img
+		float: right
+		margin-left: 10px 
+		
+//pagination for article
+.pagination
+	&.forpaper
+		margin: 40px 0 85px
+		.pagination__left
+			float: none
+			ul
+				border-radius: 0
+				display: table
+				margin: 0 auto  
+		.next
+			a
+				padding: 0 
+				&:before
+					content: ""
+					position: absolute
+					top: 13px
+					right: 8px
+					+s(forward)
+		.prev
+			a
+				&:before
+					content: ""
+					position: absolute
+					top: 13px
+					left: 8px	
+					+s(forward)
+					+rotate(180)					

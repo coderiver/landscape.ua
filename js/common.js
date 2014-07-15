@@ -345,7 +345,6 @@ $(document).ready(function() {
 	});
 
     // priceload popup 
-    $(".overlay").show();
     $(".link_download").on('click', function(){
       $(".overlay").show();
       $(".priceload__popup").show();
