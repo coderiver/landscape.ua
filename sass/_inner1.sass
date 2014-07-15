@@ -148,6 +148,10 @@
 		text-align: left 
 			
 //for page article
+.content
+	&.left
+		float: left
+
 .sidebar
 	&.right
 		float: right
@@ -237,7 +241,7 @@
 			
 .paper__content
 	+clr
-	margin: 20px 0  
+	margin: 25px 0  
 	img
 		float: left
 		margin-right: 20px
@@ -245,8 +249,10 @@
 		max-height: 200px
 	p
 		color: #838383
-		font-size: 16px
-		overflow: hidden 
+		font-size: 16px	
+		
+.paper__text	
+	overflow: hidden 
 
 .readmoar
 	width: 122px
@@ -314,3 +320,196 @@
 					left: 8px	
 					+s(forward)
 					+rotate(180)					
+
+//for page readmore
+.scl
+	margin-top: 15px
+
+.paper__datename
+	height: 80px
+	background: #F8F8F8	
+	border: 1px dashed #e4e4e4
+	margin-top: 15px 
+
+.datename__content	
+	margin: 20px 0 0 20px
+	color: #636363 
+	img
+		float: left
+		margin-right: 10px 
+	p
+		padding-top: 3px	
+	span
+		color: #838383 	
+		display: block 
+
+.paper__p
+	margin-bottom: 12px 
+
+.paper__h2, .paper__h3, .paper__h4
+	font-weight: normal 
+	
+.paper__h2
+	font-size: 24px
+	color: #00AAFD
+	
+.paper__h3
+	font-size: 21px
+	color: #333   	
+	
+.paper__h4
+	font-size: 19px
+	color: #434343  
+	
+.paper__list
+	list-style-type: disc
+	color: #838383
+	font-size: 16px 
+	padding: 15px 0 0 30px
+
+// widgets block	
+.widgets
+	+clr
+	margin: 25px 0 
+	li
+		float: left
+	a
+		display: inline-block
+		position: relative
+		width: 45px
+		height: 30px
+		margin-right: 5px   
+		&:before
+			content: ""
+			position: absolute 	
+.w-vk
+	&:before
+		
+		+s(w-vk)
+.w-od
+	&:before
+		+s(w-od)
+.w-fb
+	&:before
+		+s(w-fb)
+.w-tw
+	&:before
+		+s(w-tw)
+.w-mr
+	&:before
+		+s(w-mr)
+.w-m
+	&:before	
+		+s(w-m)	
+.w-gp
+	&:before	
+		+s(w-gp)
+.w-pr
+	&:before	
+		+s(w-pr)					
+.w-add
+	&:before	
+		+s(w-add)		 	
+
+//buyelse block
+.buyelse
+	+clr
+	margin-bottom: 55px
+	border: 1px solid #d5d5d5 
+	padding: 10px  
+	
+.buyelse__bl	
+	float: left
+	margin-right: 10px 
+	&.last
+		margin-right: 0
+	&:hover
+		cursor: pointer
+		.buyelse__but
+			display: block
+		.buyelse__price
+			background: none 	 
+	img
+		width: 172px
+		height: 172px
+		border: 1px solid #e1e1e1
+		+box  
+		
+.buyelse__inner
+	position: relative
+	height: 172px 
+	
+.buyelse__but	
+	width: 100%
+	height: 100%
+	top: 0
+	position: absolute
+	text-align: center
+	background: #fff 
+	background: rgba(255,255,255, 0.7)
+	display: none 
+	span
+		color: #535353
+		font-size: 20px 
+		font-weight: bold 
+		padding-top: 15% 
+		display: inline-block
+	
+.buyelse__price
+	color: #F88C01
+	font-size: 18px
+	font-weight: bold  
+	text-align: center
+	width: 100%
+	height: 70px  	
+	position: absolute 
+	background: rgba(255,255,255, 0.7)
+	bottom: 0
+	p
+		padding-top: 5px  
+	button
+		width: 105px
+		height: 30px
+		position: relative  
+		background: #FE950E
+		border-radius: 5px
+		padding-left: 22px 
+		color: #fff
+		font: 17px Arial, sans-serif
+		font-weight: bold 
+		&:active
+			background: darken(#FE950E, 10%) 
+		&:before
+			position: absolute
+			content: ""
+			top: 7px
+			left: 7px
+			+s(basket-white-small)   			
+
+.else__title
+	color: #636363
+	font-weight: normal
+	font-size: 22px   
+	
+.else__bl
+	float: left
+	display: block
+	width: 230px
+	min-height: 195px
+	font-size: 17px
+	color: #636363
+	margin-right: 10px
+	text-decoration: none
+	line-height: 1.2
+	border: 1px solid #e1e1e1 
+	&:hover
+		color: #0096df 
+	img
+		max-width: 230px
+	&.last
+		margin-right: 0 
+	p		
+		padding: 10px 	
+			
+.disqus
+	margin-bottom: 70px 			
